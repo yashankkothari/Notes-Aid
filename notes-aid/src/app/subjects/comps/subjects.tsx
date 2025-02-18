@@ -348,6 +348,192 @@ const subjects: Subjects = {
         ],
       },
     },
+    ds2: {
+      name: "Test",
+      icon: Binary,
+      color: "blue",
+      modules: {
+        1: [
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/xLetJpcjHS0?si=cyr5y98BKyBWwRku"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+        ],
+        2: [
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+         
+        ],
+        3: [
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+        ],
+        4: [
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+        ],
+        5: [
+          {
+            title: "Introduction to Data Structures",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1"
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2"
+              }
+            ],
+            notes: [
+              {
+                title: "Lecture Notes - Week 1",
+                url: "https://example.com/notes1.pdf"
+              },
+              {
+                title: "Practice Problems",
+                url: "https://example.com/practice1.pdf"
+              }
+            ]
+          },
+        ],
+      },
+    },
   }
 
     export default subjects
