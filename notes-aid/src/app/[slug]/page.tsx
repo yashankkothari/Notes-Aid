@@ -1,22 +1,47 @@
 "use client";
 import React, { useState } from "react";
-import { useParams } from "next/navigation";
-import subjects from "../subjects/comps/subjects";
+import { useParams,useSearchParams } from "next/navigation";
 import ModuleCard from "../components/ModuleCard";
 import TopicList from "../components/TopicList";
+import NotesData from "../notes/data";
+
 
 const EngineeringCurriculum: React.FC = () => {
   const [selectedSubject, setSelectedSubject] = useState<string>("ds");
   const [selectedModule, setSelectedModule] = useState<number>(1);
-  const { slug } = useParams();
+  const { slug } = useParams<{ slug: string }>();
+  const searchParam = useSearchParams();
+  const branch = searchParam.get("branch") || "";
+  const sem = searchParam.get("sem") || "";
+
+  console.log(branch,sem);
+
+  const subjects = (NotesData as any)[slug]?.[branch]?.[sem];
+
+
+  // const subjects = NotesData.fy.comps.oddSem;
+
+  if (!subjects || Object.keys(subjects).length === 0) {
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center bg-slate-50 p-4 md:p-6">
+        <div className="max-w-md mx-auto bg-white rounded-lg shadow-sm p-6 text-center">
+          <h2 className="text-lg md:text-2xl font-bold mb-4 text-black">
+            No Subjects Found
+          </h2>
+          <p className="text-slate-600">
+            It seems there are no subjects available for the selected curriculum. Will be added soon
+          </p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full min-h-screen bg-slate-50 p-4 md:p-6">
       <div className="max-w-full mx-auto bg-white rounded-lg shadow-sm p-4 md:p-6">
-        {/* Heading */}
         <div className="mb-6 md:mb-8 text-center md:text-left">
           <h1 className="text-lg md:text-2xl font-bold mb-2 text-black">
-            Engineering Curriculum of {slug}
+            Engineering Curriculum of {branch.toUpperCase()} / {slug.toUpperCase()} / {sem.charAt(0).toUpperCase() + sem.slice(1)}
           </h1>
           <p className="text-slate-600">
             Explore subjects and their module-wise topics
@@ -26,7 +51,7 @@ const EngineeringCurriculum: React.FC = () => {
    
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
           {Object.entries(subjects).map(([key, subject]) => {
-            const Icon = subject.icon;
+            const Icon = (subject as any).icon;
             return (
               <div
                 key={key}
@@ -42,7 +67,7 @@ const EngineeringCurriculum: React.FC = () => {
                 <div className="flex items-center justify-center gap-2 mb-2 flex-col">
                   <Icon className="w-6 h-6 text-blue-500" />
                   <h3 className="font-medium text-black text-sm md:text-base">
-                    {subject.name}
+                    {(subject as any).name}
                   </h3>
                 </div>
                 <p className="text-xs text-slate-500 md:text-sm">5 modules</p>

@@ -8,26 +8,24 @@ import {
   Calendar,
   NotebookText,
 } from "lucide-react"
-
+import { redirect } from 'next/navigation'
 const branches = [
-  "Computer Science",
-  "Mechanical Engineering",
-  "Electrical Engineering",
-  "Civil Engineering",
-  "Electronics and Communication",
-  "Chemical Engineering",
+  { value: "comps", label: "Computer Science" },
+  { value: "mech", label: "Mechanical Engineering" },
+  { value: "excp", label: "Electronics & Computer Engineering" },
+  { value: "it", label: "Information Technology" }
 ]
 
 const years = [
-  { value: "1", label: "First Year" },
-  { value: "2", label: "Second Year" },
-  { value: "3", label: "Third Year" },
-  { value: "4", label: "Fourth Year" },
+  { value: "fy", label: "First Year" },
+  { value: "sy", label: "Second Year" },
+  { value: "ty", label: "Third Year" },
+  { value: "ly", label: "Fourth Year" },
 ]
 
 const semesters = [
-  { value: 'odd', label: 'Odd Semester' },
-  { value: 'even', label: 'Even Semester' },
+  { value: 'oddSem', label: 'Odd Semester' },
+  { value: 'evenSem', label: 'Even Semester' },
 ]
 
 export default function MainPage() {
@@ -41,7 +39,7 @@ export default function MainPage() {
     const timer = setTimeout(() => {
       setIsLoading(false)
       setShowForm(true)
-    }, 1500) // Show welcome message for 1.5 seconds before showing the form
+    }, 1500) 
 
     return () => clearTimeout(timer)
   }, [])
@@ -49,6 +47,7 @@ export default function MainPage() {
   const handleContinue = () => {
     if (selectedBranch && selectedYear && selectedSemester) {
       console.log(`Selected Branch: ${selectedBranch}, Selected Year: ${selectedYear}, Semester: ${selectedSemester}`);
+      redirect(`/${selectedYear}?branch=${selectedBranch}&sem=${selectedSemester}`)
     }
   }
 
@@ -83,8 +82,8 @@ export default function MainPage() {
                     Choose a branch
                   </option>
                   {branches.map((branch, index) => (
-                    <option key={index} value={branch}>
-                      {branch}
+                    <option key={index} value={branch.value}>
+                      {branch.label}
                     </option>
                   ))}
                 </select>
