@@ -1,9 +1,10 @@
-import subjects_comps_fy from "./fy/comps/oddSem/subjects";
+import subjects_comps_fy_odd from "./fy/comps/oddSem/subjects";
+import subjects_comps_ty_even from "./ty/comps/evenSem/subject";
 
 const NotesData={
     fy:{
         comps:{
-            oddSem:subjects_comps_fy,
+            oddSem:subjects_comps_fy_odd,
             evenSem:{
 
             },
@@ -56,9 +57,7 @@ const NotesData={
             oddSem:{
 
             },
-            evenSem:{
-
-            },
+            evenSem:subjects_comps_ty_even,
         },
         it:{
             oddSem:{

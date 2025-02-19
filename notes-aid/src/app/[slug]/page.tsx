@@ -7,8 +7,7 @@ import TopicList from "../components/TopicList"
 import Navbar from "../components/Navbar"
 import NotesData from "../notes/data"
 
-// Import the Topic interface from your TopicList component
-// or create a shared types file to avoid duplication
+
 interface Topic {
   title: string
   description: string
@@ -22,9 +21,12 @@ interface Topic {
   }[]
 }
 
-// Define interfaces for your data structure
+
 interface Module {
-  [key: number]: Topic[]
+  [key: number]: {
+    notesLink: string[],
+    topics: Topic[]
+  }
 }
 
 interface Subject {
@@ -37,17 +39,16 @@ interface Subjects {
   [subjectKey: string]: Subject
 }
 
-// Type for a single semester (odd or even)
 interface SemesterData {
   [key: string]: Subjects
 }
 
-// Type for a branch (comps, it, excp)
+
 interface BranchData {
   [key: string]: SemesterData
 }
 
-// Type for the whole NotesData structure
+
 interface NotesDataType {
   [year: string]: BranchData
 }
@@ -60,14 +61,13 @@ const EngineeringCurriculum: React.FC = () => {
   const sem = searchParam.get("sem") || ""
   console.log(branch, sem)
 
-  // Use type assertion only once at the data source
+
   const typedNotesData = NotesData as NotesDataType
 
-  // Now we can use proper type checking with optional chaining
   const subjects = slug && typedNotesData[slug]?.[branch]?.[sem]
   // const subjects = NotesData.fy.comps.oddSem;
 
-  //selecting the initial subject at the position 0
+
   const initialSubject = subjects ? Object.keys(subjects)[0] : ""
   const [selectedSubject, setSelectedSubject] = useState(initialSubject)
 
@@ -112,6 +112,7 @@ const EngineeringCurriculum: React.FC = () => {
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
               {Object.entries(subjects).map(([key, subject]) => {
                 const Icon = subject.icon
+                // console.log(subject)
                 return (
                   <div
                     key={key}
@@ -131,7 +132,7 @@ const EngineeringCurriculum: React.FC = () => {
                       </h3>
                     </div>
                     <p className="text-xs text-slate-500 dark:text-slate-400 md:text-sm">
-                      5 modules
+                      {Object.keys(subject.modules).length} modules
                     </p>
                   </div>
                 )
@@ -148,7 +149,7 @@ const EngineeringCurriculum: React.FC = () => {
                         key={moduley}
                         module={moduley}
                         topics={
-                          subjects[selectedSubject].modules[moduley].length
+                          subjects[selectedSubject].modules[moduley].topics.length
                         }
                         isActive={selectedModule === moduley}
                         onClick={() => setSelectedModule(moduley)}
@@ -163,7 +164,7 @@ const EngineeringCurriculum: React.FC = () => {
                   {subjects[selectedSubject].name} - Module {selectedModule}
                 </h2>
                 <TopicList
-                  topics={subjects[selectedSubject].modules[selectedModule]}
+                  topics={subjects[selectedSubject].modules[selectedModule].topics}
                 />
               </div>
             </div>
