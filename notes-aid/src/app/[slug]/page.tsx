@@ -7,19 +7,20 @@ import NotesData from "../notes/data";
 
 
 const EngineeringCurriculum: React.FC = () => {
-  const [selectedSubject, setSelectedSubject] = useState<string>("ds");
+  // const [selectedSubject, setSelectedSubject] = useState<string>("ds");
   const [selectedModule, setSelectedModule] = useState<number>(1);
   const { slug } = useParams<{ slug: string }>();
   const searchParam = useSearchParams();
   const branch = searchParam.get("branch") || "";
   const sem = searchParam.get("sem") || "";
-
-  console.log(branch,sem);
+  console.log(branch, sem);
 
   const subjects = (NotesData as any)[slug]?.[branch]?.[sem];
-
-
   // const subjects = NotesData.fy.comps.oddSem;
+
+  //selecting the initial subject at the position 0
+  const initialSubject = subjects ? Object.keys(subjects)[0] : ""
+  const [selectedSubject, setSelectedSubject] = useState(initialSubject)
 
   if (!subjects || Object.keys(subjects).length === 0) {
     return (
