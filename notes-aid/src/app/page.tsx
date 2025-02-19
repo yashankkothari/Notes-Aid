@@ -6,6 +6,7 @@ import {
   ChevronDown,
   School,
   Calendar,
+  NotebookText,
 } from "lucide-react"
 
 const branches = [
@@ -52,29 +53,29 @@ export default function MainPage() {
   }
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-50 flex flex-col items-center justify-center p-4 transition-all duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+    <div className={`min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] flex flex-col items-center justify-center p-4 transition-all duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
       {!showForm ? (
         <div className="flex flex-col items-center justify-center text-center transition-transform duration-500 transform scale-150">
           <h1 className="text-4xl font-bold text-black text-center opacity-100 animate-fade-out delay-150 absolute inset-0 flex items-center justify-center">
-            Welcome, let's get productive!
+            Welcome, let&apos;s get productive!
           </h1>
         </div>
       ) : (
-        <div className="backdrop-blur-lg bg-white/90 rounded-2xl shadow-xl shadow-gray-100/50 p-8 w-full max-w-4xl border border-gray-200/60">
-          <div className="flex items-center gap-3 mb-8">
-            <GraduationCap className="w-8 h-8 text-gray-800" />
-            <h1 className="text-2xl font-bold text-gray-800">Academic Details</h1>
+        <div className="w-full max-w-4xl space-y-8">
+          <div className="flex items-center gap-3">
+            <GraduationCap className="w-8 h-8 text-[#706C61]" />
+            <h1 className="text-2xl font-bold text-[#333333]">Academic Details</h1>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-4 mb-8">
+          <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-              <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
-                <School className="w-4 h-4 text-gray-600" />
+              <label className="flex items-center gap-2 text-sm font-medium text-[#333333] mb-2">
+                <School className="w-4 h-4 text-[#706C61]" />
                 Branch
               </label>
               <div className="relative">
                 <select
-                  className="w-full p-3 pr-10 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400 text-gray-800 transition-all duration-200 hover:border-gray-400 appearance-none"
+                  className="w-full p-3 pr-10 bg-white border border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] text-[#333333] transition-all duration-200 hover:border-[#706C61]/80 appearance-none"
                   value={selectedBranch}
                   onChange={(e) => setSelectedBranch(e.target.value)}
                 >
@@ -87,18 +88,18 @@ export default function MainPage() {
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="w-5 h-5 text-gray-500 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <ChevronDown className="w-5 h-5 text-[#706C61] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
             </div>
 
             <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-              <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
-                <Calendar className="w-4 h-4 text-gray-600" />
+              <label className="flex items-center gap-2 text-sm font-medium text-[#333333] mb-2">
+                <Calendar className="w-4 h-4 text-[#706C61]" />
                 Year
               </label>
               <div className="relative">
                 <select
-                  className="w-full p-3 pr-10 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400 text-gray-800 transition-all duration-200 hover:border-gray-400 appearance-none"
+                  className="w-full p-3 pr-10 bg-white border border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] text-[#333333] transition-all duration-200 hover:border-[#706C61]/80 appearance-none"
                   value={selectedYear}
                   onChange={(e) => setSelectedYear(e.target.value)}
                 >
@@ -111,18 +112,18 @@ export default function MainPage() {
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="w-5 h-5 text-gray-500 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <ChevronDown className="w-5 h-5 text-[#706C61] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
             </div>
 
             <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-              <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
-                <BookOpen className="w-4 h-4 text-gray-600" />
+              <label className="flex items-center gap-2 text-sm font-medium text-[#333333] mb-2">
+                <NotebookText className="w-4 h-4 text-[#706C61]" />
                 Semester
               </label>
               <div className="relative">
                 <select
-                  className="w-full p-3 pr-10 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-400 text-gray-800 transition-all duration-200 hover:border-gray-400 appearance-none"
+                  className="w-full p-3 pr-10 bg-white border border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] text-[#333333] transition-all duration-200 hover:border-[#706C61]/80 appearance-none"
                   value={selectedSemester}
                   onChange={(e) => setSelectedSemester(e.target.value)}
                 >
@@ -135,25 +136,23 @@ export default function MainPage() {
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="w-5 h-5 text-gray-500 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                <ChevronDown className="w-5 h-5 text-[#706C61] absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               </div>
             </div>
           </div>
 
-          <div className="mt-6">
-            <button
-              className={`w-full bg-gradient-to-r from-gray-700 to-gray-600 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
-                !selectedBranch || !selectedYear || !selectedSemester 
-                  ? 'opacity-50 cursor-not-allowed' 
-                  : 'hover:bg-gray-700'
-              }`}
-              onClick={handleContinue}
-              disabled={!selectedBranch || !selectedYear || !selectedSemester}
-            >
-              <BookOpen className="w-4 h-4" />
-              Continue to Modules
-            </button>
-          </div>
+          <button
+            className={`w-full bg-[#333333] text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
+              !selectedBranch || !selectedYear || !selectedSemester 
+                ? 'opacity-50 cursor-not-allowed' 
+                : 'hover:bg-[#706C61]'
+            }`}
+            onClick={handleContinue}
+            disabled={!selectedBranch || !selectedYear || !selectedSemester}
+          >
+            <BookOpen className="w-4 h-4" />
+            Continue to Modules
+          </button>
         </div>
       )}
     </div>
