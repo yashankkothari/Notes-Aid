@@ -7,6 +7,51 @@ import TopicList from "../components/TopicList"
 import Navbar from "../components/Navbar"
 import NotesData from "../notes/data"
 
+// Import the Topic interface from your TopicList component
+// or create a shared types file to avoid duplication
+interface Topic {
+  title: string
+  description: string
+  videos?: {
+    title: string
+    url: string
+  }[]
+  notes?: {
+    title: string
+    url: string
+  }[]
+}
+
+// Define interfaces for your data structure
+interface Module {
+  [key: number]: Topic[]
+}
+
+interface Subject {
+  name: string
+  icon: React.ComponentType<{ className?: string }>
+  modules: Module
+}
+
+interface Subjects {
+  [subjectKey: string]: Subject
+}
+
+// Type for a single semester (odd or even)
+interface SemesterData {
+  [key: string]: Subjects
+}
+
+// Type for a branch (comps, it, excp)
+interface BranchData {
+  [key: string]: SemesterData
+}
+
+// Type for the whole NotesData structure
+interface NotesDataType {
+  [year: string]: BranchData
+}
+
 const EngineeringCurriculum: React.FC = () => {
   const [selectedModule, setSelectedModule] = useState<number>(1)
   const { slug } = useParams<{ slug: string }>()
@@ -15,7 +60,11 @@ const EngineeringCurriculum: React.FC = () => {
   const sem = searchParam.get("sem") || ""
   console.log(branch, sem)
 
-  const subjects = (NotesData as any)[slug]?.[branch]?.[sem]
+  // Use type assertion only once at the data source
+  const typedNotesData = NotesData as NotesDataType
+
+  // Now we can use proper type checking with optional chaining
+  const subjects = slug && typedNotesData[slug]?.[branch]?.[sem]
   // const subjects = NotesData.fy.comps.oddSem;
 
   //selecting the initial subject at the position 0
@@ -62,7 +111,7 @@ const EngineeringCurriculum: React.FC = () => {
 
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
               {Object.entries(subjects).map(([key, subject]) => {
-                const Icon = (subject as any).icon
+                const Icon = subject.icon
                 return (
                   <div
                     key={key}
@@ -78,7 +127,7 @@ const EngineeringCurriculum: React.FC = () => {
                     <div className="flex items-center justify-center gap-2 mb-2 flex-col">
                       <Icon className="w-6 h-6 text-blue-500 dark:text-blue-400" />
                       <h3 className="font-medium text-black dark:text-white text-sm md:text-base">
-                        {(subject as any).name}
+                        {subject.name}
                       </h3>
                     </div>
                     <p className="text-xs text-slate-500 dark:text-slate-400 md:text-sm">
