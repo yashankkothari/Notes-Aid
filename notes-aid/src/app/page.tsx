@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react"
+import { useRouter } from "next/navigation"
 import {
   GraduationCap,
   BookOpen,
@@ -8,7 +9,6 @@ import {
   Calendar,
   NotebookText,
 } from "lucide-react"
-import { redirect } from "next/navigation"
 import { ThemeProvider } from "next-themes"
 import Navbar from "./components/Navbar"
 
@@ -32,6 +32,7 @@ const semesters = [
 ]
 
 export default function MainPage() {
+  const router = useRouter()
   const [selectedBranch, setSelectedBranch] = useState("")
   const [selectedYear, setSelectedYear] = useState("")
   const [selectedSemester, setSelectedSemester] = useState("")
@@ -52,7 +53,7 @@ export default function MainPage() {
       console.log(
         `Selected Branch: ${selectedBranch}, Selected Year: ${selectedYear}, Semester: ${selectedSemester}`
       )
-      redirect(
+      router.push(
         `/${selectedYear}?branch=${selectedBranch}&sem=${selectedSemester}`
       )
     }
