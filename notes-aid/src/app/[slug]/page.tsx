@@ -165,6 +165,8 @@ const EngineeringCurriculum: React.FC = () => {
                 </h2>
                 <TopicList
                   topics={subjects[selectedSubject].modules[selectedModule].topics}
+                  notesLink={subjects[selectedSubject].modules[selectedModule].notesLink}
+                  moduleNumber={selectedModule}
                 />
               </div>
             </div>

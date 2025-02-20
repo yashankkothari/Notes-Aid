@@ -1,30 +1,32 @@
-import React, { useState } from "react"
-import { BookOpen, ChevronDown } from "lucide-react"
-import VideoAccordion from "./VideoAccordion"
+import React, { useState } from "react";
+import { BookOpen, ChevronDown } from "lucide-react";
+import VideoAccordion from "./VideoAccordion";
 
 interface Topic {
-  title: string
-  description: string
+  title: string;
+  description: string;
   videos?: {
-    title: string
-    url: string
-  }[]
+    title: string;
+    url: string;
+  }[];
   notes?: {
-    title: string
-    url: string
-  }[]
+    title: string;
+    url: string;
+  }[];
 }
 
 interface TopicListProps {
-  topics: Topic[]
+  topics: Topic[];
+  notesLink: string[];
+  moduleNumber: number;
 }
 
-const TopicList: React.FC<TopicListProps> = ({ topics }) => {
-  const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null)
+const TopicList: React.FC<TopicListProps> = ({ topics, notesLink,moduleNumber }) => {
+  const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
 
   const toggleTopic = (index: number) => {
-    setOpenTopicIndex(openTopicIndex === index ? null : index)
-  }
+    setOpenTopicIndex(openTopicIndex === index ? null : index);
+  };
 
   if (!topics || topics.length === 0) {
     return (
@@ -33,7 +35,7 @@ const TopicList: React.FC<TopicListProps> = ({ topics }) => {
           No topics available
         </p>
       </div>
-    )
+    );
   }
 
   return (
@@ -106,13 +108,28 @@ const TopicList: React.FC<TopicListProps> = ({ topics }) => {
                 </div>
               )}
             </div>
-           
           </div>
-          
         </div>
       ))}
+      {notesLink.map((note: string, noteIndex: number) => (
+        <>
+        <h5 className="text-sm font-medium text-black dark:text-white mb-2">
+          Study Materials for  Module {moduleNumber} 
+        </h5>
+          <a
+            key={noteIndex}
+            href={note}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+          >
+            <BookOpen className="w-4 h-4" />
+            Notes {noteIndex + 1}
+          </a>
+        </>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default TopicList
+export default TopicList;
