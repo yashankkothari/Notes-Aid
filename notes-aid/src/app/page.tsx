@@ -9,7 +9,6 @@ import {
   Calendar,
   NotebookText,
 } from "lucide-react"
-import { redirect } from "next/navigation"
 import { ThemeProvider } from "next-themes"
 import Navbar from "./components/Navbar"
 
