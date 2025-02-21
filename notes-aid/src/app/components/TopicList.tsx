@@ -44,11 +44,13 @@ const TopicList: React.FC<TopicListProps> = ({
 
   return (
     <div className="space-y-3">
+      {Object.keys(notesLink).length > 0 && (
+        <h5 className="text-sm font-medium text-black dark:text-white mb-2">
+          Study Materials for Module {moduleNumber}
+        </h5>
+      )}
       {notesLink.map((note: string, noteIndex: number) => (
         <React.Fragment key={`note-${noteIndex}`}>
-          <h5 className="text-sm font-medium text-black dark:text-white mb-2">
-            Study Materials for Module {moduleNumber}
-          </h5>
           <a
             key={noteIndex}
             href={note}
@@ -61,7 +63,9 @@ const TopicList: React.FC<TopicListProps> = ({
           </a>
         </React.Fragment>
       ))}
-      {topics.map((topic, index) => (
+      
+      {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white mb-2">Videos</h5>}
+      {Object.keys(topics).length>0 && topics.map((topic, index) => (
         <div
           key={index}
           className="bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-700 overflow-hidden"

@@ -8,6 +8,7 @@ import {
 
 import { Subjects } from "@/app/interfaces/Subject";
 
+
 const subjects: Subjects = {
   dsip: {
     name: "Digital Systems and Image Processing",
@@ -24,9 +25,22 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Video 1",
+                title: "Introduction to Digital Signals and Systems",
                 url: "https://www.youtube.com/embed/iCaDt9Esdv4?si=KFIJ7HSUSv-S6pRo",
               },
+              {
+                title: "Representation of Discrete Time Signals",
+                url: "https://www.youtube.com/embed/ZU6YFD5NQ8E?si=kbEPUnYPRQ4WRj_i",
+              },
+             
+              {
+                title: "Types of Signals",
+                url: "https://www.youtube.com/embed/N2qDknnckHc?si=86ur6m8GS9NLpm-p",
+              },
+              {
+                title: "Sampling Theorem (Definition only) ",
+                url: "https://www.youtube.com/embed/XyZerq7-IvA?si=5D4KVG8u27VPgHV-",
+              }
             ],
             // notes: [
             //   {
@@ -54,7 +68,7 @@ const subjects: Subjects = {
             description: "Important Topic for Exam ⭐",
             videos: [
               {
-                title: "Video 1 (Classification of Discrete Time Signals)",
+                title: "Video 1 - Deterministic and Non Deterministic Signals",
                 url: "https://www.youtube.com/embed/tu9TPkS0uZE?si=f7rqIaoD8EnfaSaL",
               },
               {

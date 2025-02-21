@@ -59,7 +59,7 @@ const EngineeringCurriculum: React.FC = () => {
   const searchParam = useSearchParams()
   const branch = searchParam.get("branch") || ""
   const sem = searchParam.get("sem") || ""
-  console.log(branch, sem)
+  // console.log(branch, sem)
 
 
   const typedNotesData = NotesData as NotesDataType
