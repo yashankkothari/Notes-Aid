@@ -21,7 +21,11 @@ interface TopicListProps {
   moduleNumber: number;
 }
 
-const TopicList: React.FC<TopicListProps> = ({ topics, notesLink, moduleNumber }) => {
+const TopicList: React.FC<TopicListProps> = ({
+  topics,
+  notesLink,
+  moduleNumber,
+}) => {
   const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
 
   const toggleTopic = (index: number) => {
@@ -40,6 +44,23 @@ const TopicList: React.FC<TopicListProps> = ({ topics, notesLink, moduleNumber }
 
   return (
     <div className="space-y-3">
+      {notesLink.map((note: string, noteIndex: number) => (
+        <React.Fragment key={`note-${noteIndex}`}>
+          <h5 className="text-sm font-medium text-black dark:text-white mb-2">
+            Study Materials for Module {moduleNumber}
+          </h5>
+          <a
+            key={noteIndex}
+            href={note}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
+          >
+            <BookOpen className="w-4 h-4" />
+            Notes {noteIndex + 1}
+          </a>
+        </React.Fragment>
+      ))}
       {topics.map((topic, index) => (
         <div
           key={index}
@@ -59,8 +80,9 @@ const TopicList: React.FC<TopicListProps> = ({ topics, notesLink, moduleNumber }
                     {topic.title}
                   </h4>
                   <ChevronDown
-                    className={`w-4 h-4 text-slate-500 dark:text-slate-400 transition-transform duration-200 ${openTopicIndex === index ? "rotate-180" : ""
-                      }`}
+                    className={`w-4 h-4 text-slate-500 dark:text-slate-400 transition-transform duration-200 ${
+                      openTopicIndex === index ? "rotate-180" : ""
+                    }`}
                   />
                 </div>
                 <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
@@ -71,8 +93,9 @@ const TopicList: React.FC<TopicListProps> = ({ topics, notesLink, moduleNumber }
           </div>
 
           <div
-            className={`overflow-hidden transition-all duration-200 ease-in-out ${openTopicIndex === index ? "opacity-100" : "max-h-0 opacity-0"
-              }`}
+            className={`overflow-hidden transition-all duration-200 ease-in-out ${
+              openTopicIndex === index ? "opacity-100" : "max-h-0 opacity-0"
+            }`}
           >
             <div className="p-3 pt-0">
               {topic.videos && topic.videos.length > 0 && (
@@ -108,23 +131,6 @@ const TopicList: React.FC<TopicListProps> = ({ topics, notesLink, moduleNumber }
             </div>
           </div>
         </div>
-      ))}
-      {notesLink.map((note: string, noteIndex: number) => (
-        <React.Fragment key={`note-${noteIndex}`}>
-          <h5 className="text-sm font-medium text-black dark:text-white mb-2">
-            Study Materials for Module {moduleNumber}
-          </h5>
-          <a
-            key={noteIndex}
-            href={note}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
-          >
-            <BookOpen className="w-4 h-4" />
-            Notes {noteIndex + 1}
-          </a>
-        </React.Fragment>
       ))}
     </div>
   );
