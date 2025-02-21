@@ -261,7 +261,9 @@ const subjects: Subjects = {
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://example.com/is-module1-notes.pdf"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/IS%20chapter%201.pdf?alt=media&token=70e33bae-720c-4e66-a1a5-039c3f9e39d9",
+        ],
         topics: [
           {
             title:
@@ -296,7 +298,9 @@ const subjects: Subjects = {
         ],
       },
       2: {
-        notesLink: ["https://example.com/is-module1-notes.pdf"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/IS%20chapter%202.pdf?alt=media&token=f2edcb25-bc0a-4cce-8945-5563f279cbee",
+        ],
         topics: [
           {
             title:
