@@ -134,8 +134,8 @@ const EngineeringCurriculum: React.FC = () => {
                     className={`p-4 rounded-lg border cursor-pointer transition-all flex-1 max-w-[120px] sm:max-w-[150px] md:max-w-none text-center 
                       ${
                         selectedSubject === key
-                          ? "border-blue-500 bg-blue-50 dark:bg-blue-900 dark:border-blue-400"
-                          : "bg-blue-200 dark:bg-blue-800 hover:border-blue-200 dark:hover:border-blue-700"
+                          ? "border-blue-500 bg-blue-50 dark:bg-[#2D336B] dark:border-[#7886C7]"
+                          : "bg-blue-200 dark:bg-[#000957] hover:border-blue-200 dark:hover:border-[#A9B5DF]"
                       }
                     `}
                   >
@@ -202,7 +202,7 @@ const EngineeringCurriculum: React.FC = () => {
                 </h2>
                 <p className=" text-red-500 mb-4">
                   These videos are added with respect to the college notes, So
-                  you are requested to refer the college notes as well.
+                  you are insisted to refer the college notes as well.
                 </p>
                 <TopicList
                   topics={

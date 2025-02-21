@@ -121,7 +121,7 @@ const subjects: Subjects = {
             description: "Important Topic for Exam ⭐",
             videos: [
               {
-                title: "Video 1 (Matrix Method)",
+                title: "Video 1 (Matrix Method for Linear Convolution)",
                 url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=MwfL3kmDN58h6vAi",
               },
               {
@@ -139,16 +139,16 @@ const subjects: Subjects = {
             description: "Numerical Based Topic ⭐",
             videos: [
               {
-                title: "Video 1 (Matrix Method)",
-                url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=MwfL3kmDN58h6vAi",
+                title: "Video 1 (Matrix Method for Circular Convolution)",
+                url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=i1wauBtCp5ioeTOm&amp;start=258",
               },
               {
                 title: "Video 2 (Graph Method)",
-                url: "https://www.youtube.com/embed/uwpxL_NrAMA?si=Me_zJEP5V8UhHh4f",
+                url: "https://www.youtube.com/embed/z2vH9uw_qjU?si=wArKeyKj0lcOdW2E",
               },
               {
                 title: "Video 3 (Tabular Method)",
-                url: "https://www.youtube.com/embed/27kJKCAiR8g?si=c8PS__xL0-CXDUo3",
+                url: "https://www.youtube.com/embed/HNYC26dxwNY?si=RtaaO-dQU4kC0L9x",
               },
             ],
           },
@@ -157,13 +157,26 @@ const subjects: Subjects = {
             description: "Numerical Based Topic ⭐",
             videos: [
               {
-                title: "Auto Correlation",
-                url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=MwfL3kmDN58h6vAi",
+                title: "Auto Correlation and Cross Correlation Introduction",
+                url: "https://www.youtube.com/embed/R7kVI3AS6LY?si=LtG8wNq1U57MCPR-"
               },
               {
-                title: "Cross Correlation",
-                url: "https://www.youtube.com/embed/uwpxL_NrAMA?si=Me_zJEP5V8UhHh4f",
+                title: "Cross Correlation - Graphical Method",
+                url: "https://www.youtube.com/embed/YtkDjm_oSxY?si=skuUStKrtWO94qWv",
               },
+              {
+                title: "Cross Correlation - Tabular Method",
+                url: "https://www.youtube.com/embed/dCD5GVWT7BQ?si=koRmvPZ3egm1KHof",
+              },
+              {
+                title: "Cross Correlation - Matrix Method",
+                url: "https://www.youtube.com/embed/GEFvLJhlPNg?si=LF9jMxoc6kkU3_vl",
+              },
+              {
+                title: "Auto Correlation - Numerical",
+                url:"https://www.youtube.com/embed/gunRa-XSYU4?si=JQUrMSJPhz3gObBq"
+              }
+              
             ],
           },
         ],
