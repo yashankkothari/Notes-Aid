@@ -64,7 +64,7 @@ const TopicList: React.FC<TopicListProps> = ({
         </React.Fragment>
       ))}
       
-      {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white mb-2">Videos</h5>}
+      {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white my-2">Videos</h5>}
       {Object.keys(topics).length>0 && topics.map((topic, index) => (
         <div
           key={index}

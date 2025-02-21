@@ -58,8 +58,8 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Video 1",
-                url: "https://www.youtube.com/embed/xLetJpcjHS0?si=cyr5y98BKyBWwRku",
+                title: "Operations on Signals",
+                url: "https://www.youtube.com/embed/H5RZPorc1z4?si=6qCxBHZatmGmjSWF",
               },
             ],
           },

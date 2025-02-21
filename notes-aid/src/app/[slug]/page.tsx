@@ -6,7 +6,7 @@ import ModuleCard from "../components/ModuleCard"
 import TopicList from "../components/TopicList"
 import Navbar from "../components/Navbar"
 import NotesData from "../notes/data"
-
+import pyqLinks from "../notes/pyq"
 
 interface Topic {
   title: string
@@ -65,6 +65,8 @@ const EngineeringCurriculum: React.FC = () => {
   const typedNotesData = NotesData as NotesDataType
 
   const subjects = slug && typedNotesData[slug]?.[branch]?.[sem]
+  const pyq=pyqLinks[slug];
+  // console.log(pyq)
   // const subjects = NotesData.fy.comps.oddSem;
 
 
@@ -138,6 +140,23 @@ const EngineeringCurriculum: React.FC = () => {
                 )
               })}
             </div>
+            
+
+            {Object.keys(pyq).length>0 && pyq.map((pyq,index)=>{
+                return(
+                    <div className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4" key={index}>
+                      <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
+                        Important Links
+                      </h2>
+                      <a href={pyq.url} target="_blank" className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500">
+                      {pyq.title}
+                      </a>
+                    </div>
+                )
+            })}
+
+
+            
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="space-y-3">
@@ -160,15 +179,18 @@ const EngineeringCurriculum: React.FC = () => {
               </div>
 
               <div className="md:col-span-2 bg-slate-50 dark:bg-gray-900 rounded-lg p-4 md:p-6">
-                <h2 className="text-base md:text-lg font-bold mb-4 text-black dark:text-white">
+                <h2 className="text-base md:text-lg font-bold mb-1 text-black dark:text-white">
                   {subjects[selectedSubject].name} - Module {selectedModule}
                 </h2>
+                <p className=" text-red-500 mb-4">These videos are added with respect to the college notes, So you are requested to refer the college notes as well.</p>
                 <TopicList
                   topics={subjects[selectedSubject].modules[selectedModule].topics}
                   notesLink={subjects[selectedSubject].modules[selectedModule].notesLink}
                   moduleNumber={selectedModule}
                 />
               </div>
+
+           
             </div>
           </div>
         </div>
