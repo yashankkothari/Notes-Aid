@@ -71,6 +71,27 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/tu9TPkS0uZE?si=f7rqIaoD8EnfaSaL",
               },
               {
+                title: "Video 1 - Periodic and Aperiodic",
+                url: "https://www.youtube.com/embed/o6BHBjKQ8io?si=F6VFofnRs734JYl4",
+              },
+              {
+                title: "Video 1 - Symmetric and Antisymmetric",
+                url: "https://www.youtube.com/embed/wfnIbHHtfHM?si=jX5ETZGA7lHtruRZ",
+              },
+              {
+                title: "Video 1 - Even and Odd",
+                url: "https://www.youtube.com/embed/4R0vHEnUGug?si=qgLs-Td3jQDo7Up1",
+              },
+              {
+                title: "Video 1 - Casual and Non-Casual",
+                url: "https://www.youtube.com/embed/8qAPF9QbOi8?si=kbpY_E0XYXHkwqX1",
+              },
+              {
+                title: "Video 1 - Energy and Power ",
+                url: "https://www.youtube.com/embed/yGEEvn8CzrU?si=22aPNcgJR-FcKEQu",
+              },
+
+              {
                 title: "Video 2 (Classification of Discrete Time System) 1",
                 url: "https://www.youtube.com/embed/ejKmKNujx7c?si=TCACor4C2mrW4Qqk",
               },
@@ -175,8 +196,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title:
-              "Spatial domain enhancement techniques: Point processing",
+            title: "Spatial domain enhancement techniques: Point processing",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -244,7 +264,8 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/is-module1-notes.pdf"],
         topics: [
           {
-            title: "1.1 What Is Computer Security?,  Threats, Harm, Vulnerabilities, Controls ",
+            title:
+              "1.1 What Is Computer Security?,  Threats, Harm, Vulnerabilities, Controls ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -258,7 +279,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, DES: The Data Encryption Standard, Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys, Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
+            title:
+              "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, DES: The Data Encryption Standard, Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys, Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -277,7 +299,8 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/is-module1-notes.pdf"],
         topics: [
           {
-            title: "2.1 Unintentional (Non-malicious) Programming: Oversights - Buffer Overflow,  Incomplete Mediation,  Time-ofCheck to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition",
+            title:
+              "2.1 Unintentional (Non-malicious) Programming: Oversights - Buffer Overflow,  Incomplete Mediation,  Time-ofCheck to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -291,7 +314,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.2 Malicious Code—Malware- Malware—Viruses, Trojan Horses, and Worms,  Technical Details: Malicious Code ",
+            title:
+              "2.2 Malicious Code—Malware- Malware—Viruses, Trojan Horses, and Worms,  Technical Details: Malicious Code ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -305,7 +329,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work  ",
+            title:
+              "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work  ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -324,7 +349,8 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/is-module1-notes.pdf"],
         topics: [
           {
-            title: "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
+            title:
+              "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -337,9 +363,8 @@ const subjects: Subjects = {
               },
             ],
           },
-         
         ],
-      }
+      },
     },
   },
   ac: {
