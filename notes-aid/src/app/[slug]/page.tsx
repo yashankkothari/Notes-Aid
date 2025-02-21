@@ -1,77 +1,81 @@
-"use client"
-import React, { useState } from "react"
-import { useParams, useSearchParams } from "next/navigation"
-import { ThemeProvider } from "next-themes"
-import ModuleCard from "../components/ModuleCard"
-import TopicList from "../components/TopicList"
-import Navbar from "../components/Navbar"
-import NotesData from "../notes/data"
-import pyqLinks from "../notes/pyq"
+"use client";
+import React, { useState, useEffect } from "react";
+import { useParams, useSearchParams } from "next/navigation";
+import { ThemeProvider } from "next-themes";
+import ModuleCard from "../components/ModuleCard";
+import TopicList from "../components/TopicList";
+import Navbar from "../components/Navbar";
+import NotesData from "../notes/data";
+import pyqLinks from "../notes/pyq";
 
 interface Topic {
-  title: string
-  description: string
+  title: string;
+  description: string;
   videos?: {
-    title: string
-    url: string
-  }[]
+    title: string;
+    url: string;
+  }[];
   notes?: {
-    title: string
-    url: string
-  }[]
+    title: string;
+    url: string;
+  }[];
 }
-
 
 interface Module {
   [key: number]: {
-    notesLink: string[],
-    topics: Topic[]
-  }
+    notesLink: string[];
+    topics: Topic[];
+  };
 }
 
 interface Subject {
-  name: string
-  icon: React.ComponentType<{ className?: string }>
-  modules: Module
+  name: string;
+  icon: React.ComponentType<{ className?: string }>;
+  modules: Module;
 }
 
 interface Subjects {
-  [subjectKey: string]: Subject
+  [subjectKey: string]: Subject;
 }
 
 interface SemesterData {
-  [key: string]: Subjects
+  [key: string]: Subjects;
 }
-
 
 interface BranchData {
-  [key: string]: SemesterData
+  [key: string]: SemesterData;
 }
 
-
 interface NotesDataType {
-  [year: string]: BranchData
+  [year: string]: BranchData;
 }
 
 const EngineeringCurriculum: React.FC = () => {
-  const [selectedModule, setSelectedModule] = useState<number>(1)
-  const { slug } = useParams<{ slug: string }>()
-  const searchParam = useSearchParams()
-  const branch = searchParam.get("branch") || ""
-  const sem = searchParam.get("sem") || ""
+  const { slug } = useParams<{ slug: string }>();
+  const searchParam = useSearchParams();
+  const branch = searchParam.get("branch") || "";
+  const sem = searchParam.get("sem") || "";
   // console.log(branch, sem)
 
+  const typedNotesData = NotesData as NotesDataType;
 
-  const typedNotesData = NotesData as NotesDataType
-
-  const subjects = slug && typedNotesData[slug]?.[branch]?.[sem]
-  const pyq=pyqLinks[slug];
+  const subjects = slug && typedNotesData[slug]?.[branch]?.[sem];
+  const pyq = pyqLinks[slug];
   // console.log(pyq)
   // const subjects = NotesData.fy.comps.oddSem;
 
+  const initialSubject = subjects ? Object.keys(subjects)[0] : "";
+  const [selectedSubject, setSelectedSubject] = useState(initialSubject);
+  const [selectedModule, setSelectedModule] = useState<number>(1);
 
-  const initialSubject = subjects ? Object.keys(subjects)[0] : ""
-  const [selectedSubject, setSelectedSubject] = useState(initialSubject)
+  useEffect(() => {
+    if (subjects && selectedSubject) {
+      const firstModuleKey = Object.keys(
+        subjects[selectedSubject]?.modules || {}
+      )[0];
+      setSelectedModule(firstModuleKey ? parseInt(firstModuleKey) : 1);
+    }
+  }, [selectedSubject, subjects]);
 
   if (!subjects || Object.keys(subjects).length === 0) {
     return (
@@ -91,7 +95,7 @@ const EngineeringCurriculum: React.FC = () => {
           </div>
         </div>
       </ThemeProvider>
-    )
+    );
   }
 
   return (
@@ -113,12 +117,20 @@ const EngineeringCurriculum: React.FC = () => {
 
             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
               {Object.entries(subjects).map(([key, subject]) => {
-                const Icon = subject.icon
+                const Icon = subject.icon;
                 // console.log(subject)
                 return (
                   <div
                     key={key}
-                    onClick={() => setSelectedSubject(key)}
+                    onClick={() => {
+                      setSelectedSubject(key);
+                      const firstModuleKey = Object.keys(
+                        subjects[key]?.modules || {}
+                      )[0];
+                      setSelectedModule(
+                        firstModuleKey ? parseInt(firstModuleKey) : 1
+                      );
+                    }}
                     className={`p-4 rounded-lg border cursor-pointer transition-all flex-1 max-w-[120px] sm:max-w-[150px] md:max-w-none text-center 
                       ${
                         selectedSubject === key
@@ -137,66 +149,79 @@ const EngineeringCurriculum: React.FC = () => {
                       {Object.keys(subject.modules).length} modules
                     </p>
                   </div>
-                )
+                );
               })}
             </div>
-            
 
-            {Object.keys(pyq).length>0 && pyq.map((pyq,index)=>{
-                return(
-                    <div className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4" key={index}>
-                      <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
-                        Important Links
-                      </h2>
-                      <a href={pyq.url} target="_blank" className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500">
+            {Object.keys(pyq).length > 0 &&
+              pyq.map((pyq, index) => {
+                return (
+                  <div
+                    className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4"
+                    key={index}
+                  >
+                    <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
+                      Important Links
+                    </h2>
+                    <a
+                      href={pyq.url}
+                      target="_blank"
+                      className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500"
+                    >
                       {pyq.title}
-                      </a>
-                    </div>
-                )
-            })}
-
-
-            
+                    </a>
+                  </div>
+                );
+              })}
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="space-y-3">
                 {Object.keys(subjects[selectedSubject].modules).map(
                   (moduleKey) => {
-                    const moduley = parseInt(moduleKey)
+                    const moduley = parseInt(moduleKey);
                     return (
                       <ModuleCard
                         key={moduley}
                         module={moduley}
                         topics={
-                          subjects[selectedSubject].modules[moduley].topics.length
+                          subjects[selectedSubject].modules[moduley].topics
+                            .length
                         }
                         isActive={selectedModule === moduley}
                         onClick={() => setSelectedModule(moduley)}
                       />
-                    )
+                    );
                   }
                 )}
               </div>
 
               <div className="md:col-span-2 bg-slate-50 dark:bg-gray-900 rounded-lg p-4 md:p-6">
                 <h2 className="text-base md:text-lg font-bold mb-1 text-black dark:text-white">
-                  {subjects[selectedSubject].name} - Module {selectedModule || 1}
+                  {subjects[selectedSubject].name} - Module{" "}
+                  {selectedModule || 1}
                 </h2>
-                <p className=" text-red-500 mb-4">These videos are added with respect to the college notes, So you are requested to refer the college notes as well.</p>
+                <p className=" text-red-500 mb-4">
+                  These videos are added with respect to the college notes, So
+                  you are requested to refer the college notes as well.
+                </p>
                 <TopicList
-                  topics={subjects[selectedSubject].modules[selectedModule].topics || []}
-                  notesLink={subjects[selectedSubject].modules[selectedModule].notesLink || []}
-                  moduleNumber={selectedModule || 1} 
+                  topics={
+                    subjects[selectedSubject].modules[selectedModule].topics ||
+                    []
+                  }
+                  notesLink={
+                    subjects[selectedSubject].modules[selectedModule]
+                      .notesLink || []
+                  }
+                  moduleNumber={selectedModule || 1}
                 />
               </div>
-
-           
             </div>
           </div>
         </div>
       </div>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default EngineeringCurriculum
+export default EngineeringCurriculum;
