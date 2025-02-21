@@ -8,7 +8,6 @@ import {
 
 import { Subjects } from "@/app/interfaces/Subject";
 
-
 const subjects: Subjects = {
   dsip: {
     name: "Digital Systems and Image Processing",
@@ -32,7 +31,7 @@ const subjects: Subjects = {
                 title: "Representation of Discrete Time Signals",
                 url: "https://www.youtube.com/embed/ZU6YFD5NQ8E?si=kbEPUnYPRQ4WRj_i",
               },
-             
+
               {
                 title: "Types of Signals",
                 url: "https://www.youtube.com/embed/N2qDknnckHc?si=86ur6m8GS9NLpm-p",
@@ -40,7 +39,7 @@ const subjects: Subjects = {
               {
                 title: "Sampling Theorem (Definition only) ",
                 url: "https://www.youtube.com/embed/XyZerq7-IvA?si=5D4KVG8u27VPgHV-",
-              }
+              },
             ],
             // notes: [
             //   {
@@ -119,8 +118,16 @@ const subjects: Subjects = {
             description: "Numerical Based Topic ⭐",
             videos: [
               {
-                title: "Video 1",
-                url: "https://www.youtube.com/embed/2aSzBgJ0FCE?si=k2rQRMqcMet-FJKt",
+                title: "Video 1 (Matrix Method)",
+                url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=MwfL3kmDN58h6vAi",
+              },
+              {
+                title: "Video 2 (Graph Method)",
+                url: "https://www.youtube.com/embed/uwpxL_NrAMA?si=Me_zJEP5V8UhHh4f",
+              },
+              {
+                title: "Video 3 (Tabular Method)",
+                url: "https://www.youtube.com/embed/27kJKCAiR8g?si=c8PS__xL0-CXDUo3",
               },
             ],
           },
@@ -129,19 +136,25 @@ const subjects: Subjects = {
             description: "Numerical Based Topic ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Auto Correlation",
+                url: "https://www.youtube.com/embed/TrgfP7QD3Nk?si=MwfL3kmDN58h6vAi",
+              },
+              {
+                title: "Cross Correlation",
+                url: "https://www.youtube.com/embed/uwpxL_NrAMA?si=Me_zJEP5V8UhHh4f",
               },
             ],
           },
         ],
       },
       2: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%202.pdf?alt=media&token=050c1cc3-45f5-425f-a1eb-a05c93d9e445"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%202.pdf?alt=media&token=050c1cc3-45f5-425f-a1eb-a05c93d9e445",
+        ],
         topics: [
           {
             title:
-              "Digital image Representation, Elements of digital image processing systems, sampling and quantization, basic relationships between pixels mathematical operations on images.",
+              "Digital image Representation, Elements of digital image processing systems",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -149,24 +162,45 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/example1",
               },
             ],
-            // notes: [
-            //   {
-            //     title: "Lecture Notes - Week 1",
-            //     url: "https://example.com/notes1.pdf",
-            //   },
-            //   {
-            //     title: "Practice Problems",
-            //     url: "https://example.com/practice1.pdf",
-            //   },
-            // ],
           },
           {
             title:
-              "Digital image Representation, Elements of digital image processing systems, sampling and quantization, basic relationships between pixels mathematical operations on images.",
+              "Sampling and quantization and basic relationships between pixels mathematical operations on images.",
             description: "Basic concepts and importance",
             videos: [
               {
                 title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+            ],
+          },
+          {
+            title:
+              "Spatial domain enhancement techniques: Point processing",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Image Negative or Digital Negative",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Contrast Stretching or Contrast Adjustment",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Thresholding",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Grey Level Slicing (Intensity slicing)",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Log Transformation",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Power Law Transformation",
                 url: "https://www.youtube.com/embed/example1",
               },
             ],
@@ -210,7 +244,21 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/is-module1-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Security Concepts",
+            title: "1.1 What Is Computer Security?,  Threats, Harm, Vulnerabilities, Controls ",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title: "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, DES: The Data Encryption Standard, Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys, Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -225,6 +273,73 @@ const subjects: Subjects = {
           },
         ],
       },
+      2: {
+        notesLink: ["https://example.com/is-module1-notes.pdf"],
+        topics: [
+          {
+            title: "2.1 Unintentional (Non-malicious) Programming: Oversights - Buffer Overflow,  Incomplete Mediation,  Time-ofCheck to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title: "2.2 Malicious Code—Malware- Malware—Viruses, Trojan Horses, and Worms,  Technical Details: Malicious Code ",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title: "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work  ",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+        ],
+      },
+      3: {
+        notesLink: ["https://example.com/is-module1-notes.pdf"],
+        topics: [
+          {
+            title: "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+         
+        ],
+      }
     },
   },
   ac: {

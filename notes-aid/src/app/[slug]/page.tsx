@@ -180,13 +180,13 @@ const EngineeringCurriculum: React.FC = () => {
 
               <div className="md:col-span-2 bg-slate-50 dark:bg-gray-900 rounded-lg p-4 md:p-6">
                 <h2 className="text-base md:text-lg font-bold mb-1 text-black dark:text-white">
-                  {subjects[selectedSubject].name} - Module {selectedModule}
+                  {subjects[selectedSubject].name} - Module {selectedModule || 1}
                 </h2>
                 <p className=" text-red-500 mb-4">These videos are added with respect to the college notes, So you are requested to refer the college notes as well.</p>
                 <TopicList
-                  topics={subjects[selectedSubject].modules[selectedModule].topics}
-                  notesLink={subjects[selectedSubject].modules[selectedModule].notesLink}
-                  moduleNumber={selectedModule}
+                  topics={subjects[selectedSubject].modules[selectedModule].topics || []}
+                  notesLink={subjects[selectedSubject].modules[selectedModule].notesLink || []}
+                  moduleNumber={selectedModule || 1} 
                 />
               </div>
 
