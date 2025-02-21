@@ -1,557 +1,299 @@
-import { GraduationCap, FlaskConical, Binary } from "lucide-react"
+import { GraduationCap, FlaskConical, Binary, Cloud } from "lucide-react"
 
 import { Subjects } from "@/app/interfaces/Subject"
 
 const subjects: Subjects = {
-  ds: {
-    name: "Data Structures",
+  oose: {
+    name: "Object-Oriented Software Engineering",
     icon: Binary,
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://example.com/dsip-module1-notes.pdf"],
+        notesLink: ["https://example.com/oose-module1-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/xLetJpcjHS0?si=cyr5y98BKyBWwRku",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Software Engineering Basics",
+            description: "Layered Technology, Process Framework.",
           },
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Capability Maturity Model (CMMI)",
+            description:
+              "Understanding process maturity in software development.",
           },
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Prescriptive Models",
+            description:
+              "Waterfall, Incremental, RAD, Evolutionary Models, Prototyping, Spiral, TDD.",
+          },
+          {
+            title: "Agile, Scrum & DevOps",
+            description: "Modern software development methodologies.",
           },
         ],
       },
       2: {
-        notesLink: ["https://example.com/dsip-module2-notes.pdf"],
+        notesLink: ["https://example.com/oose-module2-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Software Estimation",
+            description: "LOC, FP, COCOMO Model, SPMP.",
+          },
+          {
+            title: "Project Scheduling & Risk Management",
+            description:
+              "Work Breakdown Structure, Gantt Chart, Risk Identification, RMMM Plan.",
+          },
+          {
+            title: "Software Configuration Management",
+            description:
+              "SCM process, Version Control, Change Control, Configuration Audit.",
           },
         ],
       },
       3: {
-        notesLink: ["https://example.com/dsip-module3-notes.pdf"],
+        notesLink: ["https://example.com/oose-module3-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Requirements Engineering",
+            description:
+              "Functional & Non-Functional Requirements, Elicitation Techniques.",
+          },
+          {
+            title: "Software Requirements Specification (SRS)",
+            description: "Structuring & defining software requirements.",
           },
         ],
       },
       4: {
-        notesLink: ["https://example.com/dsip-module4-notes.pdf"],
+        notesLink: ["https://example.com/oose-module4-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "UML & Software Modeling",
+            description:
+              "Use Case Diagram, Class Diagram, DFD, Sequence Diagram, State Diagram.",
+          },
+          {
+            title: "Software Design Principles",
+            description:
+              "Modular design, Cohesion & Coupling, MVC Architecture.",
+          },
+          {
+            title: "Design Patterns",
+            description:
+              "Singleton, Observer, Adapter, Façade patterns in software design.",
           },
         ],
       },
       5: {
-        notesLink: ["https://example.com/dsip-module5-notes.pdf"],
+        notesLink: ["https://example.com/oose-module5-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Software Testing",
+            description:
+              "OO Testing Methods, Test Case Design, Class & Interclass Testing.",
+          },
+          {
+            title: "Software Maintenance",
+            description: "Types, Reverse Engineering, Reengineering.",
           },
         ],
       },
     },
   },
-  chemistry: {
-    name: "Engineering Chemistry",
+
+  ms: {
+    name: "Modeling and Simulation",
     icon: FlaskConical,
     color: "green",
     modules: {
       1: {
-        notesLink: ["https://example.com/chemistry-module1-notes.pdf"],
+        notesLink: ["https://example.com/modeling-module1-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Introduction to Modeling & Simulation",
+            description: "Model Characterization, Model Development.",
+          },
+          {
+            title: "Simulation Studies",
+            description:
+              "Programming Languages, Terminology, Inventory System.",
           },
         ],
       },
       2: {
-        notesLink: ["https://example.com/chemistry-module2-notes.pdf"],
+        notesLink: ["https://example.com/modeling-module2-notes.pdf"],
         topics: [
-          { title: "Thermodynamics", description: "Laws and applications" },
           {
-            title: "Chemical Kinetics",
-            description: "Rate laws and mechanisms",
+            title: "Random Number Generation",
+            description: "Lehmer RNG, Monte Carlo Simulation.",
           },
           {
-            title: "Chemical Equilibrium",
-            description: "Equilibrium constants and factors",
+            title: "Empirical Tests of Randomness",
+            description: "Kolmogorov-Smirnov, Chi-Square, Gap Test.",
           },
         ],
       },
       3: {
-        notesLink: ["https://example.com/chemistry-module3-notes.pdf"],
+        notesLink: ["https://example.com/modeling-module3-notes.pdf"],
         topics: [
           {
-            title: "Electrochemistry",
-            description: "Electrochemical cells and applications",
+            title: "Discrete Event Simulation",
+            description: "Multi-Stream Lehmer RNG, Event List Management.",
           },
-          { title: "Corrosion", description: "Types and prevention" },
-          { title: "Batteries", description: "Primary and secondary cells" },
+          {
+            title: "Sample Statistics",
+            description: "Histograms, Correlation, Next-Event Simulation.",
+          },
         ],
       },
       4: {
-        notesLink: ["https://example.com/chemistry-module4-notes.pdf"],
+        notesLink: ["https://example.com/modeling-module4-notes.pdf"],
         topics: [
           {
-            title: "Engineering Materials",
-            description: "Polymers and composites",
+            title: "Random Variables & Variates",
+            description:
+              "Discrete & Continuous Distributions, Sampling Techniques.",
           },
-          { title: "Water Technology", description: "Treatment and analysis" },
-          { title: "Fuels", description: "Types and combustion" },
+          {
+            title: "Poisson Processes & Markov Chains",
+            description: "Birth-Death Models, Finite-State Markov Chains.",
+          },
         ],
       },
       5: {
-        notesLink: ["https://example.com/chemistry-module5-notes.pdf"],
+        notesLink: ["https://example.com/modeling-module5-notes.pdf"],
         topics: [
-          { title: "Spectroscopy", description: "Principles and applications" },
-          { title: "Nanomaterials", description: "Synthesis and applications" },
-          { title: "Green Chemistry", description: "Sustainable processes" },
+          {
+            title: "Verification & Validation",
+            description: "Calibration & Validation of Simulation Models.",
+          },
+          {
+            title: "Output Analysis",
+            description:
+              "Monte Carlo Estimation, Finite & Infinite Horizon Statistics.",
+          },
         ],
       },
     },
   },
-  math: {
-    name: "Engineering Mathematics",
-    icon: GraduationCap,
+
+  cc: {
+    name: "Cloud Computing",
+    icon: Cloud,
     color: "purple",
     modules: {
       1: {
-        notesLink: ["https://example.com/math-module1-notes.pdf"],
+        notesLink: ["https://example.com/cloud-module1-notes.pdf"],
         topics: [
-          { title: "Matrices", description: "Operations and applications" },
-          { title: "Determinants", description: "Properties and calculations" },
-          { title: "Linear Equations", description: "Systems and solutions" },
+          {
+            title: "Virtualization Basics",
+            description: "CPU, Storage, OS Virtualization, Abstraction.",
+          },
+          {
+            title: "Hypervisors & Security",
+            description:
+              "Type 1 & 2 Hypervisors, Virtualization Security Threats.",
+          },
         ],
       },
       2: {
-        notesLink: ["https://example.com/math-module2-notes.pdf"],
+        notesLink: ["https://example.com/cloud-module2-notes.pdf"],
         topics: [
           {
-            title: "Differential Calculus",
-            description: "Limits and derivatives",
+            title: "Evolution of Cloud Computing",
+            description: "Comparison with Cluster & Grid Computing.",
           },
           {
-            title: "Applications of Derivatives",
-            description: "Optimization and rates",
+            title: "Cloud Service Models",
+            description: "SaaS, PaaS, IaaS, XaaS, Deployment Models.",
           },
-          { title: "Partial Derivatives", description: "Multiple variables" },
         ],
       },
       3: {
-        notesLink: ["https://example.com/math-module3-notes.pdf"],
+        notesLink: ["https://example.com/cloud-module3-notes.pdf"],
         topics: [
-          { title: "Integration", description: "Techniques and applications" },
           {
-            title: "Multiple Integrals",
-            description: "Double and triple integrals",
-          },
-          {
-            title: "Vector Calculus",
-            description: "Gradient, divergence, curl",
+            title: "Cloud & IoT Architecture",
+            description: "AWS, Azure, OpenStack, Role of Cloud in IoT.",
           },
         ],
       },
       4: {
-        notesLink: ["https://example.com/math-module4-notes.pdf"],
+        notesLink: ["https://example.com/cloud-module4-notes.pdf"],
         topics: [
           {
-            title: "Differential Equations",
-            description: "First and second order",
+            title: "Cloud Security",
+            description: "Threats, IAM, Cloud Security Frameworks.",
           },
           {
-            title: "Laplace Transforms",
-            description: "Properties and applications",
-          },
-          {
-            title: "Fourier Series",
-            description: "Expansions and applications",
+            title: "Data & Host Security",
+            description: "Security in SaaS, PaaS, IaaS.",
           },
         ],
       },
       5: {
-        notesLink: ["https://example.com/math-module5-notes.pdf"],
+        notesLink: ["https://example.com/cloud-module5-notes.pdf"],
         topics: [
           {
-            title: "Complex Analysis",
-            description: "Complex functions and integration",
+            title: "Research Topics",
+            description: "Self-learning & Internal Assessments.",
           },
-          {
-            title: "Numerical Methods",
-            description: "Interpolation and approximation",
-          },
-          { title: "Probability", description: "Distributions and statistics" },
         ],
       },
     },
   },
-  ds2: {
-    name: "Test",
-    icon: Binary,
-    color: "blue",
+
+  df: {
+    name: "Development Frameworks",
+    icon: GraduationCap,
+    color: "orange",
     modules: {
       1: {
-        notesLink: ["https://example.com/test-module1-notes.pdf"],
+        notesLink: ["https://example.com/frameworks-module1-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/xLetJpcjHS0?si=cyr5y98BKyBWwRku",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Basics of Frameworks",
+            description: "History, Need for Frameworks.",
           },
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
-          },
-          {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Introduction to Laravel",
+            description: "Installation, Architecture, Components.",
           },
         ],
       },
       2: {
-        notesLink: ["https://example.com/test-module2-notes.pdf"],
+        notesLink: ["https://example.com/frameworks-module2-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Laravel Fundamentals",
+            description: "MVC, Blade Templates, Middleware, Controllers.",
           },
         ],
       },
       3: {
-        notesLink: ["https://example.com/test-module3-notes.pdf"],
+        notesLink: ["https://example.com/frameworks-module3-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Database in Laravel",
+            description: "Query Builder, Migrations, Eloquent ORM.",
           },
         ],
       },
       4: {
-        notesLink: ["https://example.com/test-module4-notes.pdf"],
+        notesLink: ["https://example.com/frameworks-module4-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Introduction to Django",
+            description: "MVT Pattern, Folder Structure, Configurations.",
           },
         ],
       },
       5: {
-        notesLink: ["https://example.com/test-module5-notes.pdf"],
+        notesLink: ["https://example.com/frameworks-module5-notes.pdf"],
         topics: [
           {
-            title: "Introduction to Data Structures",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-            notes: [
-              {
-                title: "Lecture Notes - Week 1",
-                url: "https://example.com/notes1.pdf",
-              },
-              {
-                title: "Practice Problems",
-                url: "https://example.com/practice1.pdf",
-              },
-            ],
+            title: "Django Advanced Features",
+            description: "REST API, Admin Site, Email Handling.",
           },
         ],
       },
