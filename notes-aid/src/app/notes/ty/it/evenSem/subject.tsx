@@ -17,7 +17,7 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "Software Engineering Basics",
-                url: "https://www.youtube.com/embed/example1",
+                url: "https://www.youtube.com/embed/O753uuutqH8?si=wJuo9j9JBvqH0HfL",
               },
             ],
           },
@@ -28,7 +28,7 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "CMMI Explained",
-                url: "https://www.youtube.com/embed/example2",
+                url: "https://www.youtube.com/embed/w5wwwEUf_iA?si=XZV_2ao1AP-ejA15",
               },
             ],
           },
@@ -39,7 +39,7 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "Software Development Models",
-                url: "https://www.youtube.com/embed/example3",
+                url: "https://www.youtube.com/embed/Fi3_BjVzpqk?si=Gc7z9znvy7St95Wo",
               },
             ],
           },
