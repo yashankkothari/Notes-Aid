@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes"
 import "./globals.css";
+import Metrics from "./metrics";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body>
         <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <Metrics />
       </body>
     </html>
   )
