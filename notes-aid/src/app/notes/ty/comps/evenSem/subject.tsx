@@ -158,7 +158,7 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "Auto Correlation and Cross Correlation Introduction",
-                url: "https://www.youtube.com/embed/R7kVI3AS6LY?si=LtG8wNq1U57MCPR-"
+                url: "https://www.youtube.com/embed/R7kVI3AS6LY?si=LtG8wNq1U57MCPR-",
               },
               {
                 title: "Cross Correlation - Graphical Method",
@@ -174,9 +174,8 @@ const subjects: Subjects = {
               },
               {
                 title: "Auto Correlation - Numerical",
-                url:"https://www.youtube.com/embed/gunRa-XSYU4?si=JQUrMSJPhz3gObBq"
-              }
-              
+                url: "https://www.youtube.com/embed/gunRa-XSYU4?si=JQUrMSJPhz3gObBq",
+              },
             ],
           },
         ],
@@ -248,10 +247,13 @@ const subjects: Subjects = {
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%201%20(1).pdf?alt=media&token=728d59fb-f89c-4605-bd96-564ddd73c86c"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%201%20(1).pdf?alt=media&token=728d59fb-f89c-4605-bd96-564ddd73c86c",
+        ],
         topics: [
           {
-            title: "1.1 History of Artificial Intelligence, The AI problem*, The AI technique*, Foundations of AI",
+            title:
+              "1.1 History of Artificial Intelligence, The AI problem*, The AI technique*, Foundations of AI",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -265,7 +267,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.2 Categorization of Intelligent System, Components of AI Program.",
+            title:
+              "1.2 Categorization of Intelligent System, Components of AI Program.",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -279,7 +282,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.3 Sub-areas of AI, Applications of AI, Current trends in AI. ",
+            title:
+              "1.3 Sub-areas of AI, Applications of AI, Current trends in AI. ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -295,10 +299,84 @@ const subjects: Subjects = {
         ],
       },
       2: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%202%20(1).pdf?alt=media&token=ab8162a7-3e38-4ffa-90e3-b2b5281383f5"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%202%20(1).pdf?alt=media&token=ab8162a7-3e38-4ffa-90e3-b2b5281383f5",
+        ],
         topics: [
           {
-            title: "2.1 Agents and Environments, The concept of rationality, The Task environment and their properties, PEAS,  The structure of Agents, Types of Agents, Learning Agent, function of agent program",
+            title: "2.1 Agents and Environments",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Introduction to Intelligent Agents and their types",
+                url: "https://www.youtube.com/embed/BkedAnQfJ_U?si=mnVi1coeIJyuS-_z",
+              },
+              {
+                title: "Classic Vacuum Cleaner Problem",
+                url: "https://www.youtube.com/embed/KX09yGiPW70?si=ytZLlgDXTGKn-9CP",
+              },
+            ],
+          },
+          {
+            title: "2.2 The concept of rationality",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Concept of Rationality",
+                url: "https://www.youtube.com/embed/SE8kwTr-nmc?si=C6gc9g0c3hQ-1RRx",
+              },
+            ],
+          },
+          {
+            title: "2.3 The Task environment and their properties",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Properties of Task Environments",
+                url: "https://www.youtube.com/embed/yHXatUO6h28?si=Rw3atD12AFja9zgp",
+              },
+            ],
+          },
+          {
+            title: "2.4 PEAS",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "PEAS (Performance, Environment, Actuators, Sensors)",
+                url: "https://www.youtube.com/embed/n8z9HNV__OA?si=tNAFIaAesWSvv_dm",
+              },
+            ],
+          },
+          {
+            title: "2.5 The structure of Agents",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "2.6 Types of Agents",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "2.7 Learning Agent",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "2.8 Function of agent program",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+        ],
+      },
+      3: {
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%203.pdf?alt=media&token=f0c4d4a0-f75e-4816-a3c2-471592794634",
+        ],
+        topics: [
+          {
+            title:
+              " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -314,10 +392,79 @@ const subjects: Subjects = {
         ],
       },
       4: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%204.pdf?alt=media&token=b4beb656-97bf-480a-b8ae-c77fb95da5a4"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%204.pdf?alt=media&token=b4beb656-97bf-480a-b8ae-c77fb95da5a4",
+        ],
         topics: [
           {
-            title: " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
+            title: "Knowledge based Agents",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title: "The Wumpus World",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Inference procedures",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "First Order Logic: Syntax and Semantic",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Inference in FOL",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Unification and lifting",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Forward chaining",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Backward Chaining",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Resolution",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "Answer set programming",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+        ],
+      },
+      5: {
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%205.pdf?alt=media&token=d9402e5a-73a5-4f3b-9c0a-795613b2c277",
+        ],
+        topics: [
+          {
+            title:
+              " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -459,7 +606,8 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/ac-module1-notes.pdf"],
         topics: [
           {
-            title: "1.1 Information Security and its goals, Vulnerability Threats and Attacks ",
+            title:
+              "1.1 Information Security and its goals, Vulnerability Threats and Attacks ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -473,7 +621,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.2 Encryption and Decryption, Symmetric and Asymmetric Key Cryptography, Stream and Block Cipher, Cryptanalysis, Brute Force Attack",
+            title:
+              "1.2 Encryption and Decryption, Symmetric and Asymmetric Key Cryptography, Stream and Block Cipher, Cryptanalysis, Brute Force Attack",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -487,7 +636,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.3 Mathematics of Cryptography: Integer Arithmetic, The Extended Euclidean Algorithm, Modular Arithmetic,  Matrices, Linear Congruence ",
+            title:
+              "1.3 Mathematics of Cryptography: Integer Arithmetic, The Extended Euclidean Algorithm, Modular Arithmetic,  Matrices, Linear Congruence ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -501,7 +651,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "1.4 Classical Cryptography: Substitution and Transposition Techniques: Any two from each",
+            title:
+              "1.4 Classical Cryptography: Substitution and Transposition Techniques: Any two from each",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -520,7 +671,8 @@ const subjects: Subjects = {
         notesLink: ["https://example.com/ac-module1-notes.pdf"],
         topics: [
           {
-            title: "2.1 Mathematics of Symmetric Key Cryptography: Algebraic Structures, Group, Ring, Field, GF Fields",
+            title:
+              "2.1 Mathematics of Symmetric Key Cryptography: Algebraic Structures, Group, Ring, Field, GF Fields",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -534,7 +686,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.2 Modern Block Ciphers: Components of Modern Block Cipher, Product Ciphers, Diffusion and Confusion, Classes of Product Cipher DES: DES Structure, DES Analysis: Properties, Design Criteria, DES Strength and Weaknesses, DES Security, Multiple DES, 3DES ",
+            title:
+              "2.2 Modern Block Ciphers: Components of Modern Block Cipher, Product Ciphers, Diffusion and Confusion, Classes of Product Cipher DES: DES Structure, DES Analysis: Properties, Design Criteria, DES Strength and Weaknesses, DES Security, Multiple DES, 3DES ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -548,7 +701,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.3 AES:  AES Structure,   Transformations, Key Expansion in AES-128, Key Expansion in AES-192 and AES-256, KeyExpansion Analysis,   Analysis   of   AES: Security, Implementation, Simplicity and Cost ",
+            title:
+              "2.3 AES:  AES Structure,   Transformations, Key Expansion in AES-128, Key Expansion in AES-192 and AES-256, KeyExpansion Analysis,   Analysis   of   AES: Security, Implementation, Simplicity and Cost ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -563,8 +717,6 @@ const subjects: Subjects = {
           },
         ],
       },
-      
-      
     },
   },
   cc: {
