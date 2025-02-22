@@ -187,54 +187,110 @@ const subjects: Subjects = {
         topics: [
           {
             title:
-              "Digital image Representation, Elements of digital image processing systems",
-            description: "Basic concepts and importance",
+              "2.1.1 Digital image Representation, Elements of digital image processing systems",
+            description: "Basic theoretical concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Introduction to Digital Image Processing",
+                url: "https://www.youtube.com/embed/J-KxVvDRl18?si=srXPYdbpQAGLU5PD",
+              },
+              {
+                title: "Key stages in digital image processing",
+                url: "https://www.youtube.com/embed/8ekTeZD_lNY?si=qH5PtZ4UXvdPXXU8",
               },
             ],
           },
           {
             title:
-              "Sampling and quantization and basic relationships between pixels mathematical operations on images.",
-            description: "Basic concepts and importance",
+              "2.1.2 Sampling and quantization and basic relationships between pixels, mathematical operations on images.",
+            description: "Basic theoretical concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Sampling and quantization",
+                url: "https://www.youtube.com/embed/KWc9SOOLfLw?si=Nj8R7fPo6ygm0R7o",
+              },
+              {
+                title: "Basic relationships between pixels",
+                url: "https://www.youtube.com/embed/AjFURMXJTbw?si=YSVpaJwLLwaf2dn_",
+              },
+              {
+                title: "Mathematical operations on images",
+                url: "https://www.youtube.com/embed/kTxKca5i5tQ?si=IBH0ndCJnwUX8uCS",
+              }
+            ],
+          },
+          {
+            title: "2.2.1 Spatial domain enhancement techniques: Point processing, Neighbourhood processing, spatial domain filtering, zooming. ",
+            description: "Important Topic for Exam ⭐- Numerical based",
+            videos: [
+              {
+                title: "Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
+                url: "https://www.youtube.com/embed/FMDmXz6ynvk?si=7qKfBYj1VAyfMPzh",
+              },
+              {
+                title: "Contrast Stretching or Contrast Adjustment",
+                url: "https://www.youtube.com/embed/YJIgFMoC_yg?si=KVVwA_UX-rubmTJp",
+              },
+              {
+                title: "Grey Level Slicing (Intensity slicing)",
+                url: "https://www.youtube.com/embed/_roeBr60AP8?si=pj-sOZ781n9qXCZq",
+              },
+              {
+                title: "Log Transformation & Power Law Transformation",
+                url: "https://www.youtube.com/embed/jfoXoFoDb48?si=D-p6Yg2ec1Xu2zmQ",
               },
             ],
           },
           {
-            title: "Spatial domain enhancement techniques: Point processing",
-            description: "Basic concepts and importance",
+            title: "2.2.2 Neighborhood processing, spatial domain filtering, zooming. ",
+            description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
               {
-                title: "Image Negative or Digital Negative",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Lowpass and Highpass Filter ",
+                url: "https://www.youtube.com/embed/tcLJ3FQ2FqI?si=1ATrP-2LaV3CxXBM",
               },
               {
-                title: "Contrast Stretching or Contrast Adjustment",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Weighted Averaging Filter and Median Filter",
+                url: "https://www.youtube.com/embed/x6zoQ-a7A9U?si=2F7eqpvEiiSqaeOn",
               },
               {
-                title: "Thresholding",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Median Filter",
+                url: "https://www.youtube.com/embed/IsMWGkhnHpo?si=WgL1qKkFoUa7Se-9",
               },
               {
-                title: "Grey Level Slicing (Intensity slicing)",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Sum on Lowpass Filter",
+                url: "https://www.youtube.com/embed/L7odWbdRutE?si=ZJEQNU1870ZiyspL",
               },
               {
-                title: "Log Transformation",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Sum on Highpass Filter",
+                url: "https://www.youtube.com/embed/Ow-i41-Tz9k?si=oM_-q3t7AXt-Rt0v",
               },
               {
-                title: "Power Law Transformation",
-                url: "https://www.youtube.com/embed/example1",
+                title:"Highboost Filter",
+                url:"https://www.youtube.com/embed/Hutnurzr59o?si=l2McHv2YXFzHxTRR",
               },
+              {
+                title: "Replication & Zooming",
+                url: "https://www.youtube.com/embed/gH4LA71_Ko0?si=YJq0OUcgKwpsxV1M",
+              }
+            ],
+          },
+          {
+            title: "2.3 Spatial enhancement: Global processing: Histogram Equalization ",
+            description: "Important Topic for Exam ⭐- Numerical based",
+            videos: [
+             {
+              title: "Introduction to Histogram Plotting",
+                url: "https://www.youtube.com/embed/m7NSfpfMshA?si=TCGTSLNHmXOw4sc3",
+              },
+              {
+                title: "Histogram Stretching or Linear Contrast Stretching",
+                url: "https://www.youtube.com/embed/j9lMwuCpzeM?si=K8m7mNxeJ2gHgHqL",
+              },
+              {
+                title: "Histogram Equalization",
+                url: "https://www.youtube.com/embed/_PjgOllbAxY?si=Op9s-onCtkIDmAY6"
+              }
             ],
           },
         ],
@@ -304,7 +360,7 @@ const subjects: Subjects = {
         ],
         topics: [
           {
-            title: "2.1.1 Agents and Environments",
+            title: "2.1 Agents and Environments",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -318,7 +374,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.1.2 The concept of rationality",
+            title: "2.2 The concept of rationality",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -328,7 +384,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.1.3 The Task environment and their properties",
+            title: "2.3 The Task environment and their properties",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -338,7 +394,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.1.4 PEAS",
+            title: "2.4 PEAS",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -348,27 +404,22 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.1.5 The structure of Agents",
+            title: "2.5 The structure of Agents",
             description: "Basic concepts and importance",
             videos: [],
           },
           {
-            title: "2.1.6 Types of Agents",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "PEAS (Performance, Environment, Actuators, Sensors)",
-                url: "https://www.youtube.com/embed/WNrymh1jzGk?si=XNYjiuOmXAp8lV0N",
-              },
-            ],
-          },
-          {
-            title: "2.1.7 Learning Agent",
+            title: "2.6 Types of Agents",
             description: "Basic concepts and importance",
             videos: [],
           },
           {
-            title: "2.1.8 Function of agent program",
+            title: "2.7 Learning Agent",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+          {
+            title: "2.8 Function of agent program",
             description: "Basic concepts and importance",
             videos: [],
           },
@@ -513,7 +564,52 @@ const subjects: Subjects = {
           },
           {
             title:
-              "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, DES: The Data Encryption Standard, Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys, Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
+              "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, ",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title:
+              "1.2  DES: The Data Encryption Standard",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title:
+              "1.2 Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+          {
+            title:
+              "1.2 Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
             description: "Basic concepts and importance",
             videos: [
               {
