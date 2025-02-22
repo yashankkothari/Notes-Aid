@@ -304,7 +304,7 @@ const subjects: Subjects = {
         ],
         topics: [
           {
-            title: "2.1 Agents and Environments",
+            title: "2.1.1 Agents and Environments",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -318,7 +318,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.2 The concept of rationality",
+            title: "2.1.2 The concept of rationality",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -328,7 +328,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.3 The Task environment and their properties",
+            title: "2.1.3 The Task environment and their properties",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -338,7 +338,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.4 PEAS",
+            title: "2.1.4 PEAS",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -348,22 +348,27 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.5 The structure of Agents",
+            title: "2.1.5 The structure of Agents",
             description: "Basic concepts and importance",
             videos: [],
           },
           {
-            title: "2.6 Types of Agents",
+            title: "2.1.6 Types of Agents",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "PEAS (Performance, Environment, Actuators, Sensors)",
+                url: "https://www.youtube.com/embed/WNrymh1jzGk?si=XNYjiuOmXAp8lV0N",
+              },
+            ],
+          },
+          {
+            title: "2.1.7 Learning Agent",
             description: "Basic concepts and importance",
             videos: [],
           },
           {
-            title: "2.7 Learning Agent",
-            description: "Basic concepts and importance",
-            videos: [],
-          },
-          {
-            title: "2.8 Function of agent program",
+            title: "2.1.8 Function of agent program",
             description: "Basic concepts and importance",
             videos: [],
           },
