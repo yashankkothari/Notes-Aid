@@ -91,7 +91,7 @@ export default function MainPage() {
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
                       value={selectedBranch}
                       onChange={(e) => setSelectedBranch(e.target.value)}
                     >
@@ -115,7 +115,7 @@ export default function MainPage() {
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
                       value={selectedYear}
                       onChange={(e) => setSelectedYear(e.target.value)}
                     >
@@ -139,7 +139,7 @@ export default function MainPage() {
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
                       value={selectedSemester}
                       onChange={(e) => setSelectedSemester(e.target.value)}
                     >
