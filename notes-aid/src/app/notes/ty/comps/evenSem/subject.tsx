@@ -314,45 +314,57 @@ const subjects: Subjects = {
           {
             title:
               "1.1 History of Artificial Intelligence, The AI problem*, The AI technique*, Foundations of AI",
-            description: "Basic concepts and importance",
+            description: "Theoretical concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "History of AI",
+                url: "https://www.youtube.com/embed/3qRJfUv7W_Y?si=cjelR7-yfd_FbOTL",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Introduction to AI",
+                url: "https://www.youtube.com/embed/saNiKk06f1Y?si=dr4mgvMOsAaLGjHc",
               },
+              {
+                title:"Foundation of AI",
+                url:"https://www.youtube.com/embed/b-YcALlUR6k?si=mrD84BxkNyLO9ff7"
+              },
+              {
+                title:"Acting Humanly & Rationally , Thinking Humanly & Rationally",
+                url:"https://www.youtube.com/embed/aStninMO6E8?si=-6H34Mqdwwwabksk"
+              },
+              {
+                title: "The AI problem (Refer Page 30 of the notes)",
+                url: "https://www.youtube.com/embed/32QyFxFTqwg?si=B0Sy7YEIwUiTvgIx",
+              },
+              {
+                title:"The AI Technique",
+                url:"https://www.youtube.com/embed/HXGaabF6T7U?si=wMsokWwiwrmHWlt0"
+              }
             ],
           },
           {
             title:
               "1.2 Categorization of Intelligent System, Components of AI Program.",
-            description: "Basic concepts and importance",
+            description: "Theoretical concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Components of AI Program (Refer Page 22-25 of the notes)",
+                url: "https://www.youtube.com/embed/Cw-FqnU-QkA?si=rCxHpr-sOwMd15XK",
               },
             ],
           },
           {
             title:
               "1.3 Sub-areas of AI, Applications of AI, Current trends in AI. ",
-            description: "Basic concepts and importance",
+            description: "Theoretical concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Applications of AI",
+                url: "https://www.youtube.com/embed/U4t1qFteDjs?si=TW_hGGydb33R24BJ",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title:"Applications of AI - Part 2",
+                url:"https://www.youtube.com/embed/Oth_jnB5lOA?si=aHmFbVGetlyh8eil"
               },
             ],
           },
@@ -378,7 +390,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.2 The concept of rationality",
+            title: "2.1 The concept of rationality",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -405,6 +417,14 @@ const subjects: Subjects = {
                 title: "PEAS (Performance, Environment, Actuators, Sensors)",
                 url: "https://www.youtube.com/embed/n8z9HNV__OA?si=tNAFIaAesWSvv_dm",
               },
+              {
+                title: "PEAS (Self Driving Car) - Part 2",
+                url: "https://www.youtube.com/embed/n9rwoA-36iY?si=Y3z18ACSZERAm5lK"
+              },
+              {
+                title: "PEAS (More Examples) - Part 3",
+                url: "https://www.youtube.com/embed/70qc0wPeJtQ?si=aDbUdqazdkxtQrve"
+              }
             ],
           },
           {
@@ -429,28 +449,28 @@ const subjects: Subjects = {
           },
         ],
       },
-      3: {
-        notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%203.pdf?alt=media&token=f0c4d4a0-f75e-4816-a3c2-471592794634",
-        ],
-        topics: [
-          {
-            title:
-              " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-          },
-        ],
-      },
+      // 3: {
+      //   notesLink: [
+      //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%203.pdf?alt=media&token=f0c4d4a0-f75e-4816-a3c2-471592794634",
+      //   ],
+      //   topics: [
+      //     {
+      //       title:
+      //         " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
+      //       description: "Basic concepts and importance",
+      //       videos: [
+      //         {
+      //           title: "Basic Concepts - Part 1",
+      //           url: "https://www.youtube.com/embed/example1",
+      //         },
+      //         {
+      //           title: "Implementation Overview - Part 2",
+      //           url: "https://www.youtube.com/embed/example2",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
       4: {
         notesLink: [
           "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%204.pdf?alt=media&token=b4beb656-97bf-480a-b8ae-c77fb95da5a4",
@@ -473,7 +493,13 @@ const subjects: Subjects = {
           {
             title: "The Wumpus World",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title: "Wuspus World Example",
+                url: "https://www.youtube.com/embed/xSy2nwae2no?si=3MhIy4YhD1kzz2WQ",
+              },
+              
+            ],
           },
           {
             title: "Inference procedures",
@@ -517,28 +543,28 @@ const subjects: Subjects = {
           },
         ],
       },
-      5: {
-        notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%205.pdf?alt=media&token=d9402e5a-73a5-4f3b-9c0a-795613b2c277",
-        ],
-        topics: [
-          {
-            title:
-              " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-          },
-        ],
-      },
+      // 5: {
+      //   notesLink: [
+      //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%205.pdf?alt=media&token=d9402e5a-73a5-4f3b-9c0a-795613b2c277",
+      //   ],
+      //   topics: [
+      //     {
+      //       title:
+      //         " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
+      //       description: "Basic concepts and importance",
+      //       videos: [
+      //         {
+      //           title: "Basic Concepts - Part 1",
+      //           url: "https://www.youtube.com/embed/example1",
+      //         },
+      //         {
+      //           title: "Implementation Overview - Part 2",
+      //           url: "https://www.youtube.com/embed/example2",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
     },
   },
   is: {
@@ -548,7 +574,7 @@ const subjects: Subjects = {
     modules: {
       1: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/IS%20chapter%201.pdf?alt=media&token=70e33bae-720c-4e66-a1a5-039c3f9e39d9",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/1%20Introduction.pdf?alt=media&token=f354e878-b2c2-46b9-a729-9181fd474eec","https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/2%20Cryptography.pdf?alt=media&token=287136ed-9315-4d4b-9945-063ee1b78c18"
         ],
         topics: [
           {
@@ -630,7 +656,7 @@ const subjects: Subjects = {
       },
       2: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/IS%20chapter%202.pdf?alt=media&token=f2edcb25-bc0a-4cce-8945-5563f279cbee",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/3%20Software%20Security-updated.pdf?alt=media&token=780f208d-7eaa-456c-a6c4-c8c99820ce88",
         ],
         topics: [
           {
@@ -681,7 +707,7 @@ const subjects: Subjects = {
         ],
       },
       3: {
-        notesLink: ["https://example.com/is-module1-notes.pdf"],
+        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246"],
         topics: [
           {
             title:
@@ -708,7 +734,7 @@ const subjects: Subjects = {
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://example.com/ac-module1-notes.pdf"],
+        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%201.pdf?alt=media&token=42db56c3-72f1-4758-acb8-8f3ecab36ff3"],
         topics: [
           {
             title:
@@ -773,7 +799,7 @@ const subjects: Subjects = {
         ],
       },
       2: {
-        notesLink: ["https://example.com/ac-module1-notes.pdf"],
+        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%202.pdf?alt=media&token=e83fe56e-c1e6-4b86-935e-ff49986cad74"],
         topics: [
           {
             title:

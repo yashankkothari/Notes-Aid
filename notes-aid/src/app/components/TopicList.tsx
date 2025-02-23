@@ -49,6 +49,7 @@ const TopicList: React.FC<TopicListProps> = ({
           Study Materials for Module {moduleNumber}
         </h5>
       )}
+      <div className="flex flex-wrap gap-2">
       {notesLink.map((note: string, noteIndex: number) => (
         <React.Fragment key={`note-${noteIndex}`}>
           <a
@@ -62,7 +63,9 @@ const TopicList: React.FC<TopicListProps> = ({
             Notes {noteIndex + 1}
           </a>
         </React.Fragment>
+        
       ))}
+      </div>
       
       {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white my-2">Videos</h5>}
       {Object.keys(topics).length>0 && topics.map((topic, index) => (
