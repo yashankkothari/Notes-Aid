@@ -61,7 +61,7 @@ export default function MainPage() {
 
   return (
     <ThemeProvider attribute="class">
-      <div className="min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex flex-col transition-colors duration-300">
+      <div className="min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] flex flex-col transition-colors duration-300">
         <Navbar />
         <div
           className={`flex-1 grid place-items-center p-4 transition-all duration-500 ${
@@ -85,13 +85,13 @@ export default function MainPage() {
 
               <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-gray-200 mb-2">
+                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-slate-200 mb-2">
                     <School className="w-4 h-4 text-[#706C61] dark:text-gray-400" />
                     Branch
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-gray-700 border border-[#706C61] dark:border-gray-600 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-gray-500 text-[#333333] dark:text-white transition-all duration-200 hover:border-[#706C61]/80 dark:hover:border-gray-500 appearance-none"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
                       value={selectedBranch}
                       onChange={(e) => setSelectedBranch(e.target.value)}
                     >
@@ -104,18 +104,18 @@ export default function MainPage() {
                         </option>
                       ))}
                     </select>
-                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-gray-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-gray-200 mb-2">
+                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-slate-200 mb-2">
                     <Calendar className="w-4 h-4 text-[#706C61] dark:text-gray-400" />
                     Year
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-gray-700 border border-[#706C61] dark:border-gray-600 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-gray-500 text-[#333333] dark:text-white transition-all duration-200 hover:border-[#706C61]/80 dark:hover:border-gray-500 appearance-none"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
                       value={selectedYear}
                       onChange={(e) => setSelectedYear(e.target.value)}
                     >
@@ -128,18 +128,18 @@ export default function MainPage() {
                         </option>
                       ))}
                     </select>
-                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-gray-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
                 </div>
 
                 <div className="flex-grow flex-shrink min-w-[200px] group relative transition-all duration-200">
-                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-gray-200 mb-2">
+                  <label className="flex items-center gap-2 text-sm font-medium text-[#333333] dark:text-slate-200 mb-2">
                     <NotebookText className="w-4 h-4 text-[#706C61] dark:text-gray-400" />
                     Semester
                   </label>
                   <div className="relative">
                     <select
-                      className="w-full p-3 pr-10 bg-white dark:bg-gray-700 border border-[#706C61] dark:border-gray-600 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-gray-500 text-[#333333] dark:text-white transition-all duration-200 hover:border-[#706C61]/80 dark:hover:border-gray-500 appearance-none"
+                      className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100"
                       value={selectedSemester}
                       onChange={(e) => setSelectedSemester(e.target.value)}
                     >
@@ -152,16 +152,16 @@ export default function MainPage() {
                         </option>
                       ))}
                     </select>
-                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-gray-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+                    <ChevronDown className="w-5 h-5 text-[#706C61] dark:text-slate-400 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
                   </div>
                 </div>
               </div>
 
               <button
-                className={`w-full bg-[#333333] dark:bg-gray-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
+                className={`w-full bg-[#333333] dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
                   !selectedBranch || !selectedYear || !selectedSemester
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:bg-[#706C61] dark:hover:bg-gray-600"
+                    ? "opacity-50 cursor-not-allowed dark:bg-slate-900"
+                    : "hover:bg-[#706C61] dark:hover:bg-slate-700"
                 }`}
                 onClick={handleContinue}
                 disabled={!selectedBranch || !selectedYear || !selectedSemester}

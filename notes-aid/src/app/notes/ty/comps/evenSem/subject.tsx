@@ -216,15 +216,17 @@ const subjects: Subjects = {
               {
                 title: "Mathematical operations on images",
                 url: "https://www.youtube.com/embed/kTxKca5i5tQ?si=IBH0ndCJnwUX8uCS",
-              }
+              },
             ],
           },
           {
-            title: "2.2.1 Spatial domain enhancement techniques: Point processing, Neighbourhood processing, spatial domain filtering, zooming. ",
+            title:
+              "2.2.1 Spatial domain enhancement techniques: Point processing, Neighbourhood processing, spatial domain filtering, zooming. ",
             description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
               {
-                title: "Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
+                title:
+                  "Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
                 url: "https://www.youtube.com/embed/FMDmXz6ynvk?si=7qKfBYj1VAyfMPzh",
               },
               {
@@ -242,7 +244,8 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.2.2 Neighborhood processing, spatial domain filtering, zooming. ",
+            title:
+              "2.2.2 Neighborhood processing, spatial domain filtering, zooming. ",
             description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
               {
@@ -266,21 +269,22 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/Ow-i41-Tz9k?si=oM_-q3t7AXt-Rt0v",
               },
               {
-                title:"Highboost Filter",
-                url:"https://www.youtube.com/embed/Hutnurzr59o?si=l2McHv2YXFzHxTRR",
+                title: "Highboost Filter",
+                url: "https://www.youtube.com/embed/Hutnurzr59o?si=l2McHv2YXFzHxTRR",
               },
               {
                 title: "Replication & Zooming",
                 url: "https://www.youtube.com/embed/gH4LA71_Ko0?si=YJq0OUcgKwpsxV1M",
-              }
+              },
             ],
           },
           {
-            title: "2.3 Spatial enhancement: Global processing: Histogram Equalization ",
+            title:
+              "2.3 Spatial enhancement: Global processing: Histogram Equalization ",
             description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
-             {
-              title: "Introduction to Histogram Plotting",
+              {
+                title: "Introduction to Histogram Plotting",
                 url: "https://www.youtube.com/embed/m7NSfpfMshA?si=TCGTSLNHmXOw4sc3",
               },
               {
@@ -289,8 +293,8 @@ const subjects: Subjects = {
               },
               {
                 title: "Histogram Equalization",
-                url: "https://www.youtube.com/embed/_PjgOllbAxY?si=Op9s-onCtkIDmAY6"
-              }
+                url: "https://www.youtube.com/embed/_PjgOllbAxY?si=Op9s-onCtkIDmAY6",
+              },
             ],
           },
         ],
@@ -553,13 +557,14 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title:
+                  "Security Goals : Confidentiality, Integrity, Availability",
+                url: "https://www.youtube.com/embed/CrLRFn5O_F8?si=spYdUV6zNiwX-BRa",
               },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
+              // {
+              //   title: "Implementation Overview - Part 2",
+              //   url: "https://www.youtube.com/embed/example2",
+              // },
             ],
           },
           {
@@ -578,8 +583,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title:
-              "1.2  DES: The Data Encryption Standard",
+            title: "1.2  DES: The Data Encryption Standard",
             description: "Basic concepts and importance",
             videos: [
               {
