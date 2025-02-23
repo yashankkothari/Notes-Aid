@@ -152,27 +152,26 @@ const EngineeringCurriculum: React.FC = () => {
                 );
               })}
             </div>
-
-            {Object.keys(pyq).length > 0 &&
-              pyq.map((pyq, index) => {
-                return (
-                  <div
-                    className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4"
-                    key={index}
-                  >
-                    <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
-                      Important Links
-                    </h2>
+            <div className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4">
+              <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
+                Important Links
+              </h2>
+              <div className="flex gap-2 flex-wrap">
+              {Object.keys(pyq).length > 0 &&
+                pyq.map((pyq, index) => {
+                  return (
                     <a
                       href={pyq.url}
                       target="_blank"
                       className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500"
+                      key={index}
                     >
                       {pyq.title}
                     </a>
-                  </div>
-                );
-              })}
+                  );
+                })}
+                </div>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
               <div className="space-y-3">
