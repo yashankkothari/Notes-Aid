@@ -382,8 +382,12 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Introduction to Intelligent Agents and their types",
-                url: "https://www.youtube.com/embed/BkedAnQfJ_U?si=mnVi1coeIJyuS-_z",
+                title: "Introduction to Rational Agent",
+                url: "https://www.youtube.com/embed/SE8kwTr-nmc?si=tQbl0MfkXHjw_xik",
+              },
+              {
+                title:"Agent and Environment",
+                url:"https://www.youtube.com/embed/Yp_EUYtNBb8?si=H8ka2aFKK7hcil4n"
               },
               {
                 title: "Classic Vacuum Cleaner Problem",
@@ -397,22 +401,26 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "Concept of Rationality",
-                url: "https://www.youtube.com/embed/SE8kwTr-nmc?si=C6gc9g0c3hQ-1RRx",
+                url: "https://www.youtube.com/embed/xN2fCNKzsbw?si=BeZU_A0HQu07Lr9a",
               },
             ],
           },
           {
-            title: "2.3 The Task environment and their properties",
+            title: "2.1 The Task environment and their properties",
             description: "Basic concepts and importance",
             videos: [
               {
                 title: "Properties of Task Environments",
                 url: "https://www.youtube.com/embed/yHXatUO6h28?si=Rw3atD12AFja9zgp",
               },
+              {
+                title: "Properties of Task Environments - Part 2",
+                url:"https://www.youtube.com/embed/FiD_xBYGjgE?si=bfa_uU4BRzG003RE"
+              }
             ],
           },
           {
-            title: "2.4 PEAS",
+            title: "2.1 PEAS",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -430,24 +438,28 @@ const subjects: Subjects = {
             ],
           },
           {
-            title: "2.5 The structure of Agents",
+            title: "2.1 The structure of Agents & Types of Agents",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Structure of Agents",
+                url:"https://www.youtube.com/embed/ER9QomwqFmQ?si=GcmZ6HWNMYfXYzE4"
+              },
+              {
+                title:"Types of Agents",
+                url:"https://www.youtube.com/embed/WNrymh1jzGk?si=aMvvKQtqH6ENcP7H"
+              }
+            ],
           },
           {
-            title: "2.6 Types of Agents",
+            title: "2.1 Learning Agent",
             description: "Basic concepts and importance",
-            videos: [],
-          },
-          {
-            title: "2.7 Learning Agent",
-            description: "Basic concepts and importance",
-            videos: [],
-          },
-          {
-            title: "2.8 Function of agent program",
-            description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Learning Agent",
+                url:"https://www.youtube.com/embed/LAkscQo_Cak?si=A07Hh3RJcWjMmN3u"
+              }
+            ],
           },
         ],
       },
@@ -483,12 +495,8 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Knowledge based Agents",
+                url: "https://www.youtube.com/embed/a_bXNyCR5Vs?si=VTMj9SgPdBL6j32U",
               },
             ],
           },
@@ -500,22 +508,53 @@ const subjects: Subjects = {
                 title: "Wuspus World Example",
                 url: "https://www.youtube.com/embed/xSy2nwae2no?si=3MhIy4YhD1kzz2WQ",
               },
+              {
+                title:"Wumpus World - Part 2",
+                url:"https://www.youtube.com/embed/SHfP8SPOEEw?si=ktojXZvDSN2IbMGc"
+              },
+              {
+                title:"Knowledge Base for Wumpus World",
+                url:"https://www.youtube.com/embed/R32KPiOBBxg?si=OURZVYLObzJl7tc-0"
+              }
             ],
           },
           {
             title: "Inference procedures",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Propositional Logic",
+                url:"https://www.youtube.com/embed/6490tKrGEic?si=9uVqYLxqbP3UYEg6"
+              },
+              {
+                title:"Inference Procedures (Refer Page 7 of the notes)",
+                url:"https://www.youtube.com/embed/aVwcNDKXcHU?si=oy47KP1SzhDAyUj3",
+              }
+            ],
           },
           {
             title: "First Order Logic: Syntax and Semantic",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"First Order Logic",
+                url:"https://www.youtube.com/embed/wgb9_BJhaT0?si=OZcA13Cm4934JBAY"
+              }
+            ],
           },
           {
             title: "Inference in FOL",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Inference in FOL",
+                url:"https://www.youtube.com/embed/DZXTVoSQzFo?si=V1-DAlbkZ4ChHpEM"
+              },
+              {
+                title:"Inference in FOL - Part 2",
+                url:"https://www.youtube.com/embed/5JcNbX6UM5w?si=gBGhjbxt4WOjFbUB"
+              }
+            ],
           },
           {
             title: "Unification and lifting",
@@ -597,7 +636,7 @@ const subjects: Subjects = {
           },
           {
             title:
-              "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology, ",
+              "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology. ",
             description: "Basic concepts and importance",
             videos: [
               {
@@ -615,12 +654,20 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Introduction to DES",
+                url: "https://www.youtube.com/embed/j53iXhTSi_s?si=F_cj1-OYh3UdtuQk",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Single Round of DES Algorithm",
+                url: "https://www.youtube.com/embed/nynAQ593HdU?si=iOCZapqb5AMRWbm3",
+              },
+              {
+                title: "The F Function of DES (S block)",
+                url: "https://www.youtube.com/embed/OePPcJR--F4?si=kUGiXfMciBjVuPoF",
+              },
+              {
+                title: "Key Scheduling and Decryption in DES",
+                url: "https://www.youtube.com/embed/S-vLA7d1ORI?si=YjCR1YbZ3Xxadb9_",
               },
             ],
           },
