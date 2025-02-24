@@ -11,12 +11,12 @@ const Footer = () => {
           <div className="flex ">
             Contribute on{" "} 
             <Link href="https://github.com/MinavKaria/Notes-Aid" target="_blank" className="text-blue-400 underline hover:text-blue-700">
-              <Github className="w-6 h-6 mx-1 text-blue-400 dark:text-blue-400 animate-bounce" />
+              <Github className="w-6 h-6 mx-1 text-blue-400 dark:text-blue-400" />
             </Link>
 
           </div>
             <div className="flex gap-1 items-center text-sm text-gray-600 dark:text-gray-400">
-            Engineered with  <Rocket className="w-4 h-4 mx-1 text-indigo-500 dark:text-cyan-400 animate-bounce" />{" "} by 
+            <Rocket className="w-4 h-4 mx-1 text-indigo-500 dark:text-cyan-400 animate-bounce" /> {" "} Engineered by 
             <Link href="https://github.com/veddsavla" target="_blank" className=" text-blue-400 underline hover:text-blue-700">
               Vedansh
             </Link>
