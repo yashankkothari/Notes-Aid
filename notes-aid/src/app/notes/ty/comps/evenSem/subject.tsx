@@ -896,7 +896,7 @@ const subjects: Subjects = {
 
         topics: [
           {
-            title: "Introduction to Cloud Computing",
+            title: "Virtualization",
             description: "Basic concepts and importance",
             videos: [
               {
