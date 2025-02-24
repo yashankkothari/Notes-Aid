@@ -14,7 +14,7 @@ const pyqLinks:pyqLink={
     ty:[
         {
             title:"PYQs",
-            url:"https://drive.google.com/drive/folders/1W_kJgzThKW6biOKyWJxlGiuaISirV4hK?usp=sharing"
+            url:"https://drive.google.com/drive/folders/1oPbFkqXMBdEGfcz5FEtJMaxwHT3Ik-cE?usp=sharing"
         },
         {
             title:"TY B.Tech Syllabus",
