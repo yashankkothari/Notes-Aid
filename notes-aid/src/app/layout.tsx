@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes"
 import "./globals.css";
 import Metrics from "./metrics";
+import Footer from './components/Footer';
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class">{children}</ThemeProvider>
         <Metrics />
+        <Footer />
       </body>
     </html>
   )
