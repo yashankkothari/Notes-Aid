@@ -325,21 +325,22 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/saNiKk06f1Y?si=dr4mgvMOsAaLGjHc",
               },
               {
-                title:"Foundation of AI",
-                url:"https://www.youtube.com/embed/b-YcALlUR6k?si=mrD84BxkNyLO9ff7"
+                title: "Foundation of AI",
+                url: "https://www.youtube.com/embed/b-YcALlUR6k?si=mrD84BxkNyLO9ff7",
               },
               {
-                title:"Acting Humanly & Rationally , Thinking Humanly & Rationally",
-                url:"https://www.youtube.com/embed/aStninMO6E8?si=-6H34Mqdwwwabksk"
+                title:
+                  "Acting Humanly & Rationally , Thinking Humanly & Rationally",
+                url: "https://www.youtube.com/embed/aStninMO6E8?si=-6H34Mqdwwwabksk",
               },
               {
                 title: "The AI problem (Refer Page 30 of the notes)",
                 url: "https://www.youtube.com/embed/32QyFxFTqwg?si=B0Sy7YEIwUiTvgIx",
               },
               {
-                title:"The AI Technique",
-                url:"https://www.youtube.com/embed/HXGaabF6T7U?si=wMsokWwiwrmHWlt0"
-              }
+                title: "The AI Technique",
+                url: "https://www.youtube.com/embed/HXGaabF6T7U?si=wMsokWwiwrmHWlt0",
+              },
             ],
           },
           {
@@ -348,7 +349,8 @@ const subjects: Subjects = {
             description: "Theoretical concepts",
             videos: [
               {
-                title: "Components of AI Program (Refer Page 22-25 of the notes)",
+                title:
+                  "Components of AI Program (Refer Page 22-25 of the notes)",
                 url: "https://www.youtube.com/embed/Cw-FqnU-QkA?si=rCxHpr-sOwMd15XK",
               },
             ],
@@ -363,8 +365,8 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/U4t1qFteDjs?si=TW_hGGydb33R24BJ",
               },
               {
-                title:"Applications of AI - Part 2",
-                url:"https://www.youtube.com/embed/Oth_jnB5lOA?si=aHmFbVGetlyh8eil"
+                title: "Applications of AI - Part 2",
+                url: "https://www.youtube.com/embed/Oth_jnB5lOA?si=aHmFbVGetlyh8eil",
               },
             ],
           },
@@ -419,12 +421,12 @@ const subjects: Subjects = {
               },
               {
                 title: "PEAS (Self Driving Car) - Part 2",
-                url: "https://www.youtube.com/embed/n9rwoA-36iY?si=Y3z18ACSZERAm5lK"
+                url: "https://www.youtube.com/embed/n9rwoA-36iY?si=Y3z18ACSZERAm5lK",
               },
               {
                 title: "PEAS (More Examples) - Part 3",
-                url: "https://www.youtube.com/embed/70qc0wPeJtQ?si=aDbUdqazdkxtQrve"
-              }
+                url: "https://www.youtube.com/embed/70qc0wPeJtQ?si=aDbUdqazdkxtQrve",
+              },
             ],
           },
           {
@@ -498,7 +500,6 @@ const subjects: Subjects = {
                 title: "Wuspus World Example",
                 url: "https://www.youtube.com/embed/xSy2nwae2no?si=3MhIy4YhD1kzz2WQ",
               },
-              
             ],
           },
           {
@@ -574,7 +575,8 @@ const subjects: Subjects = {
     modules: {
       1: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/1%20Introduction.pdf?alt=media&token=f354e878-b2c2-46b9-a729-9181fd474eec","https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/2%20Cryptography.pdf?alt=media&token=287136ed-9315-4d4b-9945-063ee1b78c18"
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/1%20Introduction.pdf?alt=media&token=f354e878-b2c2-46b9-a729-9181fd474eec",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/2%20Cryptography.pdf?alt=media&token=287136ed-9315-4d4b-9945-063ee1b78c18",
         ],
         topics: [
           {
@@ -707,7 +709,9 @@ const subjects: Subjects = {
         ],
       },
       3: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246",
+        ],
         topics: [
           {
             title:
@@ -734,7 +738,9 @@ const subjects: Subjects = {
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%201.pdf?alt=media&token=42db56c3-72f1-4758-acb8-8f3ecab36ff3"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%201.pdf?alt=media&token=42db56c3-72f1-4758-acb8-8f3ecab36ff3",
+        ],
         topics: [
           {
             title:
@@ -799,7 +805,9 @@ const subjects: Subjects = {
         ],
       },
       2: {
-        notesLink: ["https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%202.pdf?alt=media&token=e83fe56e-c1e6-4b86-935e-ff49986cad74"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AC%20Module%202.pdf?alt=media&token=e83fe56e-c1e6-4b86-935e-ff49986cad74",
+        ],
         topics: [
           {
             title:
@@ -856,7 +864,36 @@ const subjects: Subjects = {
     color: "blue",
     modules: {
       1: {
-        notesLink: ["https://example.com/cc-module1-notes.pdf"],
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%201.pdf?alt=media&token=5fdc10e7-7eef-41c1-a2a8-d5fac03bf238",
+        ],
+        topics: [
+          {
+            title: "Introduction to Cloud Computing",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Basic Concepts - Part 1",
+                url: "https://www.youtube.com/embed/example1",
+              },
+              {
+                title: "Implementation Overview - Part 2",
+                url: "https://www.youtube.com/embed/example2",
+              },
+            ],
+          },
+        ],
+      },
+      2: {
+        notesLink: [
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202.1%2C%202.2%2C%202.3.pdf?alt=media&token=2e06924c-2866-4875-93b8-e110fcf1e284",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Hardware-assisted%20CPU%20virtualization%20in%20KVM%20QEMU.pdf?alt=media&token=12fc3a59-97de-42b6-bbd4-1b356871fc4d",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization.pdf?alt=media&token=e45c11af-8b7d-4b7d-8fe8-197ad96dd3c2",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization%202.pdf?alt=media&token=48376b43-fe35-4d54-a424-b3101f861f9c",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Parairtualization%20in%20Xen.pdf?alt=media&token=da1c8a39-0c00-46e6-bfa5-9a56db6493a1",
+          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Full%20virtualization.pdf?alt=media&token=8afdc23b-9adb-4689-883f-be7b807f1cbe",
+        ],
+
         topics: [
           {
             title: "Introduction to Cloud Computing",
