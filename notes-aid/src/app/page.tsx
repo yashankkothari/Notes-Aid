@@ -173,7 +173,6 @@ export default function MainPage() {
             </div>
           )}
         </div>
-        <Footer />
       </div>
     </ThemeProvider>
   )
