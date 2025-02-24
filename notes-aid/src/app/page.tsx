@@ -11,7 +11,6 @@ import {
 } from "lucide-react"
 import { ThemeProvider } from "next-themes"
 import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
 
 const branches = [
   { value: "comps", label: "Computer Science" },
@@ -173,7 +172,6 @@ export default function MainPage() {
             </div>
           )}
         </div>
-        <Footer />
       </div>
     </ThemeProvider>
   )
