@@ -386,8 +386,8 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/SE8kwTr-nmc?si=tQbl0MfkXHjw_xik",
               },
               {
-                title:"Agent and Environment",
-                url:"https://www.youtube.com/embed/Yp_EUYtNBb8?si=H8ka2aFKK7hcil4n"
+                title: "Agent and Environment",
+                url: "https://www.youtube.com/embed/Yp_EUYtNBb8?si=H8ka2aFKK7hcil4n",
               },
               {
                 title: "Classic Vacuum Cleaner Problem",
@@ -415,8 +415,8 @@ const subjects: Subjects = {
               },
               {
                 title: "Properties of Task Environments - Part 2",
-                url:"https://www.youtube.com/embed/FiD_xBYGjgE?si=bfa_uU4BRzG003RE"
-              }
+                url: "https://www.youtube.com/embed/FiD_xBYGjgE?si=bfa_uU4BRzG003RE",
+              },
             ],
           },
           {
@@ -442,13 +442,13 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:"Structure of Agents",
-                url:"https://www.youtube.com/embed/ER9QomwqFmQ?si=GcmZ6HWNMYfXYzE4"
+                title: "Structure of Agents",
+                url: "https://www.youtube.com/embed/ER9QomwqFmQ?si=GcmZ6HWNMYfXYzE4",
               },
               {
-                title:"Types of Agents",
-                url:"https://www.youtube.com/embed/WNrymh1jzGk?si=aMvvKQtqH6ENcP7H"
-              }
+                title: "Types of Agents",
+                url: "https://www.youtube.com/embed/WNrymh1jzGk?si=aMvvKQtqH6ENcP7H",
+              },
             ],
           },
           {
@@ -456,9 +456,9 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:"Learning Agent",
-                url:"https://www.youtube.com/embed/LAkscQo_Cak?si=A07Hh3RJcWjMmN3u"
-              }
+                title: "Learning Agent",
+                url: "https://www.youtube.com/embed/LAkscQo_Cak?si=A07Hh3RJcWjMmN3u",
+              },
             ],
           },
         ],
@@ -509,13 +509,13 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/xSy2nwae2no?si=3MhIy4YhD1kzz2WQ",
               },
               {
-                title:"Wumpus World - Part 2",
-                url:"https://www.youtube.com/embed/SHfP8SPOEEw?si=ktojXZvDSN2IbMGc"
+                title: "Wumpus World - Part 2",
+                url: "https://www.youtube.com/embed/SHfP8SPOEEw?si=ktojXZvDSN2IbMGc",
               },
               {
-                title:"Knowledge Base for Wumpus World",
-                url:"https://www.youtube.com/embed/R32KPiOBBxg?si=OURZVYLObzJl7tc-0"
-              }
+                title: "Knowledge Base for Wumpus World",
+                url: "https://www.youtube.com/embed/R32KPiOBBxg?si=OURZVYLObzJl7tc-0",
+              },
             ],
           },
           {
@@ -523,13 +523,13 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:"Propositional Logic",
-                url:"https://www.youtube.com/embed/6490tKrGEic?si=9uVqYLxqbP3UYEg6"
+                title: "Propositional Logic",
+                url: "https://www.youtube.com/embed/6490tKrGEic?si=9uVqYLxqbP3UYEg6",
               },
               {
-                title:"Inference Procedures (Refer Page 7 of the notes)",
-                url:"https://www.youtube.com/embed/aVwcNDKXcHU?si=oy47KP1SzhDAyUj3",
-              }
+                title: "Inference Procedures (Refer Page 7 of the notes)",
+                url: "https://www.youtube.com/embed/aVwcNDKXcHU?si=oy47KP1SzhDAyUj3",
+              },
             ],
           },
           {
@@ -537,9 +537,9 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:"First Order Logic",
-                url:"https://www.youtube.com/embed/wgb9_BJhaT0?si=OZcA13Cm4934JBAY"
-              }
+                title: "First Order Logic",
+                url: "https://www.youtube.com/embed/wgb9_BJhaT0?si=OZcA13Cm4934JBAY",
+              },
             ],
           },
           {
@@ -547,13 +547,13 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:"Inference in FOL",
-                url:"https://www.youtube.com/embed/DZXTVoSQzFo?si=V1-DAlbkZ4ChHpEM"
+                title: "Inference in FOL",
+                url: "https://www.youtube.com/embed/DZXTVoSQzFo?si=V1-DAlbkZ4ChHpEM",
               },
               {
-                title:"Inference in FOL - Part 2",
-                url:"https://www.youtube.com/embed/5JcNbX6UM5w?si=gBGhjbxt4WOjFbUB"
-              }
+                title: "Inference in FOL - Part 2",
+                url: "https://www.youtube.com/embed/5JcNbX6UM5w?si=gBGhjbxt4WOjFbUB",
+              },
             ],
           },
           {
@@ -916,16 +916,48 @@ const subjects: Subjects = {
         ],
         topics: [
           {
-            title: "Introduction to Cloud Computing",
+            title: "1.1 Introduction to Cloud Computing",
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "1.1.1 Cloud Computing at a Glance",
+                url: "https://www.youtube.com/embed/8C_kHJ5YEiA?si=nsQPnHteHy7XGmds",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "1.1.2 Historical Developments",
+                url: "https://www.youtube.com/embed/mphoO_bxWy0?si=LNhHmrhR8odiQppO",
+              },
+              {
+                title: "1.1.3 NIST Definitions and Models",
+                url: "https://www.youtube.com/embed/raXHR3jjSow?si=kKDXFx1p9qlGZpC_",
+              },
+              {
+                title: "1.1.4 Cost Models",
+                url: "https://www.youtube.com/embed/lsvpvCU6Oxs?si=ptAwZ71PsHS2K3Pz",
+              },
+              {
+                title: "1.1.5 Advantages of Cloud Computing",
+                url: "https://www.youtube.com/embed/oFga9Q1nd8M?si=EDvUhDLkNDUFLHVv",
+              },
+              {
+                title: "1.1.6 Disadvantages of Cloud Computing",
+                url: "https://www.youtube.com/embed/TuDIr0ZEp6k?si=EdyksNeQ68sEDLxF",
+              },
+              {
+                title: "1.1.7 Deployment Models",
+                url: "https://www.youtube.com/embed/5G0L7XCt6XQ?si=BI-IB0_LoGb0J-Ql",
+              },
+              {
+                title: "1.1.8 Evolutionary Trends",
+                url: "https://www.youtube.com/embed/lsvpvCU6Oxs?si=ptAwZ71PsHS2K3Pz",
+              },
+              {
+                title: "1.1.9 Building Cloud Environments",
+                url: "https://www.youtube.com/embed/Uaue6aanZrY?si=6s3mX_1aq59dCJ_M",
+              },
+              {
+                title: "1.1.10 Web Services and SOA",
+                url: "https://www.youtube.com/embed/AoimJr4WBac?si=tZ1hgyUi6nooHRiG",
               },
             ],
           },
