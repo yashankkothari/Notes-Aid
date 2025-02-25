@@ -660,14 +660,33 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title:
-                  "Security Goals : Confidentiality, Integrity, Availability",
+                title:"Security Goals : Confidentiality, Integrity, Availability",
                 url: "https://www.youtube.com/embed/CrLRFn5O_F8?si=spYdUV6zNiwX-BRa",
               },
-              // {
-              //   title: "Implementation Overview - Part 2",
-              //   url: "https://www.youtube.com/embed/example2",
-              // },
+              {
+                title:"Types of Threats",
+                url:"https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI"
+              },
+              {
+                title:"Security Attacks : Active and Passive Attack",
+                url:"https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S"
+              },
+              {
+                title:"Types of Active Attacks",
+                url:"https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn"
+              },
+              {
+                title:"Active Attack Vs Passive Attack ",
+                url:"https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1"
+              },
+              {
+                title:"Advanced Persistent threat APT",
+                url:"https://www.youtube.com/embed/49iU-0Focsk?si=wfNEacd6rJoUqQ63"
+              },
+              {
+                title:"Security Attacks - Part 2 (Refer Notes 1)",
+                url:"https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy"
+              }
             ],
           },
           {
@@ -676,13 +695,32 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Uses of Cryptography",
+                url: "https://www.youtube.com/embed/GUmk_pNY9Ik?si=OVYT20ULznKPVxRg",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Terminologies in Cryptography",
+                url: "https://www.youtube.com/embed/Xb4_VT4y9kQ?si=S0-5LyFyMs36BPx9",
               },
+            ],
+          },
+          {
+            title:
+              "1.2 Types of Cryptography and other important concepts",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "Symmetric Key Cryptography",
+                url: "https://www.youtube.com/embed/fKFKThuUdnI?si=OqN1GqlX4F6J30Gc",
+              },
+              {
+                title: "Asymmetric Key Cryptography",
+                url: "https://www.youtube.com/embed/yvf3lgBxdrA?si=4j-cipLIP0hFVslT",
+              },
+              {
+                title:"Stream Cipher vs. Block Cipher",
+                url:"https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC"
+              }
             ],
           },
           {
@@ -705,6 +743,22 @@ const subjects: Subjects = {
                 title: "Key Scheduling and Decryption in DES",
                 url: "https://www.youtube.com/embed/S-vLA7d1ORI?si=YjCR1YbZ3Xxadb9_",
               },
+              {
+                title:"Avalanche Effect and the Strength of DES",
+                url:"https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL"
+              },
+              {
+                title:"Weakness of DES",
+                url:"https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y"
+              },
+              {
+                title:"Multiple Encryption and Triple DES",
+                url:"https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf"
+              },
+              {
+                title:"AES vs DES",
+                url:"https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx"
+              }
             ],
           },
           {
@@ -713,13 +767,29 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Public Key Cryptography",
+                url: "https://www.youtube.com/embed/i6jUOJRThC0?si=2OHEBtwtTDDm_JXp",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Public Key Cryptography - Part 2",
+                url: "https://www.youtube.com/embed/xw19eT5thIE?si=j93UHQsyDApxQvwL",
               },
+              {
+                title:"Diffie Hellman Key Exchange Algorithm (Page 64 of the notes)",
+                url:"https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb"
+              },
+              {
+                title:"Man-in-the-Middle Attack",
+                url:"https://www.youtube.com/embed/9OzbjSbzDlk?si=5AUhjD5BIlIDbjnE"
+              },
+              {
+                title:"Station to Station Key Agreement",
+                url:"https://www.youtube.com/embed/ucWKa_Mpae0?si=eqpy0VSN1L4xnRoU"
+              },
+              {
+                title:"RSA Algorithm (May come in Exam, Not Sure) ",
+                url:"https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-"
+              }
             ],
           },
           {
@@ -728,13 +798,17 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Error Detecting Codes (Refer Page 67 of the notes)",
+                url: "https://www.youtube.com/embed/Bwih7_AT1oI?si=8rehCoeYSubjA71N",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Hash Functions",
+                url: "https://www.youtube.com/embed/0wFI04w345k?si=m3os4WpQy5qR2uyP",
               },
+              {
+                title:"Digital Signatures",
+                url:"https://www.youtube.com/embed/yUeI4nqvNs8?si=Rus3TQnCNnHAehAE"
+              }
             ],
           },
         ],
