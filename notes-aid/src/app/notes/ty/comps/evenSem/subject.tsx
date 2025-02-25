@@ -505,7 +505,7 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Wuspus World Example",
+                title: "Wumpus World Example",
                 url: "https://www.youtube.com/embed/xSy2nwae2no?si=3MhIy4YhD1kzz2WQ",
               },
               {
@@ -526,26 +526,32 @@ const subjects: Subjects = {
                 title: "Propositional Logic",
                 url: "https://www.youtube.com/embed/6490tKrGEic?si=9uVqYLxqbP3UYEg6",
               },
-              {
-                title: "Inference Procedures (Refer Page 7 of the notes)",
-                url: "https://www.youtube.com/embed/aVwcNDKXcHU?si=oy47KP1SzhDAyUj3",
-              },
+              // {
+              //   title: "Inference Procedures (Refer Page 7 of the notes)",
+              //   url: "https://www.youtube.com/embed/aVwcNDKXcHU?si=oy47KP1SzhDAyUj3",
+              // },
             ],
           },
           {
-            title: "First Order Logic: Syntax and Semantic",
+            title: "First Order Logic: Syntax and Semantic, Inference in FOL",
             description: "Basic concepts and importance",
             videos: [
               {
                 title: "First Order Logic",
                 url: "https://www.youtube.com/embed/wgb9_BJhaT0?si=OZcA13Cm4934JBAY",
               },
-            ],
-          },
-          {
-            title: "Inference in FOL",
-            description: "Basic concepts and importance",
-            videos: [
+              {
+                title:"Quantifiers in FOL",
+                url:"https://www.youtube.com/embed/3WYCk2Pm1G4?si=gT9TYvMmeuI7MA5y"
+              },
+              {
+                title:"Quantifiers in FOL - Part 2",
+                url:"https://www.youtube.com/embed/x5GfV8ORetQ?si=elXaD-L8SgqNQ0FT"
+              },
+              {
+                title:"Inference rules for quantifiers",
+                url:"https://www.youtube.com/embed/cOhA95ukJf0?si=9vIjOwbqk2q94oPS"
+              },
               {
                 title: "Inference in FOL",
                 url: "https://www.youtube.com/embed/DZXTVoSQzFo?si=V1-DAlbkZ4ChHpEM",
@@ -559,28 +565,58 @@ const subjects: Subjects = {
           {
             title: "Unification and lifting",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Unification basic",
+                url:"https://www.youtube.com/embed/S4Y2PMsoueg?si=ZFmcQGZFMom_WKtW"
+              },
+              {
+                title:"Unification in FOL ",
+                url:"https://www.youtube.com/embed/MbAsMEpJL-k?si=UZpg_mfBZyaNiNtC"
+              },
+              {
+                title:"Unification in FOL- Part 2",
+                url:"https://www.youtube.com/embed/JEWtrRUa1g0?si=pATr6ktswTfWPND2"
+              }
+            ],
           },
-          {
-            title: "Forward chaining",
-            description: "Basic concepts and importance",
-            videos: [],
-          },
-          {
-            title: "Backward Chaining",
-            description: "Basic concepts and importance",
-            videos: [],
-          },
+          // {
+          //   title: "Forward chaining",
+          //   description: "Basic concepts and importance",
+          //   videos: [],
+          // },
+          // {
+          //   title: "Backward Chaining",
+          //   description: "Basic concepts and importance",
+          //   videos: [],
+          // },
           {
             title: "Resolution",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title:"Represent Facts or Knowledge",
+                url:"https://www.youtube.com/embed/tFYngFwDuJQ?si=Ys3STjMuCedzpdM3"
+              },
+              {
+                title:"Steps to Convert Propositional Logic Statement into CNF",
+                url:"https://www.youtube.com/embed/Jf2T8RdCYfA?si=LI2-3ESe_AHy6_OO"
+              },
+              {
+                title:"Steps of Resolution",
+                url:"https://www.youtube.com/embed/CbI-Q2a5rUU?si=3xMm1l42WK06fpsv"
+              },
+              {
+                title:"Resolution : FOL to CNF , Resolution Tree",
+                url:"https://www.youtube.com/embed/7g6cB3kIHJI?si=yjpEr7fKxLm5pGEX"
+              }
+            ],
           },
-          {
-            title: "Answer set programming",
-            description: "Basic concepts and importance",
-            videos: [],
-          },
+          // {
+          //   title: "Answer set programming",
+          //   description: "Basic concepts and importance",
+          //   videos: [],
+          // },
         ],
       },
       // 5: {
