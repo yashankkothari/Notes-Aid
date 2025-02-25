@@ -787,7 +787,7 @@ const subjects: Subjects = {
                 url:"https://www.youtube.com/embed/ucWKa_Mpae0?si=eqpy0VSN1L4xnRoU"
               },
               {
-                title:"RSA Algorithm (May come in Exam, Not Sure) ",
+                title:"RSA Algorithm (May come in Exam,Not Sure) ",
                 url:"https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-"
               }
             ],
