@@ -105,14 +105,22 @@ const TopicList: React.FC<TopicListProps> = ({
             }`}
           >
             <div className="p-3 pt-0">
-              {topic.videos && topic.videos.length > 0 && (
+              {topic.videos && topic.videos.length > 0 ? (
                 <div className="mt-3 border-t dark:border-gray-700 pt-3">
                   <h5 className="text-sm font-medium text-black dark:text-white mb-2">
                     Lecture Videos
                   </h5>
                   <VideoAccordion videos={topic.videos} />
                 </div>
+              ):(
+                <div className="mt-3 border-t dark:border-gray-700 pt-3">
+                  <h5 className="text-sm font-medium text-black dark:text-white mb-2">
+                    No videos available, We will update soon, Till then refer the notes
+                  </h5>
+                </div>
               )}
+
+             
 
               {topic.notes && topic.notes.length > 0 && (
                 <div className="mt-3 border-t dark:border-gray-700 pt-3">

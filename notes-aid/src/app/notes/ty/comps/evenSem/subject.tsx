@@ -314,7 +314,7 @@ const subjects: Subjects = {
           {
             title:
               "1.1 History of Artificial Intelligence, The AI problem*, The AI technique*, Foundations of AI",
-            description: "Theoretical concepts",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "History of AI",
@@ -346,7 +346,7 @@ const subjects: Subjects = {
           {
             title:
               "1.2 Categorization of Intelligent System, Components of AI Program.",
-            description: "Theoretical concepts",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title:
@@ -358,7 +358,7 @@ const subjects: Subjects = {
           {
             title:
               "1.3 Sub-areas of AI, Applications of AI, Current trends in AI. ",
-            description: "Theoretical concepts",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Applications of AI",
@@ -379,7 +379,7 @@ const subjects: Subjects = {
         topics: [
           {
             title: "2.1 Agents and Environments",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Introduction to Rational Agent",
@@ -397,7 +397,7 @@ const subjects: Subjects = {
           },
           {
             title: "2.1 The concept of rationality",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Concept of Rationality",
@@ -407,7 +407,7 @@ const subjects: Subjects = {
           },
           {
             title: "2.1 The Task environment and their properties",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Properties of Task Environments",
@@ -421,7 +421,7 @@ const subjects: Subjects = {
           },
           {
             title: "2.1 PEAS",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "PEAS (Performance, Environment, Actuators, Sensors)",
@@ -439,7 +439,7 @@ const subjects: Subjects = {
           },
           {
             title: "2.1 The structure of Agents & Types of Agents",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "Structure of Agents",
@@ -453,7 +453,7 @@ const subjects: Subjects = {
           },
           {
             title: "2.1 Learning Agent",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Learning Agent",
@@ -492,7 +492,7 @@ const subjects: Subjects = {
         topics: [
           {
             title: "Knowledge based Agents",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "Knowledge based Agents",
@@ -502,7 +502,7 @@ const subjects: Subjects = {
           },
           {
             title: "The Wumpus World",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Wumpus World Example",
@@ -534,7 +534,7 @@ const subjects: Subjects = {
           },
           {
             title: "First Order Logic: Syntax and Semantic, Inference in FOL",
-            description: "Basic concepts and importance",
+            description: "Numerical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "First Order Logic",
@@ -564,7 +564,7 @@ const subjects: Subjects = {
           },
           {
             title: "Unification and lifting",
-            description: "Basic concepts and importance",
+            description: "Numerical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title:"Unification basic",
@@ -592,7 +592,7 @@ const subjects: Subjects = {
           // },
           {
             title: "Resolution",
-            description: "Basic concepts and importance",
+            description: "Numerical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title:"Represent Facts or Knowledge",
@@ -657,7 +657,7 @@ const subjects: Subjects = {
           {
             title:
               "1.1 What Is Computer Security?,  Threats, Harm, Vulnerabilities, Controls ",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title:"Security Goals : Confidentiality, Integrity, Availability",
@@ -692,7 +692,7 @@ const subjects: Subjects = {
           {
             title:
               "1.2 Use of Cryptography in System Security: Problems Addressed by Encryption, Terminology. ",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Uses of Cryptography",
@@ -707,7 +707,7 @@ const subjects: Subjects = {
           {
             title:
               "1.2 Types of Cryptography and other important concepts",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "Symmetric Key Cryptography",
@@ -720,12 +720,16 @@ const subjects: Subjects = {
               {
                 title:"Stream Cipher vs. Block Cipher",
                 url:"https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC"
+              },
+              {
+                title:"Cryptanalysis",
+                url:"https://www.youtube.com/embed/Kejs-saINOo?si=avO_PSSO_amRWuC-"
               }
             ],
           },
           {
             title: "1.2  DES: The Data Encryption Standard",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
                 title: "Introduction to DES",
@@ -764,7 +768,7 @@ const subjects: Subjects = {
           {
             title:
               "1.2 Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys",
-            description: "Basic concepts and importance",
+            description: "Theoretical and numerical based concepts - Important for Exam ⭐",
             videos: [
               {
                 title: "Public Key Cryptography",
@@ -795,7 +799,7 @@ const subjects: Subjects = {
           {
             title:
               "1.2 Error Detecting Codes, Trust, Certificates: Trustable Identities and Public Keys, Digital Signatures—All the Pieces",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Error Detecting Codes (Refer Page 67 of the notes)",
@@ -820,73 +824,87 @@ const subjects: Subjects = {
         topics: [
           {
             title:
-              "2.1 Unintentional (Non-malicious) Programming: Oversights - Buffer Overflow,  Incomplete Mediation,  Time-ofCheck to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition",
-            description: "Basic concepts and importance",
+              "2.1 Unintentional (Non-malicious) Programming: Oversights - Buffer Overflow,  Incomplete Mediation",
+            description: "Theoretical based concepts",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Buffer Overflow",
+                url: "https://www.youtube.com/embed/AD-iXWANggo?si=yJuSNQmeJQ4GZU1w",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Defense against Buffer Overflow",
+                url: "https://www.youtube.com/embed/JxC7U6dQ_u8?si=FxPAYFRE83tJBN3j",
               },
+              {
+                title:"Buffer Overflow - Part 2",
+                url:"https://www.youtube.com/embed/mTrTwg03N9M?si=6jk8WbqzWecNV0Xo"
+              },
+              {
+                title:"Stack Canary",
+                url:"https://www.youtube.com/embed/N7kGd76evsM?si=sWRBGNOXo1baOvAP"
+              },
+              {
+                title:"Incomplete Mediation",
+                url:"https://www.youtube.com/embed/JWFNNiOPMvg?si=u2Eu-1SvMvC2LsXR"
+              }
+            ],
+          },
+          {
+            title:"Time-of Check to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition (Refer Notes for these topics from page 32)",
+            description: "Basic concepts and importance",
+            videos: [
+            
+              
+            ]
+          },
+          {
+            title:
+              "2.2 Malicious Code—Malware- Malware—Viruses, Trojan Horses, and Worms,  Technical Details: Malicious Code (Refer Notes for these topics from page 58)",
+            description: "Theoretical based concepts",
+            videos: [
+              {
+                title: "Malware and its types",
+                url: "https://www.youtube.com/embed/eaVBvrhwbk0?si=I32-caYNZffQdZdJ",
+              },
+              {
+                title: "Virus & Related Threats - Worms, Trojan Horses, Countermeasures ",
+                url: "https://www.youtube.com/embed/ds5Cbw6QmXs?si=cgZvq9W1DEqvoLpP",
+              },
+              
             ],
           },
           {
             title:
-              "2.2 Malicious Code—Malware- Malware—Viruses, Trojan Horses, and Worms,  Technical Details: Malicious Code ",
+              "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work (Refer Notes for these topics from page 73)",
             description: "Basic concepts and importance",
             videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-          },
-          {
-            title:
-              "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work  ",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
+             
             ],
           },
         ],
       },
-      3: {
-        notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246",
-        ],
-        topics: [
-          {
-            title:
-              "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
-            description: "Basic concepts and importance",
-            videos: [
-              {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
-              },
-            ],
-          },
-        ],
-      },
+      // 3: {
+      //   notesLink: [
+      //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246",
+      //   ],
+      //   topics: [
+      //     {
+      //       title:
+      //         "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
+      //       description: "Basic concepts and importance",
+      //       videos: [
+      //         {
+      //           title: "Basic Concepts - Part 1",
+      //           url: "https://www.youtube.com/embed/example1",
+      //         },
+      //         {
+      //           title: "Implementation Overview - Part 2",
+      //           url: "https://www.youtube.com/embed/example2",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
     },
   },
   ac: {
@@ -902,61 +920,145 @@ const subjects: Subjects = {
           {
             title:
               "1.1 Information Security and its goals, Vulnerability Threats and Attacks ",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title:"Security Goals : Confidentiality, Integrity, Availability",
+                url: "https://www.youtube.com/embed/CrLRFn5O_F8?si=spYdUV6zNiwX-BRa",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title:"Types of Threats",
+                url:"https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI"
               },
+              {
+                title:"Security Attacks : Active and Passive Attack",
+                url:"https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S"
+              },
+              {
+                title:"Types of Active Attacks",
+                url:"https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn"
+              },
+              {
+                title:"Active Attack Vs Passive Attack ",
+                url:"https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1"
+              },
+              {
+                title:"Security Attacks - Part 2 (Refer Notes 1)",
+                url:"https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy"
+              }
             ],
           },
           {
             title:
               "1.2 Encryption and Decryption, Symmetric and Asymmetric Key Cryptography, Stream and Block Cipher, Cryptanalysis, Brute Force Attack",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Symmetric Key Cryptography",
+                url: "https://www.youtube.com/embed/fKFKThuUdnI?si=OqN1GqlX4F6J30Gc",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Asymmetric Key Cryptography",
+                url: "https://www.youtube.com/embed/yvf3lgBxdrA?si=4j-cipLIP0hFVslT",
               },
+              {
+                title:"Stream Cipher vs. Block Cipher",
+                url:"https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC"
+              }
             ],
           },
           {
             title:
               "1.3 Mathematics of Cryptography: Integer Arithmetic, The Extended Euclidean Algorithm, Modular Arithmetic,  Matrices, Linear Congruence ",
-            description: "Basic concepts and importance",
+            description: "Numerical based concepts- Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title:"Multiplicative Inverse",
+                url:"https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn"
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Modular Arithmetic (Part 1)",
+                url: "https://www.youtube.com/embed/M42uDLGRSpI?si=2ypr8CcrW7zFrT-M",
               },
+              {
+                title: "Modular Arithmetic (Part 2)",
+                url: "https://www.youtube.com/embed/P7P03gg3msE?si=oMhoDfElMtvVhrKs",
+              },
+              {
+                title:"Euclidean Algorithm",
+                url:"https://www.youtube.com/embed/yHwneN6zJmU?si=VCoIe-f-bTXwts3w"
+              },
+              {
+                title:"Extended Euclidean Algorithm",
+                url:"https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn"
+              }
             ],
           },
           {
             title:
               "1.4 Classical Cryptography: Substitution and Transposition Techniques: Any two from each",
-            description: "Basic concepts and importance",
+            description: "Numerical based concepts- Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title:"Caesar Cipher- Part 1",
+                url:"https://www.youtube.com/embed/JtbKh_12ctg?si=IW7ixglXgR5NJjWv"
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title:"Ceaser Cipher - Part 2",
+                url:"https://www.youtube.com/embed/na5rapg1XsI?si=TAsU6mB5GlBpTXLD"
               },
+              {
+                title:"Monoalphabetic Cipher",
+                url:"https://www.youtube.com/embed/J-utjSeUq_c?si=D6CTum76TfSGwE0N"
+              },
+              {
+                title:"Multiplicative Cipher",
+                url:"https://www.youtube.com/embed/G8D5daIhDmM?si=jqStFmWXOXo2Qg3W"
+              },
+              {
+                title:"Autokey Cipher",
+                url:"https://www.youtube.com/embed/-UgLXx-RIKE?si=oYPdIrDhDfhdhiQy"
+              },
+              {
+                title:"Affine Cipher",
+                url:"https://www.youtube.com/embed/7JNO9hQ71_U?si=Yn-UFSJUb0915l3-"
+              },
+              {
+                title:"Playfair Cipher - Part 1",
+                url:"https://www.youtube.com/embed/UURjVI5cw4g?si=AXDqjehMTkQTU0k8"
+              },
+              {
+                title:"Playfair Cipher - Part 2",
+                url:"https://www.youtube.com/embed/whEJfas9MAI?si=aAgfOAcPah37Y0sr"
+              },
+              {
+                title:"Playfair Cipher - Solved Example",
+                url:"https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3"
+              },
+              {
+                title:"Vigenere Cipher",
+                url:"https://www.youtube.com/embed/GQrKEwLZcPY?si=FK6WooDkwTIV-5gE"
+              },
+              {
+                title:"Vernam Cipher",
+                url:"https://www.youtube.com/embed/Qojvtgf7SQw?si=8WWWXEtloCouVTAo"
+              },
+              {
+                title:"One Time Pad (Vernam Cipher)",
+                url:"https://www.youtube.com/embed/VFMSnDZ7FEI?si=za8SOp3bmAdx0sta"
+              },
+              {
+                title:"One Time Pad - Solved Example",
+                url:"https://www.youtube.com/embed/rlrpcNYNPBY?si=bIBHYZdH51a157lB"
+              },
+              {
+                title:"Hill Cipher",
+                url:"https://www.youtube.com/embed/ytJAdBLNjn0?si=V9mx5-DLeY3z_xQv"
+              },
+              {
+                title:"Hill Cipher - Solved Example",
+                url:"https://www.youtube.com/embed/6T46sgty4Mk?si=4-xF3AOLYoAbVDcJ"
+              }
             ],
           },
         ],
@@ -972,43 +1074,71 @@ const subjects: Subjects = {
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
-              },
-              {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Rings, Fields and Finite Fields",
+                url: "https://www.youtube.com/embed/oBL-Cb5GxA0?si=sq428wOWhDPTiqM_",
               },
             ],
           },
           {
             title:
               "2.2 Modern Block Ciphers: Components of Modern Block Cipher, Product Ciphers, Diffusion and Confusion, Classes of Product Cipher DES: DES Structure, DES Analysis: Properties, Design Criteria, DES Strength and Weaknesses, DES Security, Multiple DES, 3DES ",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts- Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Introduction to DES",
+                url: "https://www.youtube.com/embed/j53iXhTSi_s?si=F_cj1-OYh3UdtuQk",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "Single Round of DES Algorithm",
+                url: "https://www.youtube.com/embed/nynAQ593HdU?si=iOCZapqb5AMRWbm3",
               },
+              {
+                title: "The F Function of DES (S block)",
+                url: "https://www.youtube.com/embed/OePPcJR--F4?si=kUGiXfMciBjVuPoF",
+              },
+              {
+                title: "Key Scheduling and Decryption in DES",
+                url: "https://www.youtube.com/embed/S-vLA7d1ORI?si=YjCR1YbZ3Xxadb9_",
+              },
+              {
+                title:"Avalanche Effect and the Strength of DES",
+                url:"https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL"
+              },
+              {
+                title:"Weakness of DES",
+                url:"https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y"
+              },
+              {
+                title:"Multiple Encryption and Triple DES",
+                url:"https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf"
+              },
+              {
+                title:"AES vs DES",
+                url:"https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx"
+              }
             ],
           },
           {
             title:
               "2.3 AES:  AES Structure,   Transformations, Key Expansion in AES-128, Key Expansion in AES-192 and AES-256, KeyExpansion Analysis,   Analysis   of   AES: Security, Implementation, Simplicity and Cost ",
-            description: "Basic concepts and importance",
+            description: "Theoretical based concepts - Important for exam ⭐",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "Introduction to AES",
+                url: "https://www.youtube.com/embed/3MPkc-PFSRI?si=3ty_MlCnVg8FU1cN",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "AES Encryption and Decryption",
+                url: "https://www.youtube.com/embed/4KiwoeDJFiA?si=EfCWLa861JCT5sf1",
               },
+              {
+                title:"AES Round Transformation ",
+                url:"https://www.youtube.com/embed/IpuvKyeCrvU?si=j_sZ4IoJhDDskz6A"
+              },
+              {
+                title:"AES Key Expansion",
+                url:"https://www.youtube.com/embed/0RxLUf4fxs8?si=Kl62SpaihIjBoKr1"
+              }
             ],
           },
         ],
