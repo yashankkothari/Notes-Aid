@@ -541,16 +541,16 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/wgb9_BJhaT0?si=OZcA13Cm4934JBAY",
               },
               {
-                title:"Quantifiers in FOL",
-                url:"https://www.youtube.com/embed/3WYCk2Pm1G4?si=gT9TYvMmeuI7MA5y"
+                title: "Quantifiers in FOL",
+                url: "https://www.youtube.com/embed/3WYCk2Pm1G4?si=gT9TYvMmeuI7MA5y",
               },
               {
-                title:"Quantifiers in FOL - Part 2",
-                url:"https://www.youtube.com/embed/x5GfV8ORetQ?si=elXaD-L8SgqNQ0FT"
+                title: "Quantifiers in FOL - Part 2",
+                url: "https://www.youtube.com/embed/x5GfV8ORetQ?si=elXaD-L8SgqNQ0FT",
               },
               {
-                title:"Inference rules for quantifiers",
-                url:"https://www.youtube.com/embed/cOhA95ukJf0?si=9vIjOwbqk2q94oPS"
+                title: "Inference rules for quantifiers",
+                url: "https://www.youtube.com/embed/cOhA95ukJf0?si=9vIjOwbqk2q94oPS",
               },
               {
                 title: "Inference in FOL",
@@ -567,17 +567,17 @@ const subjects: Subjects = {
             description: "Numerical based concepts- Important for Exam ⭐",
             videos: [
               {
-                title:"Unification basic",
-                url:"https://www.youtube.com/embed/S4Y2PMsoueg?si=ZFmcQGZFMom_WKtW"
+                title: "Unification basic",
+                url: "https://www.youtube.com/embed/S4Y2PMsoueg?si=ZFmcQGZFMom_WKtW",
               },
               {
-                title:"Unification in FOL ",
-                url:"https://www.youtube.com/embed/MbAsMEpJL-k?si=UZpg_mfBZyaNiNtC"
+                title: "Unification in FOL ",
+                url: "https://www.youtube.com/embed/MbAsMEpJL-k?si=UZpg_mfBZyaNiNtC",
               },
               {
-                title:"Unification in FOL- Part 2",
-                url:"https://www.youtube.com/embed/JEWtrRUa1g0?si=pATr6ktswTfWPND2"
-              }
+                title: "Unification in FOL- Part 2",
+                url: "https://www.youtube.com/embed/JEWtrRUa1g0?si=pATr6ktswTfWPND2",
+              },
             ],
           },
           // {
@@ -595,21 +595,22 @@ const subjects: Subjects = {
             description: "Numerical based concepts- Important for Exam ⭐",
             videos: [
               {
-                title:"Represent Facts or Knowledge",
-                url:"https://www.youtube.com/embed/tFYngFwDuJQ?si=Ys3STjMuCedzpdM3"
+                title: "Represent Facts or Knowledge",
+                url: "https://www.youtube.com/embed/tFYngFwDuJQ?si=Ys3STjMuCedzpdM3",
               },
               {
-                title:"Steps to Convert Propositional Logic Statement into CNF",
-                url:"https://www.youtube.com/embed/Jf2T8RdCYfA?si=LI2-3ESe_AHy6_OO"
+                title:
+                  "Steps to Convert Propositional Logic Statement into CNF",
+                url: "https://www.youtube.com/embed/Jf2T8RdCYfA?si=LI2-3ESe_AHy6_OO",
               },
               {
-                title:"Steps of Resolution",
-                url:"https://www.youtube.com/embed/CbI-Q2a5rUU?si=3xMm1l42WK06fpsv"
+                title: "Steps of Resolution",
+                url: "https://www.youtube.com/embed/CbI-Q2a5rUU?si=3xMm1l42WK06fpsv",
               },
               {
-                title:"Resolution : FOL to CNF , Resolution Tree",
-                url:"https://www.youtube.com/embed/7g6cB3kIHJI?si=yjpEr7fKxLm5pGEX"
-              }
+                title: "Resolution : FOL to CNF , Resolution Tree",
+                url: "https://www.youtube.com/embed/7g6cB3kIHJI?si=yjpEr7fKxLm5pGEX",
+              },
             ],
           },
           // {
@@ -660,33 +661,34 @@ const subjects: Subjects = {
             description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
-                title:"Security Goals : Confidentiality, Integrity, Availability",
+                title:
+                  "Security Goals : Confidentiality, Integrity, Availability",
                 url: "https://www.youtube.com/embed/CrLRFn5O_F8?si=spYdUV6zNiwX-BRa",
               },
               {
-                title:"Types of Threats",
-                url:"https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI"
+                title: "Types of Threats",
+                url: "https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI",
               },
               {
-                title:"Security Attacks : Active and Passive Attack",
-                url:"https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S"
+                title: "Security Attacks : Active and Passive Attack",
+                url: "https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S",
               },
               {
-                title:"Types of Active Attacks",
-                url:"https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn"
+                title: "Types of Active Attacks",
+                url: "https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn",
               },
               {
-                title:"Active Attack Vs Passive Attack ",
-                url:"https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1"
+                title: "Active Attack Vs Passive Attack ",
+                url: "https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1",
               },
               {
-                title:"Advanced Persistent threat APT",
-                url:"https://www.youtube.com/embed/49iU-0Focsk?si=wfNEacd6rJoUqQ63"
+                title: "Advanced Persistent threat APT",
+                url: "https://www.youtube.com/embed/49iU-0Focsk?si=wfNEacd6rJoUqQ63",
               },
               {
-                title:"Security Attacks - Part 2 (Refer Notes 1)",
-                url:"https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy"
-              }
+                title: "Security Attacks - Part 2 (Refer Notes 1)",
+                url: "https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy",
+              },
             ],
           },
           {
@@ -705,8 +707,7 @@ const subjects: Subjects = {
             ],
           },
           {
-            title:
-              "1.2 Types of Cryptography and other important concepts",
+            title: "1.2 Types of Cryptography and other important concepts",
             description: "Theoretical based concepts- Important for Exam ⭐",
             videos: [
               {
@@ -718,13 +719,13 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/yvf3lgBxdrA?si=4j-cipLIP0hFVslT",
               },
               {
-                title:"Stream Cipher vs. Block Cipher",
-                url:"https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC"
+                title: "Stream Cipher vs. Block Cipher",
+                url: "https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC",
               },
               {
-                title:"Cryptanalysis",
-                url:"https://www.youtube.com/embed/Kejs-saINOo?si=avO_PSSO_amRWuC-"
-              }
+                title: "Cryptanalysis",
+                url: "https://www.youtube.com/embed/Kejs-saINOo?si=avO_PSSO_amRWuC-",
+              },
             ],
           },
           {
@@ -748,27 +749,28 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/S-vLA7d1ORI?si=YjCR1YbZ3Xxadb9_",
               },
               {
-                title:"Avalanche Effect and the Strength of DES",
-                url:"https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL"
+                title: "Avalanche Effect and the Strength of DES",
+                url: "https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL",
               },
               {
-                title:"Weakness of DES",
-                url:"https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y"
+                title: "Weakness of DES",
+                url: "https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y",
               },
               {
-                title:"Multiple Encryption and Triple DES",
-                url:"https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf"
+                title: "Multiple Encryption and Triple DES",
+                url: "https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf",
               },
               {
-                title:"AES vs DES",
-                url:"https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx"
-              }
+                title: "AES vs DES",
+                url: "https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx",
+              },
             ],
           },
           {
             title:
               "1.2 Public Key Cryptography, Public Key Cryptography to Exchange Secret Keys",
-            description: "Theoretical and numerical based concepts - Important for Exam ⭐",
+            description:
+              "Theoretical and numerical based concepts - Important for Exam ⭐",
             videos: [
               {
                 title: "Public Key Cryptography",
@@ -779,21 +781,22 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/xw19eT5thIE?si=j93UHQsyDApxQvwL",
               },
               {
-                title:"Diffie Hellman Key Exchange Algorithm (Page 64 of the notes)",
-                url:"https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb"
+                title:
+                  "Diffie Hellman Key Exchange Algorithm (Page 64 of the notes)",
+                url: "https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb",
               },
               {
-                title:"Man-in-the-Middle Attack",
-                url:"https://www.youtube.com/embed/9OzbjSbzDlk?si=5AUhjD5BIlIDbjnE"
+                title: "Man-in-the-Middle Attack",
+                url: "https://www.youtube.com/embed/9OzbjSbzDlk?si=5AUhjD5BIlIDbjnE",
               },
               {
-                title:"Station to Station Key Agreement",
-                url:"https://www.youtube.com/embed/ucWKa_Mpae0?si=eqpy0VSN1L4xnRoU"
+                title: "Station to Station Key Agreement",
+                url: "https://www.youtube.com/embed/ucWKa_Mpae0?si=eqpy0VSN1L4xnRoU",
               },
               {
-                title:"RSA Algorithm (May come in Exam,Not Sure) ",
-                url:"https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-"
-              }
+                title: "RSA Algorithm (May come in Exam,Not Sure) ",
+                url: "https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-",
+              },
             ],
           },
           {
@@ -810,9 +813,9 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/0wFI04w345k?si=m3os4WpQy5qR2uyP",
               },
               {
-                title:"Digital Signatures",
-                url:"https://www.youtube.com/embed/yUeI4nqvNs8?si=Rus3TQnCNnHAehAE"
-              }
+                title: "Digital Signatures",
+                url: "https://www.youtube.com/embed/yUeI4nqvNs8?si=Rus3TQnCNnHAehAE",
+              },
             ],
           },
         ],
@@ -836,26 +839,24 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/JxC7U6dQ_u8?si=FxPAYFRE83tJBN3j",
               },
               {
-                title:"Buffer Overflow - Part 2",
-                url:"https://www.youtube.com/embed/mTrTwg03N9M?si=6jk8WbqzWecNV0Xo"
+                title: "Buffer Overflow - Part 2",
+                url: "https://www.youtube.com/embed/mTrTwg03N9M?si=6jk8WbqzWecNV0Xo",
               },
               {
-                title:"Stack Canary",
-                url:"https://www.youtube.com/embed/N7kGd76evsM?si=sWRBGNOXo1baOvAP"
+                title: "Stack Canary",
+                url: "https://www.youtube.com/embed/N7kGd76evsM?si=sWRBGNOXo1baOvAP",
               },
               {
-                title:"Incomplete Mediation",
-                url:"https://www.youtube.com/embed/JWFNNiOPMvg?si=u2Eu-1SvMvC2LsXR"
-              }
+                title: "Incomplete Mediation",
+                url: "https://www.youtube.com/embed/JWFNNiOPMvg?si=u2Eu-1SvMvC2LsXR",
+              },
             ],
           },
           {
-            title:"Time-of Check to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition (Refer Notes for these topics from page 32)",
+            title:
+              "Time-of Check to Time-of-Use,  Undocumented Access Point Off-by-One,  Error Integer Overflow, Unterminated Null-Terminated String, Parameter Length, Type, and Number,  Unsafe Utility Program, Race Condition (Refer Notes for these topics from page 32)",
             description: "Basic concepts and importance",
-            videos: [
-            
-              
-            ]
+            videos: [],
           },
           {
             title:
@@ -867,19 +868,17 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/eaVBvrhwbk0?si=I32-caYNZffQdZdJ",
               },
               {
-                title: "Virus & Related Threats - Worms, Trojan Horses, Countermeasures ",
+                title:
+                  "Virus & Related Threats - Worms, Trojan Horses, Countermeasures ",
                 url: "https://www.youtube.com/embed/ds5Cbw6QmXs?si=cgZvq9W1DEqvoLpP",
               },
-              
             ],
           },
           {
             title:
               "2.3 Countermeasures: Countermeasures for Users, Countermeasures for Developers,  Countermeasure Specifically for Security, Countermeasures that Dont Work (Refer Notes for these topics from page 73)",
             description: "Basic concepts and importance",
-            videos: [
-             
-            ],
+            videos: [],
           },
         ],
       },
@@ -923,29 +922,30 @@ const subjects: Subjects = {
             description: "Theoretical based concepts- Important for exam ⭐",
             videos: [
               {
-                title:"Security Goals : Confidentiality, Integrity, Availability",
+                title:
+                  "Security Goals : Confidentiality, Integrity, Availability",
                 url: "https://www.youtube.com/embed/CrLRFn5O_F8?si=spYdUV6zNiwX-BRa",
               },
               {
-                title:"Types of Threats",
-                url:"https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI"
+                title: "Types of Threats",
+                url: "https://www.youtube.com/embed/U5o2hOODCFw?si=X7Prmd7ZaBFoxEYI",
               },
               {
-                title:"Security Attacks : Active and Passive Attack",
-                url:"https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S"
+                title: "Security Attacks : Active and Passive Attack",
+                url: "https://www.youtube.com/embed/szHSgMWYSiQ?si=tfSMssZx2xdXUM6S",
               },
               {
-                title:"Types of Active Attacks",
-                url:"https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn"
+                title: "Types of Active Attacks",
+                url: "https://www.youtube.com/embed/tSkh7zqbQwg?si=znmsdTMrmZQIF2Vn",
               },
               {
-                title:"Active Attack Vs Passive Attack ",
-                url:"https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1"
+                title: "Active Attack Vs Passive Attack ",
+                url: "https://www.youtube.com/embed/mjaY0ExSmFU?si=3bCLW7kXPmHz3Mq1",
               },
               {
-                title:"Security Attacks - Part 2 (Refer Notes 1)",
-                url:"https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy"
-              }
+                title: "Security Attacks - Part 2 (Refer Notes 1)",
+                url: "https://www.youtube.com/embed/yIm0Ol9Dg4Y?si=I0sMutl6IGnf-Hmy",
+              },
             ],
           },
           {
@@ -962,9 +962,9 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/yvf3lgBxdrA?si=4j-cipLIP0hFVslT",
               },
               {
-                title:"Stream Cipher vs. Block Cipher",
-                url:"https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC"
-              }
+                title: "Stream Cipher vs. Block Cipher",
+                url: "https://www.youtube.com/embed/3adBPqIB4Tw?si=VtpSAtt9XW3f2tEC",
+              },
             ],
           },
           {
@@ -973,8 +973,8 @@ const subjects: Subjects = {
             description: "Numerical based concepts- Important for exam ⭐",
             videos: [
               {
-                title:"Multiplicative Inverse",
-                url:"https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn"
+                title: "Multiplicative Inverse",
+                url: "https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn",
               },
               {
                 title: "Modular Arithmetic (Part 1)",
@@ -985,13 +985,13 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/P7P03gg3msE?si=oMhoDfElMtvVhrKs",
               },
               {
-                title:"Euclidean Algorithm",
-                url:"https://www.youtube.com/embed/yHwneN6zJmU?si=VCoIe-f-bTXwts3w"
+                title: "Euclidean Algorithm",
+                url: "https://www.youtube.com/embed/yHwneN6zJmU?si=VCoIe-f-bTXwts3w",
               },
               {
-                title:"Extended Euclidean Algorithm",
-                url:"https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn"
-              }
+                title: "Extended Euclidean Algorithm",
+                url: "https://www.youtube.com/embed/YwaQ4m1eHQo?si=0K4wW2moIyDiNiMn",
+              },
             ],
           },
           {
@@ -1000,65 +1000,65 @@ const subjects: Subjects = {
             description: "Numerical based concepts- Important for exam ⭐",
             videos: [
               {
-                title:"Caesar Cipher- Part 1",
-                url:"https://www.youtube.com/embed/JtbKh_12ctg?si=IW7ixglXgR5NJjWv"
+                title: "Caesar Cipher- Part 1",
+                url: "https://www.youtube.com/embed/JtbKh_12ctg?si=IW7ixglXgR5NJjWv",
               },
               {
-                title:"Ceaser Cipher - Part 2",
-                url:"https://www.youtube.com/embed/na5rapg1XsI?si=TAsU6mB5GlBpTXLD"
+                title: "Ceaser Cipher - Part 2",
+                url: "https://www.youtube.com/embed/na5rapg1XsI?si=TAsU6mB5GlBpTXLD",
               },
               {
-                title:"Monoalphabetic Cipher",
-                url:"https://www.youtube.com/embed/J-utjSeUq_c?si=D6CTum76TfSGwE0N"
+                title: "Monoalphabetic Cipher",
+                url: "https://www.youtube.com/embed/J-utjSeUq_c?si=D6CTum76TfSGwE0N",
               },
               {
-                title:"Multiplicative Cipher",
-                url:"https://www.youtube.com/embed/G8D5daIhDmM?si=jqStFmWXOXo2Qg3W"
+                title: "Multiplicative Cipher",
+                url: "https://www.youtube.com/embed/G8D5daIhDmM?si=jqStFmWXOXo2Qg3W",
               },
               {
-                title:"Autokey Cipher",
-                url:"https://www.youtube.com/embed/-UgLXx-RIKE?si=oYPdIrDhDfhdhiQy"
+                title: "Autokey Cipher",
+                url: "https://www.youtube.com/embed/-UgLXx-RIKE?si=oYPdIrDhDfhdhiQy",
               },
               {
-                title:"Affine Cipher",
-                url:"https://www.youtube.com/embed/7JNO9hQ71_U?si=Yn-UFSJUb0915l3-"
+                title: "Affine Cipher",
+                url: "https://www.youtube.com/embed/7JNO9hQ71_U?si=Yn-UFSJUb0915l3-",
               },
               {
-                title:"Playfair Cipher - Part 1",
-                url:"https://www.youtube.com/embed/UURjVI5cw4g?si=AXDqjehMTkQTU0k8"
+                title: "Playfair Cipher - Part 1",
+                url: "https://www.youtube.com/embed/UURjVI5cw4g?si=AXDqjehMTkQTU0k8",
               },
               {
-                title:"Playfair Cipher - Part 2",
-                url:"https://www.youtube.com/embed/whEJfas9MAI?si=aAgfOAcPah37Y0sr"
+                title: "Playfair Cipher - Part 2",
+                url: "https://www.youtube.com/embed/whEJfas9MAI?si=aAgfOAcPah37Y0sr",
               },
               {
-                title:"Playfair Cipher - Solved Example",
-                url:"https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3"
+                title: "Playfair Cipher - Solved Example",
+                url: "https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3",
               },
               {
-                title:"Vigenere Cipher",
-                url:"https://www.youtube.com/embed/GQrKEwLZcPY?si=FK6WooDkwTIV-5gE"
+                title: "Vigenere Cipher",
+                url: "https://www.youtube.com/embed/GQrKEwLZcPY?si=FK6WooDkwTIV-5gE",
               },
               {
-                title:"Vernam Cipher",
-                url:"https://www.youtube.com/embed/Qojvtgf7SQw?si=8WWWXEtloCouVTAo"
+                title: "Vernam Cipher",
+                url: "https://www.youtube.com/embed/Qojvtgf7SQw?si=8WWWXEtloCouVTAo",
               },
               {
-                title:"One Time Pad (Vernam Cipher)",
-                url:"https://www.youtube.com/embed/VFMSnDZ7FEI?si=za8SOp3bmAdx0sta"
+                title: "One Time Pad (Vernam Cipher)",
+                url: "https://www.youtube.com/embed/VFMSnDZ7FEI?si=za8SOp3bmAdx0sta",
               },
               {
-                title:"One Time Pad - Solved Example",
-                url:"https://www.youtube.com/embed/rlrpcNYNPBY?si=bIBHYZdH51a157lB"
+                title: "One Time Pad - Solved Example",
+                url: "https://www.youtube.com/embed/rlrpcNYNPBY?si=bIBHYZdH51a157lB",
               },
               {
-                title:"Hill Cipher",
-                url:"https://www.youtube.com/embed/ytJAdBLNjn0?si=V9mx5-DLeY3z_xQv"
+                title: "Hill Cipher",
+                url: "https://www.youtube.com/embed/ytJAdBLNjn0?si=V9mx5-DLeY3z_xQv",
               },
               {
-                title:"Hill Cipher - Solved Example",
-                url:"https://www.youtube.com/embed/6T46sgty4Mk?si=4-xF3AOLYoAbVDcJ"
-              }
+                title: "Hill Cipher - Solved Example",
+                url: "https://www.youtube.com/embed/6T46sgty4Mk?si=4-xF3AOLYoAbVDcJ",
+              },
             ],
           },
         ],
@@ -1101,21 +1101,21 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/S-vLA7d1ORI?si=YjCR1YbZ3Xxadb9_",
               },
               {
-                title:"Avalanche Effect and the Strength of DES",
-                url:"https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL"
+                title: "Avalanche Effect and the Strength of DES",
+                url: "https://www.youtube.com/embed/kF_h9gl-vyw?si=hkD6gVLvuYRKHFVL",
               },
               {
-                title:"Weakness of DES",
-                url:"https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y"
+                title: "Weakness of DES",
+                url: "https://www.youtube.com/embed/4Uo7kivJ0EQ?si=wv0QwQJDul7rdz5y",
               },
               {
-                title:"Multiple Encryption and Triple DES",
-                url:"https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf"
+                title: "Multiple Encryption and Triple DES",
+                url: "https://www.youtube.com/embed/4R_kocR1roM?si=t0CNzGjp8CKfXcGf",
               },
               {
-                title:"AES vs DES",
-                url:"https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx"
-              }
+                title: "AES vs DES",
+                url: "https://www.youtube.com/embed/BPXEy6FzoWU?si=9Jj_F51-6-KzUSdx",
+              },
             ],
           },
           {
@@ -1132,13 +1132,13 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/4KiwoeDJFiA?si=EfCWLa861JCT5sf1",
               },
               {
-                title:"AES Round Transformation ",
-                url:"https://www.youtube.com/embed/IpuvKyeCrvU?si=j_sZ4IoJhDDskz6A"
+                title: "AES Round Transformation ",
+                url: "https://www.youtube.com/embed/IpuvKyeCrvU?si=j_sZ4IoJhDDskz6A",
               },
               {
-                title:"AES Key Expansion",
-                url:"https://www.youtube.com/embed/0RxLUf4fxs8?si=Kl62SpaihIjBoKr1"
-              }
+                title: "AES Key Expansion",
+                url: "https://www.youtube.com/embed/0RxLUf4fxs8?si=Kl62SpaihIjBoKr1",
+              },
             ],
           },
         ],
@@ -1215,18 +1215,37 @@ const subjects: Subjects = {
 
         topics: [
           {
-            title: "Virtualization",
+            title:
+              "2.1 Introduction, Characteristics of Virtualized Environments ,Taxonomy of Virtualization Techniques, Virtualization and Cloud Computing, Pros and Cons of Virtualization",
             description: "Basic concepts and importance",
             videos: [
               {
-                title: "Basic Concepts - Part 1",
-                url: "https://www.youtube.com/embed/example1",
+                title: "2.1.1 Introduction to Virtualization",
+                url: "https://www.youtube.com/embed/7yXlLgZkiJM?si=34s0XW3xX03tmn0o",
               },
               {
-                title: "Implementation Overview - Part 2",
-                url: "https://www.youtube.com/embed/example2",
+                title: "2.1.2 Characteristics of Virtualized Environments",
+                url: "https://www.youtube.com/embed/smV9-Pd2FMk?si=_6n-IkrgniK7K-8W",
+              },
+              {
+                title: "2.1.3 Taxonomy of Virtualization Techniques",
+                url: "https://www.youtube.com/embed/HQ_0kAJWweM?si=HTu30XsiCYMwKrLy",
               },
             ],
+          },
+
+          {
+            title:
+              "2.2 Technology Examples, Xen: Para virtualization, VMware: Full Virtualization, Microsoft Hyper-V",
+            description: "Basic concepts and importance",
+            videos: [],
+          },
+
+          {
+            title:
+              "2.3 Cloud Computing Architecture : Cloud Reference Model, Types of Clouds, Economics of the Cloud, Open Challenges",
+            description: "Basic concepts and importance",
+            videos: [],
           },
         ],
       },
