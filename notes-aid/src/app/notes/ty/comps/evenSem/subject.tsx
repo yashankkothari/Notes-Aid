@@ -1238,14 +1238,36 @@ const subjects: Subjects = {
             title:
               "2.2 Technology Examples, Xen: Para virtualization, VMware: Full Virtualization, Microsoft Hyper-V",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              {
+                title: "2.2.1  Para virtualization",
+                url: "https://www.youtube.com/embed/-rrnt79YPZ4?si=_9bM1qtFn0QRQj9X",
+              },
+
+              {
+                title: "2.2.2 Full Virtualization",
+                url: "https://www.youtube.com/embed/wh9ZUxiB2j8?si=QKOGLI91FX_mMas3",
+              },
+
+              {
+                title: "2.2.3 Microsoft Hyper V",
+                url: "https://www.youtube.com/embed/RCIVFJLqy-s?si=sBgBWwnE2aZ20CcZ",
+              },
+
+              
+            ],
           },
 
           {
             title:
               "2.3 Cloud Computing Architecture : Cloud Reference Model, Types of Clouds, Economics of the Cloud, Open Challenges",
             description: "Basic concepts and importance",
-            videos: [],
+            videos: [
+              // ref models 
+              // https://www.youtube.com/embed/GKtCwEQqaMI?si=TDMH7ltS7Kknn4Wl
+
+              
+            ],
           },
         ],
       },
