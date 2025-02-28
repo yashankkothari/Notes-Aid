@@ -90,7 +90,22 @@ const subjects: Subjects = {
                 title: "Video 1 - Energy and Power ",
                 url: "https://www.youtube.com/embed/yGEEvn8CzrU?si=22aPNcgJR-FcKEQu",
               },
-
+              {
+                title:"Block Diagram & Signal Flow Graph",
+                url:"https://www.youtube.com/embed/BDI4zf9Azpk?si=OOfMbLy-cbIG4ib7"
+              },
+              {
+                title:"Block Diagram & Signal Flow Graph - Part 2",
+                url:"https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
+              },
+              {
+                title:"Block Diagram & Signal Flow Graph - Part 2",
+                url:"https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
+              },
+              {
+                title:"Block Diagram & Signal Flow Graph - Part 3",
+                url:"https://www.youtube.com/embed/BYMc-YEy89E?si=6kmCxOIYxiqTARVB"
+              },
               {
                 title: "Video 2 (Classification of Discrete Time System) 1",
                 url: "https://www.youtube.com/embed/ejKmKNujx7c?si=TCACor4C2mrW4Qqk",
@@ -221,17 +236,20 @@ const subjects: Subjects = {
           },
           {
             title:
-              "2.2.1 Spatial domain enhancement techniques: Point processing, Neighbourhood processing, spatial domain filtering, zooming. ",
+              "2.2.1 Spatial domain enhancement techniques: Point processing",
             description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
               {
-                title:
-                  "Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
+                title:"Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
                 url: "https://www.youtube.com/embed/FMDmXz6ynvk?si=7qKfBYj1VAyfMPzh",
               },
               {
                 title: "Contrast Stretching or Contrast Adjustment",
                 url: "https://www.youtube.com/embed/YJIgFMoC_yg?si=KVVwA_UX-rubmTJp",
+              },
+              {
+                title:" Digital Negative, Bit Plane Slicing and Contrast Stretching- Part 2",
+                url:"https://www.youtube.com/embed/pu-897YlpKM?si=lSUzYYZv4185jtGH"
               },
               {
                 title: "Grey Level Slicing (Intensity slicing)",
@@ -816,6 +834,10 @@ const subjects: Subjects = {
                 title: "Digital Signatures",
                 url: "https://www.youtube.com/embed/yUeI4nqvNs8?si=Rus3TQnCNnHAehAE",
               },
+              {
+                title:"Digital Certificates",
+                url:"https://www.youtube.com/embed/stsWa9A3sOM?si=EAXhnuST9lHWRXJ6"
+              }
             ],
           },
         ],

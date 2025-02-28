@@ -17,17 +17,20 @@ const Footer = () => {
           </div>
             <div className="flex gap-1 items-center text-sm text-gray-600 dark:text-gray-400">
             <Rocket className="w-4 h-4 mx-1 text-indigo-500 dark:text-cyan-400 animate-bounce" /> {" "} Engineered by 
-            <Link href="https://github.com/veddsavla" target="_blank" className=" text-blue-400 underline hover:text-blue-700">
-              Vedansh
-            </Link>
-            , 
+           
+          
             <Link href="https://github.com/MinavKaria" target="_blank" className=" text-blue-400 underline hover:text-blue-700">
               Minav
+            </Link>
+            , 
+            <Link href="https://github.com/veddsavla" target="_blank" className=" text-blue-400 underline hover:text-blue-700">
+              Vedansh
             </Link>
             & 
             <Link href="https://github.com/aarushsaboo" target="_blank" className=" text-blue-400 underline hover:text-blue-700">
               Aarush
             </Link>
+          
             </div>
         </div>
       </div>
