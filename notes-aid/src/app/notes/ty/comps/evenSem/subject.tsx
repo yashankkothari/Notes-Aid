@@ -326,7 +326,7 @@ const subjects: Subjects = {
     modules: {
       1: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%201%20(1).pdf?alt=media&token=728d59fb-f89c-4605-bd96-564ddd73c86c",
+          "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea5TxRERSnNMk8dJziSwhr4B59EW4oP51sNa7uOmTKA1ZA?e=JueEIi",
         ],
         topics: [
           {
@@ -392,7 +392,7 @@ const subjects: Subjects = {
       },
       2: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%202%20(1).pdf?alt=media&token=ab8162a7-3e38-4ffa-90e3-b2b5281383f5",
+          "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/EVTpki7L6b1Nsq50m8uOL6EB-8Td3LndwzkLk-VMQCbTbg?e=CYBbWp",
         ],
         topics: [
           {
@@ -505,12 +505,12 @@ const subjects: Subjects = {
       // },
       4: {
         notesLink: [
-          "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Module%204.pdf?alt=media&token=b4beb656-97bf-480a-b8ae-c77fb95da5a4",
+          "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea0c7C72Nv9DhETaPxfCfZgB_JiRc_fBV3FeMcCWRRMuqw?e=DoEypQ",
         ],
         topics: [
           {
             title: "Knowledge based Agents",
-            description: "Theoretical based concepts- Important for Exam ⭐",
+            description: "Theoretical based concepts",
             videos: [
               {
                 title: "Knowledge based Agents",
@@ -799,8 +799,7 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/xw19eT5thIE?si=j93UHQsyDApxQvwL",
               },
               {
-                title:
-                  "Diffie Hellman Key Exchange Algorithm (Page 64 of the notes)",
+                title:"Diffie Hellman Key Exchange Algorithm (Page 64 of the notes) - Added in Numericals as well",
                 url: "https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb",
               },
               {
@@ -812,7 +811,7 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/ucWKa_Mpae0?si=eqpy0VSN1L4xnRoU",
               },
               {
-                title: "RSA Algorithm (May come in Exam,Not Sure) ",
+                title: "RSA Algorithm- Added in Numericals as well",
                 url: "https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-",
               },
             ],
@@ -838,6 +837,61 @@ const subjects: Subjects = {
                 title:"Digital Certificates",
                 url:"https://www.youtube.com/embed/stsWa9A3sOM?si=EAXhnuST9lHWRXJ6"
               }
+            ],
+          },
+          {
+            title:
+              "Numericals: RSA Algorithm, Ciphers, Diffie Hellman Key Exchange Algorithm",
+            description: "Theoretical based concepts",
+            videos: [
+              {
+                title: "Caesar Cipher- Part 1",
+                url: "https://www.youtube.com/embed/JtbKh_12ctg?si=IW7ixglXgR5NJjWv",
+              },
+              {
+                title: "Ceaser Cipher - Part 2",
+                url: "https://www.youtube.com/embed/na5rapg1XsI?si=TAsU6mB5GlBpTXLD",
+              },
+              {
+                title: "Monoalphabetic Substitution Cipher",
+                url: "https://www.youtube.com/embed/J-utjSeUq_c?si=D6CTum76TfSGwE0N",
+              },
+              {
+                title: "Multiplicative Cipher",
+                url: "https://www.youtube.com/embed/G8D5daIhDmM?si=jqStFmWXOXo2Qg3W",
+              },
+              {
+                title: "Playfair Cipher - Part 1",
+                url: "https://www.youtube.com/embed/UURjVI5cw4g?si=AXDqjehMTkQTU0k8",
+              },
+              {
+                title: "Playfair Cipher - Part 2",
+                url: "https://www.youtube.com/embed/whEJfas9MAI?si=aAgfOAcPah37Y0sr",
+              },
+              {
+                title: "Playfair Cipher - Solved Example",
+                url: "https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3",
+              },
+              {
+                title:"Rail Fence Cipher",
+                url:"https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
+              },
+              {
+                title:"Row Column or Columnar Transposition Cipher",
+                url:"https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
+              },
+              {
+                title:"Row Column or Columnar Transposition Cipher - Solved Example",
+                url:"https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
+              },
+              {
+                title: "RSA Algorithm",
+                url: "https://www.youtube.com/embed/di3OXhHMZmI?si=eS45PGfIBXdesgu-",
+              },
+              {
+                title: "Diffie Hellman Key Exchange Algorithm (Page 64 of the notes)",
+                url: "https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb",
+              },
             ],
           },
         ],
@@ -1058,6 +1112,18 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3",
               },
               {
+                title:"Rail Fence Cipher",
+                url:"https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
+              },
+              {
+                title:"Row Column or Columnar Transposition Cipher",
+                url:"https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
+              },
+              {
+                title:"Row Column or Columnar Transposition Cipher - Solved Example",
+                url:"https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
+              },
+              {
                 title: "Vigenere Cipher",
                 url: "https://www.youtube.com/embed/GQrKEwLZcPY?si=FK6WooDkwTIV-5gE",
               },
@@ -1081,6 +1147,7 @@ const subjects: Subjects = {
                 title: "Hill Cipher - Solved Example",
                 url: "https://www.youtube.com/embed/6T46sgty4Mk?si=4-xF3AOLYoAbVDcJ",
               },
+             
             ],
           },
         ],

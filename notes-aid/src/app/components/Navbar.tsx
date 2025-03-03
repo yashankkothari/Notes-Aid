@@ -25,9 +25,9 @@ const Navbar = () => {
           <Link href="/">
             <div className="flex items-center space-x-2 cursor-pointer">
               <NotebookPen className="w-6 h-6 text-gray-700 dark:text-gray-200" />
-              <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-                Notes-Aid
-              </h1>
+                <h1 className="text-xl font-bold text-gray-800 dark:text-white">
+                Notes-Aid<sup className="text-xs font-normal text-gray-500 dark:text-gray-400 mx-2">Beta</sup>
+                </h1>
             </div>
           </Link>
         </div>
