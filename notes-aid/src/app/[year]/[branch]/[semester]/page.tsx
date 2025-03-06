@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import { ThemeProvider } from "next-themes";
 // import ModuleCard from "../components/ModuleCard";
 // import TopicList from "../components/TopicList";
 // import Navbar from "../components/Navbar";
@@ -9,7 +8,6 @@ import { ThemeProvider } from "next-themes";
 // import pyqLinks from "../notes/pyq";
 import ModuleCard from "@/app/components/ModuleCard";
 import TopicList from "@/app/components/TopicList";
-import Navbar from "@/app/components/Navbar";
 import NotesData from "@/app/notes/data";
 import pyqLinks from "@/app/notes/pyq";
 
@@ -86,9 +84,9 @@ const EngineeringCurriculum: React.FC = () => {
 
   if (!subjects || Object.keys(subjects).length === 0) {
     return (
-      <ThemeProvider attribute="class">
+  
         <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
-          <Navbar />
+        
           <div className="w-full min-h-[calc(100vh-4rem)] flex items-center justify-center p-4 md:p-6">
             <div className="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 text-center">
               <h2 className="text-lg md:text-2xl font-bold mb-4 text-black dark:text-white">
@@ -101,14 +99,12 @@ const EngineeringCurriculum: React.FC = () => {
             </div>
           </div>
         </div>
-      </ThemeProvider>
     );
   }
 
   return (
-    <ThemeProvider attribute="class">
+ 
       <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
-        <Navbar />
         <div className="w-full p-4 md:p-6">
           <div className="max-w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 md:p-6">
             <div className="mb-6 md:mb-8 text-center md:text-left">
@@ -226,7 +222,6 @@ const EngineeringCurriculum: React.FC = () => {
           </div>
         </div>
       </div>
-    </ThemeProvider>
   );
 };
 

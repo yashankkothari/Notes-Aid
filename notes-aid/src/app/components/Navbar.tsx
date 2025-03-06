@@ -12,9 +12,8 @@ const Navbar = () => {
     setMounted(true)
   }, [])
 
-  // Early return to prevent hydration mismatch
+
   if (!mounted) {
-    // Return a skeleton version with matching structure but no theme-dependent content
     return null
   }
 
@@ -34,7 +33,10 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-4">
           <button
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => {
+              console.log("Theme toggled")
+              setTheme(theme === "dark" ? "light" : "dark")
+            }}
             className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
           >
             {theme === "dark" ? (

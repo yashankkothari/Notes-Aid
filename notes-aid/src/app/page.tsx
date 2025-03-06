@@ -9,8 +9,7 @@ import {
   Calendar,
   NotebookText,
 } from "lucide-react"
-import { ThemeProvider } from "next-themes"
-import Navbar from "./components/Navbar"
+
 
 const branches = [
   { value: "comps", label: "Computer Science" },
@@ -43,7 +42,7 @@ export default function MainPage() {
     const timer = setTimeout(() => {
       setIsLoading(false)
       setShowForm(true)
-    }, 1500)
+    }, 750)
 
     return () => clearTimeout(timer)
   }, [])
@@ -60,9 +59,7 @@ export default function MainPage() {
   }
 
   return (
-    <ThemeProvider attribute="class">
-      <div className="min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] flex flex-col transition-colors duration-300">
-        <Navbar />
+    <div className="min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] flex flex-col transition-colors duration-300">
         <div
           className={`flex-1 grid place-items-center p-4 transition-all duration-500 ${
             isLoading ? "opacity-0" : "opacity-100"
@@ -173,6 +170,7 @@ export default function MainPage() {
           )}
         </div>
       </div>
-    </ThemeProvider>
+    
+
   )
 }
