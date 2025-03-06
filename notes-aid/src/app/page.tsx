@@ -27,8 +27,8 @@ const years = [
 ]
 
 const semesters = [
-  { value: "oddSem", label: "Odd Semester" },
-  { value: "evenSem", label: "Even Semester" },
+  { value: "odd", label: "Odd Semester" },
+  { value: "even", label: "Even Semester" },
 ]
 
 export default function MainPage() {
@@ -54,7 +54,7 @@ export default function MainPage() {
         `Selected Branch: ${selectedBranch}, Selected Year: ${selectedYear}, Semester: ${selectedSemester}`
       )
       router.push(
-        `/${selectedYear}?branch=${selectedBranch}&sem=${selectedSemester}`
+        `/${selectedYear}/${selectedBranch}/${selectedSemester}`
       )
     }
   }

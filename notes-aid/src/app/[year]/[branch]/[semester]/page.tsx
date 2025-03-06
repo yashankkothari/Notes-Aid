@@ -1,12 +1,18 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { ThemeProvider } from "next-themes";
-import ModuleCard from "../components/ModuleCard";
-import TopicList from "../components/TopicList";
-import Navbar from "../components/Navbar";
-import NotesData from "../notes/data";
-import pyqLinks from "../notes/pyq";
+// import ModuleCard from "../components/ModuleCard";
+// import TopicList from "../components/TopicList";
+// import Navbar from "../components/Navbar";
+// import NotesData from "../notes/data";
+// import pyqLinks from "../notes/pyq";
+import ModuleCard from "@/app/components/ModuleCard";
+import TopicList from "@/app/components/TopicList";
+import Navbar from "@/app/components/Navbar";
+import NotesData from "@/app/notes/data";
+import pyqLinks from "@/app/notes/pyq";
+
 
 interface Topic {
   title: string;
@@ -51,11 +57,12 @@ interface NotesDataType {
 }
 
 const EngineeringCurriculum: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const searchParam = useSearchParams();
-  const branch = searchParam.get("branch") || "";
-  const sem = searchParam.get("sem") || "";
-  // console.log(branch, sem)
+  const { year:slug,branch,semester:sem } = useParams<{ year: string,branch:string,semester:string }>();
+//   const searchParam = useSearchParams();
+//   const branch = searchParam.get("branch") || "";
+//   const sem = searchParam.get("sem") || "";
+
+  console.log(branch, sem,slug)
 
   const typedNotesData = NotesData as NotesDataType;
 

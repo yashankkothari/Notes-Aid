@@ -5,58 +5,58 @@ import subjects_it_ty_even from "./ty/it/evenSem/subject";
 const NotesData = {
   fy: {
     comps: {
-      oddSem: subjects_comps_fy_odd,
-      evenSem: {},
+      odd: subjects_comps_fy_odd,
+      even: {},
     },
     it: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
     excp: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
   },
   sy: {
     comps: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
     it: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
     excp: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
   },
   ty: {
     comps: {
-      oddSem: {},
-      evenSem: subjects_comps_ty_even,
+      odd: {},
+      even: subjects_comps_ty_even,
     },
     it: {
-      oddSem: {},
-      evenSem: subjects_it_ty_even,
+      odd: {},
+      even: subjects_it_ty_even,
     },
     excp: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
   },
   ly: {
     comps: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
     it: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
     excp: {
-      oddSem: {},
-      evenSem: {},
+      odd: {},
+      even: {},
     },
   },
 }
