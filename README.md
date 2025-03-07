@@ -13,7 +13,7 @@ A **modern platform** to access academic notes with **embedded YouTube videos an
 ## **👥 Contributors**  
 We appreciate the contributions of our amazing team:  
 
-<a href="https://github.com/MinavKaria/Ratna-Supermarket/graphs/contributors"> <img align="center" src="https://contrib.rocks/image?max=100&repo=MinavKaria/Notes-Aid"/> </a>
+<a href="https://github.com/MinavKaria/Notes-Aid/graphs/contributors"> <img align="center" src="https://contrib.rocks/image?max=100&repo=MinavKaria/Notes-Aid"/> </a>
 
 🙌 Feel free to contribute and improve Notes-Aid!  
 
