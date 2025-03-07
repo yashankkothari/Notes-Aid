@@ -203,8 +203,8 @@ const EngineeringCurriculum: React.FC = () => {
                   {selectedModule || 1}
                 </h2>
                 <p className=" text-red-500 mb-4">
-                  These videos are added with respect to the college notes, So
-                  you are insisted to refer the college notes as well.
+                  These videos only serve as explanations for the college notes, so
+                  please refer to the notes to study.
                 </p>
                 <TopicList
                   topics={
