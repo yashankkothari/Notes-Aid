@@ -4,6 +4,7 @@ import {
   EarthLock,
   MessageSquareLock,
   Server,
+  Database,
 } from "lucide-react";
 
 import { Subjects } from "@/app/interfaces/Subject";
@@ -1356,6 +1357,50 @@ const subjects: Subjects = {
               // https://www.youtube.com/embed/GKtCwEQqaMI?si=TDMH7ltS7Kknn4Wl
 
               
+            ],
+          },
+        ],
+      },
+    },
+  },
+  adm: {
+    name: "Honors - Advanced Data Mining",
+    icon: Database,
+    color: "blue",
+    modules: {
+      1: {
+        notesLink: [
+          "https://drive.google.com/file/d/1yMCgNSGgRlqBfouRmyNXgXEEaPRjOL86/view?usp=sharing",
+          "https://drive.google.com/file/d/1zITv6KHvz5x1Hjg0kp2hGqcQ9dQGkpZE/view?usp=sharing",
+          "https://drive.google.com/file/d/1lXXUJ_Di70sqcGYLpZ1xXTJhSWN-3VcF/view?usp=drive_link",
+          "https://drive.google.com/file/d/1n7Lv6A7qlkk0iWzOarnP0z7gGeGvOYPu/view?usp=drive_link",
+          "https://drive.google.com/file/d/1yOYbvs03ULo5rbgkxuucQVc4gINnRQFb/view?usp=drive_link"
+        ],
+        topics: [
+          {
+            title: "Data Mining Introduction",
+            description: "Basic concepts and importance",
+            videos: [
+              {
+                title: "1.1 Introduction to Data Mining",
+                url: "https://youtu.be/z6t_hFDtvew?si=pIfgtc7sejqsHs_h",
+              },
+              {
+                title: "1.2 Knowledge Discovery in Databases (KDD)",
+                url: "https://youtu.be/L9PfNWIQ1bY?si=cqZXebuY62ECV-pJ",
+              },
+              {
+                title: "1.3 Data Mining Techniques",
+                url: "https://youtu.be/dUm3ptTQr0Q?si=5D3FJ85EFUfa82w4",
+              },
+              {
+                title: "1.4 Distributed Computing",
+                url: "https://youtu.be/UDuuMEP4J5U?si=0OMprH6uf-xAtgRZ",
+              },
+              {
+                title: "1.5 Introduction to Hadoop",
+                url: "https://youtu.be/aReuLtY0YMI?si=jcq-i_iDJstNcoYp",
+              },
             ],
           },
         ],
