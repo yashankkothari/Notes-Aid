@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { BookOpen, ChevronDown } from "lucide-react";
 import VideoAccordion from "./VideoAccordion";
-
+import ProgressBar from "./ProgressBar";
 interface Topic {
   title: string;
   description: string;
@@ -30,7 +30,13 @@ const TopicList: React.FC<TopicListProps> = ({
 
   const toggleTopic = (index: number) => {
     setOpenTopicIndex(openTopicIndex === index ? null : index);
+    // setDone((x)=>x+10);
   };
+
+
+  useEffect(() => {
+    setOpenTopicIndex(null);
+  }, [topics]);
 
   if (!topics || topics.length === 0) {
     return (
@@ -41,6 +47,10 @@ const TopicList: React.FC<TopicListProps> = ({
       </div>
     );
   }
+  const total = 100; 
+  // const [done, setDone] = useState(70);
+  
+
 
   return (
     <div className="space-y-3">
@@ -73,10 +83,12 @@ const TopicList: React.FC<TopicListProps> = ({
           key={index}
           className="bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-700 overflow-hidden"
         >
+            <ProgressBar total={total} completed={70}  />
           <div
             onClick={() => toggleTopic(index)}
             className="p-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors"
           >
+             
             <div className="flex items-start gap-3">
               <div className="p-2 bg-blue-50 dark:bg-blue-900 rounded">
                 <BookOpen className="w-4 h-4 text-blue-500 dark:text-blue-400" />

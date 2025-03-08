@@ -5,6 +5,7 @@ import Metrics from "./metrics";
 import Footer from './components/Footer';
 import Navbar from "./components/Navbar";
 import { Inter, Poppins, JetBrains_Mono } from "next/font/google";
+import SessionProvider from "./components/SessionProvider";
 
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -81,12 +82,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${poppins.variable} ${jetbrainsMono.variable}`}>
       <body>
+        <SessionProvider>
         <ThemeProvider attribute="class" >
             <Navbar />
             {children}
             <Metrics />
             <Footer />
         </ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   );
