@@ -1,235 +1,321 @@
-// "use client";
-// import React, { useState, useEffect } from "react";
-// import { useParams, useSearchParams } from "next/navigation";
-// import { ThemeProvider } from "next-themes";
-// import ModuleCard from "../components/ModuleCard";
-// import TopicList from "../components/TopicList";
-// import Navbar from "../components/Navbar";
-// import NotesData from "../notes/data";
-// import pyqLinks from "../notes/pyq";
+"use client"
+import React, { useState } from 'react';
+import useProgress from '../hook/tmp'; // Adjust path as needed
+import { Subjects } from '../interfaces/Subject';
+import { Book, Calculator, Code } from 'lucide-react';
 
-// interface Topic {
-//   title: string;
-//   description: string;
-//   videos?: {
-//     title: string;
-//     url: string;
-//   }[];
-//   notes?: {
-//     title: string;
-//     url: string;
-//   }[];
-// }
+// Sample subject data with 3 subjects
+const sampleSubjects: Subjects = {
+  mathematics: {
+    name: 'Mathematics',
+    icon: Calculator,
+    color: 'blue',
+    modules: {
+      1: {
+        notesLink: ['math-notes-1'],
+        topics: [
+          {
+            title: 'Algebra',
+            description: 'Basic algebra concepts',
+            videos: [
+              { title: 'Introduction to Algebra', url: 'video-url-1' },
+              { title: 'Algebraic Expressions', url: 'video-url-2' }
+            ]
+          },
+          {
+            title: 'Geometry',
+            description: 'Basic geometry concepts',
+            videos: [
+              { title: 'Introduction to Geometry', url: 'video-url-3' }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  programming: {
+    name: 'Programming',
+    icon: Code,
+    color: 'green',
+    modules: {
+      1: {
+        notesLink: ['programming-notes-1'],
+        topics: [
+          {
+            title: 'JavaScript',
+            description: 'JavaScript fundamentals',
+            videos: [
+              { title: 'Variables and Data Types', url: 'video-url-1' },
+              { title: 'Functions and Scope', url: 'video-url-2' }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  literature: {
+    name: 'Literature',
+    icon: Book,
+    color: 'purple',
+    modules: {
+      1: {
+        notesLink: ['literature-notes-1'],
+        topics: [
+          {
+            title: 'ClassicNovels',
+            description: 'Study of classic novels',
+            videos: [
+              { title: 'Introduction to Literary Analysis', url: 'video-url-1' },
+              { title: 'Character Development', url: 'video-url-2' }
+            ]
+          }
+        ]
+      }
+    }
+  }
+};
 
-// interface Module {
-//   [key: number]: {
-//     notesLink: string[];
-//     topics: Topic[];
-//   };
-// }
+const MultiSubjectProgress: React.FC = () => {
+  const [activeSubject, setActiveSubject] = useState<string>('mathematics');
+  
+  // Create a progress hook for the active subject
+  const { progressData, updateVideoProgress, resetProgress } = useProgress(
+    activeSubject, 
+    sampleSubjects
+  );
 
-// interface Subject {
-//   name: string;
-//   icon: React.ComponentType<{ className?: string }>;
-//   modules: Module;
-// }
+  // Function to get total videos in a subject
+  const getTotalVideos = (subjectName: string): number => {
+    const subject = sampleSubjects[subjectName];
+    let count = 0;
+    
+    Object.keys(subject.modules).forEach(moduleKey => {
+      const module = subject.modules[Number(moduleKey)];
+      module.topics.forEach(topic => {
+        count += topic.videos?.length || 0;
+      });
+    });
+    
+    return count;
+  };
 
-// interface Subjects {
-//   [subjectKey: string]: Subject;
-// }
+  // Function to calculate completion percentage
+  const getCompletionPercentage = (subjectName: string): number => {
+    if (subjectName !== activeSubject) {
+      // For non-active subjects, we need to check localStorage directly
+      const storedData = localStorage.getItem(`${subjectName}-progress`);
+      if (storedData) {
+        try {
+          const parsedData = JSON.parse(storedData);
+          const completed = parsedData.subjectProgress || 0;
+          const total = getTotalVideos(subjectName);
+          return total > 0 ? Math.round((completed / total) * 100) : 0;
+        } catch {
+          return 0;
+        }
+      }
+      return 0;
+    }
+    
+    // For active subject, use the current progressData
+    const total = getTotalVideos(subjectName);
+    if (total === 0) return 0;
+    
+    return Math.round((progressData.subjectProgress / total) * 100);
+  };
 
-// interface SemesterData {
-//   [key: string]: Subjects;
-// }
+  // Function to render the subject tabs
+  const renderSubjectTabs = () => {
+    return Object.keys(sampleSubjects).map(subjectKey => {
+      const subject = sampleSubjects[subjectKey];
+      const Icon = subject.icon;
+      const isActive = activeSubject === subjectKey;
+      const percentage = getCompletionPercentage(subjectKey);
+      
+      return (
+        <div 
+          key={subjectKey}
+          className={`subject-tab ${isActive ? 'active' : ''}`}
+          style={{ 
+            borderColor: isActive ? subject.color : 'transparent',
+            padding: '10px',
+            margin: '5px',
+            cursor: 'pointer',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            borderWidth: '2px',
+            borderStyle: 'solid',
+            borderRadius: '8px'
+          }}
+          onClick={() => setActiveSubject(subjectKey)}
+        >
+          <Icon size={24} color={subject.color} />
+          <span>{subject.name}</span>
+          <div style={{ 
+            width: '100%', 
+            height: '8px', 
+            backgroundColor: '#eee',
+            borderRadius: '4px',
+            margin: '5px 0'
+          }}>
+            <div style={{ 
+              width: `${percentage}%`, 
+              height: '100%',
+              backgroundColor: subject.color,
+              borderRadius: '4px'
+            }}></div>
+          </div>
+          <span>{percentage}%</span>
+        </div>
+      );
+    });
+  };
 
-// interface BranchData {
-//   [key: string]: SemesterData;
-// }
+  // Get active subject details
+  const currentSubject = sampleSubjects[activeSubject];
+  
+  // Render videos for the selected subject
+  const renderSubjectVideos = () => {
+    const moduleKeys = Object.keys(currentSubject.modules);
+    if (moduleKeys.length === 0) return <p>No modules available</p>;
+    
+    return moduleKeys.map(moduleKey => {
+      const module = currentSubject.modules[Number(moduleKey)];
+      const moduleProgress = progressData.moduleProgress[moduleKey] || 0;
+      
+      // Count total videos in this module
+      let totalModuleVideos = 0;
+      module.topics.forEach(topic => {
+        totalModuleVideos += topic.videos?.length || 0;
+      });
+      
+      return (
+        <div key={moduleKey} style={{ 
+          margin: '20px 0',
+          padding: '15px',
+          border: '1px solid #ddd',
+          borderRadius: '8px'
+        }}>
+          <h2>Module {moduleKey}</h2>
+          <p>Progress: {moduleProgress}/{totalModuleVideos} videos</p>
+          
+          {module.topics.map((topic, topicIndex) => {
+            const topicKey = `${activeSubject}-module${moduleKey}-topic${topic.title}`;
+            const topicProgress = progressData.topicProgress[topicKey] || 0;
+            const totalTopicVideos = topic.videos?.length || 0;
+            
+            return (
+              <div key={topicIndex} style={{ 
+                margin: '15px 0',
+                padding: '10px',
+                backgroundColor: '#f9f9f9',
+                borderRadius: '8px'
+              }}>
+                <h3>{topic.title}</h3>
+                <p>{topic.description}</p>
+                <p>Progress: {topicProgress}/{totalTopicVideos} videos</p>
+                
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                  {topic.videos?.map((video, videoIndex) => {
+                    const videoKey = `${activeSubject}-module${moduleKey}-topic${topic.title}-video${videoIndex}`;
+                    const isCompleted = progressData.completeVideos[videoKey] === true;
+                    
+                    return (
+                      <div key={videoIndex} style={{ 
+                        padding: '10px',
+                        backgroundColor: isCompleted ? '#e6f7e6' : '#fff',
+                        borderRadius: '6px',
+                        border: '1px solid #ddd',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                      }}>
+                        <h4 style={{ margin: '0' }}>{video.title}</h4>
+                        <button
+                          onClick={() => updateVideoProgress(moduleKey, videoIndex.toString(), topic.title)}
+                          style={{
+                            backgroundColor: isCompleted ? '#4CAF50' : '#2196F3',
+                            color: 'white',
+                            border: 'none',
+                            padding: '8px 16px',
+                            borderRadius: '4px',
+                            cursor: 'pointer'
+                          }}
+                        >
+                          {isCompleted ? 'Mark as Incomplete' : 'Mark as Complete'}
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    });
+  };
 
-// interface NotesDataType {
-//   [year: string]: BranchData;
-// }
-
-// const EngineeringCurriculum: React.FC = () => {
-//   const { slug } = useParams<{ slug: string }>();
-//   const searchParam = useSearchParams();
-//   const branch = searchParam.get("branch") || "";
-//   const sem = searchParam.get("sem") || "";
-//   // console.log(branch, sem)
-
-//   const typedNotesData = NotesData as NotesDataType;
-
-//   const subjects = slug && typedNotesData[slug]?.[branch]?.[sem];
-//   const pyq = pyqLinks[slug];
-//   // console.log(pyq)
-//   // const subjects = NotesData.fy.comps.oddSem;
-
-//   const initialSubject = subjects ? Object.keys(subjects)[0] : "";
-//   const [selectedSubject, setSelectedSubject] = useState(initialSubject);
-//   const [selectedModule, setSelectedModule] = useState<number>(1);
-
-//   useEffect(() => {
-//     if (subjects && selectedSubject) {
-//       const firstModuleKey = Object.keys(
-//         subjects[selectedSubject]?.modules || {}
-//       )[0];
-//       setSelectedModule(firstModuleKey ? parseInt(firstModuleKey) : 1);
-//     }
-//   }, [selectedSubject, subjects]);
-
-//   if (!subjects || Object.keys(subjects).length === 0) {
-//     return (
-//       <ThemeProvider attribute="class">
-//         <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
-//           <Navbar />
-//           <div className="w-full min-h-[calc(100vh-4rem)] flex items-center justify-center p-4 md:p-6">
-//             <div className="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 text-center">
-//               <h2 className="text-lg md:text-2xl font-bold mb-4 text-black dark:text-white">
-//                 No Subjects Found
-//               </h2>
-//               <p className="text-slate-600 dark:text-slate-300">
-//                 It seems there are no subjects available for the selected
-//                 curriculum. Will be added soon
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-//       </ThemeProvider>
-//     );
-//   }
-
-//   return (
-//     <ThemeProvider attribute="class">
-//       <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
-//         <Navbar />
-//         <div className="w-full p-4 md:p-6">
-//           <div className="max-w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 md:p-6">
-//             <div className="mb-6 md:mb-8 text-center md:text-left">
-//               <h1 className="text-lg md:text-2xl font-bold mb-2 text-black dark:text-white">
-//                 Engineering Curriculum of {branch.toUpperCase()} /{" "}
-//                 {slug.toUpperCase()} /{" "}
-//                 {sem.charAt(0).toUpperCase() + sem.slice(1)}
-//               </h1>
-//               <p className="text-slate-600 dark:text-slate-300">
-//                 Explore subjects and their module-wise topics
-//               </p>
-//             </div>
-
-//             <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-6 md:mb-8">
-//               {Object.entries(subjects).map(([key, subject]) => {
-//                 const Icon = subject.icon;
-//                 // console.log(subject)
-//                 return (
-//                   <div
-//                     key={key}
-//                     onClick={() => {
-//                       setSelectedSubject(key);
-//                       const firstModuleKey = Object.keys(
-//                         subjects[key]?.modules || {}
-//                       )[0];
-//                       setSelectedModule(
-//                         firstModuleKey ? parseInt(firstModuleKey) : 1
-//                       );
-//                     }}
-//                     className={`p-4 rounded-lg border cursor-pointer transition-all flex-1 max-w-[120px] sm:max-w-[150px] md:max-w-none text-center 
-//                       ${
-//                         selectedSubject === key
-//                           ? "border-blue-500 bg-blue-50 dark:bg-[#2D336B] dark:border-[#7886C7]"
-//                           : "bg-blue-200 dark:bg-[#000957] hover:border-blue-200 dark:hover:border-[#A9B5DF]"
-//                       }
-//                     `}
-//                   >
-//                     <div className="flex items-center justify-center gap-2 mb-2 flex-col">
-//                       <Icon className="w-6 h-6 text-blue-500 dark:text-blue-400" />
-//                       <h3 className="font-medium text-black dark:text-white text-sm md:text-base">
-//                         {subject.name}
-//                       </h3>
-//                     </div>
-//                     <p className="text-xs text-slate-500 dark:text-slate-400 md:text-sm">
-//                       {Object.keys(subject.modules).length} modules
-//                     </p>
-//                   </div>
-//                 );
-//               })}
-//             </div>
-//             <div className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4">
-//               <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
-//                 Important Links
-//               </h2>
-//               <div className="flex gap-2 flex-wrap">
-//               {Object.keys(pyq).length > 0 &&
-//                 pyq.map((pyq, index) => {
-//                   return (
-//                     <a
-//                       href={pyq.url}
-//                       target="_blank"
-//                       className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500"
-//                       key={index}
-//                     >
-//                       {pyq.title}
-//                     </a>
-//                   );
-//                 })}
-//                 </div>
-//             </div>
-
-//             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
-//               <div className="space-y-3">
-//                 {Object.keys(subjects[selectedSubject].modules).map(
-//                   (moduleKey) => {
-//                     const moduley = parseInt(moduleKey);
-//                     return (
-//                       <ModuleCard
-//                         key={moduley}
-//                         module={moduley}
-//                         topics={
-//                           subjects[selectedSubject].modules[moduley].topics
-//                             .length
-//                         }
-//                         isActive={selectedModule === moduley}
-//                         onClick={() => setSelectedModule(moduley)}
-//                       />
-//                     );
-//                   }
-//                 )}
-//               </div>
-
-//               <div className="md:col-span-2 bg-slate-50 dark:bg-gray-900 rounded-lg p-4 md:p-6">
-//                 <h2 className="text-base md:text-lg font-bold mb-1 text-black dark:text-white">
-//                   {subjects[selectedSubject].name} - Module{" "}
-//                   {selectedModule || 1}
-//                 </h2>
-//                 <p className=" text-red-500 mb-4">
-//                   These videos are added with respect to the college notes, So
-//                   you are insisted to refer the college notes as well.
-//                 </p>
-//                 <TopicList
-//                   topics={
-//                     subjects[selectedSubject].modules[selectedModule].topics ||
-//                     []
-//                   }
-//                   notesLink={
-//                     subjects[selectedSubject].modules[selectedModule]
-//                       .notesLink || []
-//                   }
-//                   moduleNumber={selectedModule || 1}
-//                 />
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </ThemeProvider>
-//   );
-// };
-
-// export default EngineeringCurriculum;
-
-
-function page() {
   return (
-    <div>page</div>
-  )
-}
+    <div style={{ fontFamily: 'Arial, sans-serif', maxWidth: '1000px', margin: '0 auto' }}>
+      <h1 style={{ textAlign: 'center', margin: '20px 0' }}>Learning Progress Tracker</h1>
+      
+      <div style={{ display: 'flex', justifyContent: 'space-around', margin: '20px 0' }}>
+        {renderSubjectTabs()}
+      </div>
+      
+      <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
+        <div style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center',
+          marginBottom: '20px'
+        }}>
+          <h1 style={{ margin: '0', color: currentSubject.color }}>{currentSubject.name}</h1>
+          <button 
+            onClick={resetProgress} 
+            style={{
+              backgroundColor: '#f44336',
+              color: 'white',
+              border: 'none',
+              padding: '10px 20px',
+              borderRadius: '4px',
+              cursor: 'pointer'
+            }}
+          >
+            Reset Progress
+          </button>
+        </div>
+        
+        <div style={{ 
+          padding: '15px',
+          backgroundColor: '#f5f5f5',
+          borderRadius: '8px',
+          marginBottom: '20px'
+        }}>
+          <h3>Overall Progress</h3>
+          <p>{progressData.subjectProgress}/{getTotalVideos(activeSubject)} videos completed</p>
+          <div style={{ 
+            width: '100%', 
+            height: '15px', 
+            backgroundColor: '#eee',
+            borderRadius: '8px'
+          }}>
+            <div style={{ 
+              width: `${getCompletionPercentage(activeSubject)}%`, 
+              height: '100%',
+              backgroundColor: currentSubject.color,
+              borderRadius: '8px',
+              transition: 'width 0.3s ease'
+            }}></div>
+          </div>
+        </div>
+        
+        {renderSubjectVideos()}
+      </div>
+    </div>
+  );
+};
 
-export default page
+export default MultiSubjectProgress;
