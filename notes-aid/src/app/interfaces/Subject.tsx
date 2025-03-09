@@ -1,24 +1,31 @@
 import { LucideIcon } from 'lucide-react';
 
+interface Video {
+  title: string;
+  url: string;
+  completed?: boolean;
+}
+
+interface Note {
+  title: string;
+  url: string;
+}
+
 interface Module {
-    [key: number]: {
-      notesLink: string[];
-      topics: Topic[];
-    };
-  }
+  [key: number]: {
+    progress?: number; 
+    notesLink: string[];
+    topics: Topic[];
+  };
+}
   
-  interface Topic {
-    title: string
-    description: string
-    videos?: {
-      title: string
-      url: string
-    }[]
-    notes?: {
-      title: string
-      url: string
-    }[]
-  }
+interface Topic {
+  title: string;
+  description: string;
+  progress?: number; 
+  videos?: Video[];
+  notes?: Note[];
+}
   
   interface Subject {
     name: string

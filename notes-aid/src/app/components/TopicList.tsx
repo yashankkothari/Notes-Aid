@@ -27,12 +27,12 @@ const TopicList: React.FC<TopicListProps> = ({
   moduleNumber,
 }) => {
   const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
+  // const [completedItems, setCompletedItems] = useState<Record<string, boolean>>({});
 
   const toggleTopic = (index: number) => {
     setOpenTopicIndex(openTopicIndex === index ? null : index);
     // setDone((x)=>x+10);
   };
-
 
   useEffect(() => {
     setOpenTopicIndex(null);
@@ -47,7 +47,7 @@ const TopicList: React.FC<TopicListProps> = ({
       </div>
     );
   }
-  const total = 100; 
+  // const total = 100; 
   // const [done, setDone] = useState(70);
   
 
@@ -83,7 +83,7 @@ const TopicList: React.FC<TopicListProps> = ({
           key={index}
           className="bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-700 overflow-hidden"
         >
-            <ProgressBar total={total} completed={70}  />
+            <ProgressBar total={topic.videos?.length ?? 0} completed={1}  />
           <div
             onClick={() => toggleTopic(index)}
             className="p-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors"
