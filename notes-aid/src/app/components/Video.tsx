@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { RefObject, Dispatch, SetStateAction } from "react";
 import { CheckSquare, Square, ChevronDown } from "lucide-react";
+import useProgress from "../hook/useProgress";
 
 interface VideoProps {
   checked: boolean;
@@ -10,22 +12,54 @@ interface VideoProps {
   index: number;
   video: { title: string; url: string };
   videoRefs: RefObject<(HTMLIFrameElement | null)[]>;
+  videoKey: string;
+  updateVideoProgress: (
+    moduleIndex: string,
+    videoIndex: string,
+    topicName: string
+  ) => void;
+  moduleKey: string;
+  topicKey: string;
+  subjectName: string;
 }
 
 function Video({
-checked,
+  checked,
   setChecked,
   toggleVideo,
   openVideoIndex,
   index,
   video,
   videoRefs,
+  videoKey,
+  updateVideoProgress,
+  moduleKey,
+  topicKey,
+  subjectName,
 }: VideoProps) {
+  // console.log(videoKey)
+
+  const storedProgress = localStorage.getItem(subjectName + "-progress");
+  const progressData = storedProgress
+    ? JSON.parse(storedProgress)
+    : { completeVideos: {} };
+
+  const key = `${subjectName}-module${moduleKey}-topic${topicKey}-video${videoKey}`;
+  const isCompleted = progressData.completeVideos[key] === true;
+
+  // console.log(key)
+
   return (
     <>
       <div className="flex items-center gap-2">
-        <button onClick={() => setChecked(!checked)} className="w-6 h-6">
-          {checked ? (
+        <button
+          onClick={() => {
+            updateVideoProgress(moduleKey, videoKey, topicKey);
+            // setChecked((prev) => !prev);
+          }}
+          className="w-6 h-6"
+        >
+          {isCompleted ? (
             <CheckSquare className="text-blue-500" />
           ) : (
             <Square className="text-gray-400" />

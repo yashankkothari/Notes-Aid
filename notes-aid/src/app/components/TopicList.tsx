@@ -19,12 +19,18 @@ interface TopicListProps {
   topics: Topic[];
   notesLink: string[];
   moduleNumber: number;
+  updateVideoProgress: (moduleIndex: string, videoIndex: string, topicName: string) => void;
+  moduleKey:string;
+  subjectName:string;
 }
 
 const TopicList: React.FC<TopicListProps> = ({
   topics,
   notesLink,
   moduleNumber,
+  updateVideoProgress,
+  moduleKey,
+  subjectName
 }) => {
   const [openTopicIndex, setOpenTopicIndex] = useState<number | null>(null);
   // const [completedItems, setCompletedItems] = useState<Record<string, boolean>>({});
@@ -33,6 +39,10 @@ const TopicList: React.FC<TopicListProps> = ({
     setOpenTopicIndex(openTopicIndex === index ? null : index);
     // setDone((x)=>x+10);
   };
+
+  
+
+  // console.log("Module Key is: "+moduleKey)
 
   useEffect(() => {
     setOpenTopicIndex(null);
@@ -78,12 +88,32 @@ const TopicList: React.FC<TopicListProps> = ({
       </div>
       
       {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white my-2">Videos</h5>}
-      {Object.keys(topics).length>0 && topics.map((topic, index) => (
-        <div
+      {Object.keys(topics).length>0 && topics.map((topic, index) => {
+
+const topicKey = `${subjectName}-module${moduleKey}-topic${topic.title.replace(/\s/g, '')}`;
+  
+// Safely access localStorage with client-side check
+      let progressData = { completeVideos: {}, topicProgress: {} };
+
+      if (typeof window !== 'undefined') {
+        const storedProgress = localStorage.getItem(subjectName+"-progress");
+        if (storedProgress) {
+          progressData = JSON.parse(storedProgress);
+          // Ensure the topicProgress object exists
+          if (!progressData.topicProgress) {
+            progressData.topicProgress = {};
+          }
+        }
+      }
+
+      const completedTopics:number = progressData.topicProgress[topicKey] || 0;
+      console.log(completedTopics);
+
+        return(<div
           key={index}
           className="bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-700 overflow-hidden"
         >
-            <ProgressBar total={topic.videos?.length ?? 0} completed={1}  />
+            <ProgressBar total={topic.videos?.length ?? 0} completed={completedTopics}  />
           <div
             onClick={() => toggleTopic(index)}
             className="p-3 cursor-pointer hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors"
@@ -122,7 +152,7 @@ const TopicList: React.FC<TopicListProps> = ({
                   <h5 className="text-sm font-medium text-black dark:text-white mb-2">
                     Lecture Videos
                   </h5>
-                  <VideoAccordion videos={topic.videos} />
+                  <VideoAccordion videos={topic.videos} topicKey={topic.title.replace(/\s/g, '')} moduleKey={moduleKey} updateVideoProgress={updateVideoProgress} subjectName={subjectName}/>
                 </div>
               ):(
                 <div className="mt-3 border-t dark:border-gray-700 pt-3">
@@ -157,8 +187,8 @@ const TopicList: React.FC<TopicListProps> = ({
               )}
             </div>
           </div>
-        </div>
-      ))}
+        </div>)
+})}
     </div>
   );
 };
