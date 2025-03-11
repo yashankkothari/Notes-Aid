@@ -2,7 +2,6 @@
 import React from "react";
 import { RefObject, Dispatch, SetStateAction } from "react";
 import { CheckSquare, Square, ChevronDown } from "lucide-react";
-import useProgress from "../hook/useProgress";
 
 interface VideoProps {
   checked: boolean;
@@ -24,8 +23,6 @@ interface VideoProps {
 }
 
 function Video({
-  checked,
-  setChecked,
   toggleVideo,
   openVideoIndex,
   index,

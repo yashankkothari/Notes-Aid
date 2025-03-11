@@ -90,24 +90,30 @@ const TopicList: React.FC<TopicListProps> = ({
       {Object.keys(topics).length>0 && <h5 className="text-sm font-medium text-black dark:text-white my-2">Videos</h5>}
       {Object.keys(topics).length>0 && topics.map((topic, index) => {
 
-const topicKey = `${subjectName}-module${moduleKey}-topic${topic.title.replace(/\s/g, '')}`;
-  
-// Safely access localStorage with client-side check
-      let progressData = { completeVideos: {}, topicProgress: {} };
-
-      if (typeof window !== 'undefined') {
-        const storedProgress = localStorage.getItem(subjectName+"-progress");
-        if (storedProgress) {
-          progressData = JSON.parse(storedProgress);
-          // Ensure the topicProgress object exists
-          if (!progressData.topicProgress) {
-            progressData.topicProgress = {};
+        const topicKey = `${subjectName}-module${moduleKey}-topic${topic.title.replace(/\s/g, '')}`;
+          
+          let progressData = { 
+            completeVideos: {} as Record<string, boolean>,
+            topicProgress: {} as Record<string, number>
+          };
+          
+          if (typeof window !== 'undefined') {
+            const storedProgress = localStorage.getItem(subjectName+"-progress");
+            if (storedProgress) {
+              try {
+                const parsedData = JSON.parse(storedProgress);
+                progressData = {
+                  completeVideos: parsedData.completeVideos || {},
+                  topicProgress: parsedData.topicProgress || {}
+                };
+              } catch (e) {
+                console.error("Error parsing progress data:", e);
+              }
+            }
           }
-        }
-      }
 
-      const completedTopics:number = progressData.topicProgress[topicKey] || 0;
-      console.log(completedTopics);
+          const completedTopics = progressData.topicProgress[topicKey] || 0;
+          console.log(completedTopics);
 
         return(<div
           key={index}

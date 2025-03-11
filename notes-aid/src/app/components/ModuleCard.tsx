@@ -33,7 +33,7 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   progressData,
   numberOfVideos
 }) => {
-  const total = 100;
+  // const total = 100;
   // const [done, setdone] = useState(20);
 
   // console.log("Module Progress for this is "+(progressData.moduleProgress[module] || 0))

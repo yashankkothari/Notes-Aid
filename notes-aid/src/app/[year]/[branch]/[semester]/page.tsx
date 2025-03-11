@@ -78,6 +78,7 @@ const EngineeringCurriculum: React.FC = () => {
   // Handle client-side mounting
   useEffect(() => {
     setIsMounted(true);
+    console.log(isMounted);
   }, []);
 
   const initialSubject = subjects ? Object.keys(subjects)[0] : "";
@@ -92,6 +93,9 @@ const EngineeringCurriculum: React.FC = () => {
       setSelectedModule(firstModuleKey ? parseInt(firstModuleKey) : 1);
     }
   }, [selectedSubject, subjects]);
+
+  const { progressData, updateVideoProgress, resetProgress } =
+  useProgress(selectedSubject);
 
   if (!subjects || Object.keys(subjects).length === 0) {
     return (
@@ -111,19 +115,19 @@ const EngineeringCurriculum: React.FC = () => {
     );
   }
 
-  const getTotalVideos = (subjectName: string): number => {
-    const subject = subjects[subjectName];
-    let count = 0;
+  // const getTotalVideos = (subjectName: string): number => {
+  //   const subject = subjects[subjectName];
+  //   let count = 0;
 
-    Object.keys(subject.modules).forEach((moduleKey) => {
-      const module = subject.modules[Number(moduleKey)];
-      module.topics.forEach((topic) => {
-        count += topic.videos?.length || 0;
-      });
-    });
+  //   Object.keys(subject.modules).forEach((moduleKey) => {
+  //     const moduley = subject.modules[Number(moduleKey)];
+  //     moduley.topics.forEach((topic) => {
+  //       count += topic.videos?.length || 0;
+  //     });
+  //   });
 
-    return count;
-  };
+  //   return count;
+  // };
 
   // const getCompletionPercentage = (subjectName: string): number => {
   //   if (!isMounted) return 0;
@@ -152,8 +156,7 @@ const EngineeringCurriculum: React.FC = () => {
   //   return 0;
   // };
 
-  const { progressData, updateVideoProgress, resetProgress } =
-    useProgress(selectedSubject);
+
 
   // console.log(getTotalVideos("cc"))
 
