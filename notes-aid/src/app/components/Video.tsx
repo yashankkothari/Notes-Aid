@@ -36,15 +36,13 @@ function Video({
 }: VideoProps) {
   // console.log(videoKey)
 
-  const storedProgress = localStorage.getItem(subjectName + "-progress");
-  const progressData = storedProgress
-    ? JSON.parse(storedProgress)
-    : { completeVideos: {} };
+  const storedProgress = typeof window !== 'undefined' ? localStorage.getItem(subjectName + "-progress") : null;
+  const progressData = storedProgress ? JSON.parse(storedProgress): { completeVideos: {} };
 
   const key = `${subjectName}-module${moduleKey}-topic${topicKey}-video${videoKey}`;
   const isCompleted = progressData.completeVideos[key] === true;
 
-  // console.log(key)
+
 
   return (
     <>
