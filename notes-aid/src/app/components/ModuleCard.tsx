@@ -3,11 +3,26 @@ import React from "react";
 import { ChevronDown } from "lucide-react";
 import ProgressBar from "./ProgressBar";
 
+interface ProgressData {
+  completeVideos: {
+      [key: string]: boolean;
+  };
+  moduleProgress: {
+      [key: string]: number;
+  };
+  topicProgress: {
+      [key: string]: number;
+  };
+  subjectProgress: number;
+}
+
 interface ModuleCardProps {
   module: number;
   topics: number;
   isActive: boolean;
   onClick: () => void;
+  progressData:ProgressData;
+  numberOfVideos:number;
 }
 
 const ModuleCard: React.FC<ModuleCardProps> = ({
@@ -15,13 +30,20 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
   topics,
   isActive,
   onClick,
+  progressData,
+  numberOfVideos
 }) => {
-  const total = 100;
+  // const total = 100;
   // const [done, setdone] = useState(20);
+
+  // console.log("Module Progress for this is "+(progressData.moduleProgress[module] || 0))
+  // console.log(topics)
+  // console.log("Number of videos in this module is: "+numberOfVideos)
   
   // setdone(40);
 
   return (
+    <>
     <div
       onClick={onClick}
       className={`
@@ -57,14 +79,15 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
         
         <div className="flex items-center gap-2">
           <div className="flex-1">
-            <ProgressBar total={total} completed={20} />
+            <ProgressBar total={numberOfVideos} completed={(progressData.moduleProgress[module] || 0)} />
           </div>
           <span className="text-xs text-gray-500 dark:text-gray-400 whitespace-nowrap">
-            {20}/{total}
+            {(progressData.moduleProgress[module] || 0)}/{numberOfVideos} videos
           </span>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
