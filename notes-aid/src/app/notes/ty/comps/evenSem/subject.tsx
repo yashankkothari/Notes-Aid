@@ -92,20 +92,20 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/yGEEvn8CzrU?si=22aPNcgJR-FcKEQu",
               },
               {
-                title:"Block Diagram & Signal Flow Graph",
-                url:"https://www.youtube.com/embed/BDI4zf9Azpk?si=OOfMbLy-cbIG4ib7"
+                title: "Block Diagram & Signal Flow Graph",
+                url: "https://www.youtube.com/embed/BDI4zf9Azpk?si=OOfMbLy-cbIG4ib7"
               },
               {
-                title:"Block Diagram & Signal Flow Graph - Part 2",
-                url:"https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
+                title: "Block Diagram & Signal Flow Graph - Part 2",
+                url: "https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
               },
               {
-                title:"Block Diagram & Signal Flow Graph - Part 2",
-                url:"https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
+                title: "Block Diagram & Signal Flow Graph - Part 2",
+                url: "https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK"
               },
               {
-                title:"Block Diagram & Signal Flow Graph - Part 3",
-                url:"https://www.youtube.com/embed/BYMc-YEy89E?si=6kmCxOIYxiqTARVB"
+                title: "Block Diagram & Signal Flow Graph - Part 3",
+                url: "https://www.youtube.com/embed/BYMc-YEy89E?si=6kmCxOIYxiqTARVB"
               },
               {
                 title: "Video 2 (Classification of Discrete Time System) 1",
@@ -241,7 +241,7 @@ const subjects: Subjects = {
             description: "Important Topic for Exam ⭐- Numerical based",
             videos: [
               {
-                title:"Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
+                title: "Image Negative or Digital Negative,Thresholding, Bit Plane Slicing",
                 url: "https://www.youtube.com/embed/FMDmXz6ynvk?si=7qKfBYj1VAyfMPzh",
               },
               {
@@ -249,8 +249,8 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/YJIgFMoC_yg?si=KVVwA_UX-rubmTJp",
               },
               {
-                title:" Digital Negative, Bit Plane Slicing and Contrast Stretching- Part 2",
-                url:"https://www.youtube.com/embed/pu-897YlpKM?si=lSUzYYZv4185jtGH"
+                title: " Digital Negative, Bit Plane Slicing and Contrast Stretching- Part 2",
+                url: "https://www.youtube.com/embed/pu-897YlpKM?si=lSUzYYZv4185jtGH"
               },
               {
                 title: "Grey Level Slicing (Intensity slicing)",
@@ -482,6 +482,122 @@ const subjects: Subjects = {
           },
         ],
       },
+      3: {
+        notesLink: [
+          'https://drive.google.com/file/d/1esiJaNmR6CyKEBRptQA60GMU8clbyR0n/view?usp=drive_link',
+          'https://drive.google.com/file/d/1mDPMwUxSFYGvdhVRn4mLNdWnld1Z6uCk/view?usp=drive_link',
+          'https://drive.google.com/file/d/19yLUfnPABTv3jw_umuHvCKhywIhpup6j/view?usp=drive_link',
+        ],
+        topics: [
+          {
+            title: "3.1 Solving Problems by Searching",
+            description: "Theoretical based concepts",
+            videos: [
+              {
+                title: "Problem Solving Agents",
+                url: "https://www.youtube.com/embed/PLOtEiTjSt8?si=yJq04QHdInQ3ehxb",
+              },
+              {
+                title: "8-Puzzle Problem",
+                url: "https://www.youtube.com/embed/r14GPj1YcCQ?si=StO05MSVMLYTdED3",
+              },
+              {
+                title: "Vaccum Cleaner Problem",
+                url: "https://www.youtube.com/embed/KX09yGiPW70?si=34FEEPXamWg4sEoY",
+              },
+            ],
+          },
+          {
+            title: "3.2 Uninformed Search Strategies",
+            description: "Algorithm based concepts - Important for Exam ⭐",
+            videos: [
+              {
+                title: "Breadth First Search",
+                url: "https://www.youtube.com/embed/ZjPXeJaGEus?si=7ZPlqwSbyG3_mrW3",
+              },
+              {
+                title: "Depth First Search",
+                url: "https://www.youtube.com/embed/axtcFOsKlGM?si=D00MN38REY7YgJLn",
+              },
+              {
+                title: "Depth Limited Search",
+                url: "https://www.youtube.com/embed/v3GCQ1Y-1dI?si=L6nsklY3tQ4Gy3lC",
+              },
+              {
+                title: "Iterative Deepening Depth First Search",
+                url: "https://www.youtube.com/embed/ubsBoqXnvfE?si=eSsitM-1eaJLkkHc",
+              }
+            ],
+          },
+          {
+            title: "3.3 Informed Search Strategies",
+            description: "Algorithm based concepts - Important for Exam ⭐",
+            videos: [
+              {
+                title: "Heurestic Function",
+                url: "https://www.youtube.com/embed/E48Hn3nfCqg?si=sXU_L8vKSRSoc9IY",
+              },
+              {
+                title: "Best Fit Search",
+                url: "https://www.youtube.com/embed/MboFR7C8gNQ?si=1XYTf9M_S_qa-NCV",
+              },
+              {
+                title: "A* Search",
+                url: "https://www.youtube.com/embed/tvAh0JZF2YE?si=R5HH08iQPUnx2TVq",
+              },
+              {
+                title: "AO* Search",
+                url: "https://www.youtube.com/embed/u_TE42-uWD0?si=iw06IakOO1CI-z33",
+              },
+            ],
+          },
+          {
+            title: "3.4 Local Search Algorithms",
+            description: "Algorithm based concepts - Important for Exam ⭐",
+            videos: [
+              {
+                title: "Hill Climbing Algorithm",
+                url: "https://www.youtube.com/embed/1w-2fJAYNmE?si=jubzlhvRXjiDL333",
+              },
+              {
+                title: "Hill Climbing Algorithm - Solved Numerical",
+                url: "https://www.youtube.com/embed/2SlO34_VsY4?si=PqTdXd206mCghlNZ",
+              },
+              {
+                title: "Constraint Satisfaction Problem",
+                url: "https://www.youtube.com/embed/AgyCSmDVk5s?si=2Lde08Mz0endcjx7",
+              },
+              {
+                title: "Constraint Satisfaction Problem - Part 2",
+                url: "https://www.youtube.com/embed/udOfKqeLVSg?si=sHjEZRTk9sC194Z0",
+              },
+              {
+                title: "Genetic Algorithm",
+                url: "https://www.youtube.com/embed/WueuYdDqUt0?si=_5h3AIs6BMIt6-a2",
+              },
+              {
+                title: "Genetric Algorithm - Solved Numerical",
+                url: "https://www.youtube.com/embed/Dj1AZ0T-m-I?si=0j0oFGbu7ZT7EtKL",
+              },
+              {
+                title: "Crossover and Mutation",
+                url: "https://www.youtube.com/embed/iYxM9dQQyTw?si=_BpcsMVTi9GibfVO",
+              },
+            ],
+          },
+          {
+            title: "3.5 Adversarial Search",
+            description: "Algorithm based concepts - Important for Exam ⭐",
+            videos: [
+              {
+                title: "Adversarial Search and Game Playing",
+                url: "https://www.youtube.com/embed/6k8WilOGtXY?si=cVlNmwKNPBQeCTXJ",
+              },
+            ],
+          },
+        ],
+      },
+
       // 3: {
       //   notesLink: [
       //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%203.pdf?alt=media&token=f0c4d4a0-f75e-4816-a3c2-471592794634",
@@ -599,16 +715,6 @@ const subjects: Subjects = {
               },
             ],
           },
-          // {
-          //   title: "Forward chaining",
-          //   description: "Basic concepts and importance",
-          //   videos: [],
-          // },
-          // {
-          //   title: "Backward Chaining",
-          //   description: "Basic concepts and importance",
-          //   videos: [],
-          // },
           {
             title: "Resolution",
             description: "Numerical based concepts- Important for Exam ⭐",
@@ -632,35 +738,22 @@ const subjects: Subjects = {
               },
             ],
           },
-          // {
-          //   title: "Answer set programming",
-          //   description: "Basic concepts and importance",
-          //   videos: [],
-          // },
+          {
+            title: "Forward chaining, backward Chaining",
+            description: "Numerical based concepts- Important for Exam ⭐",
+            videos: [
+              {
+                title: "Forward Chaining",
+                url: "https://www.youtube.com/embed/rbtr4VnjA2c?si=JDC-DHutbIFd_iMt",
+              },
+              {
+                title: "Backward Chaining",
+                url: "https://www.youtube.com/embed/2UJV1nmjNGw?si=nOUkn7Sjw6wBrxZe",
+              },
+            ],
+          },
         ],
       },
-      // 5: {
-      //   notesLink: [
-      //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/AI%20Module%205.pdf?alt=media&token=d9402e5a-73a5-4f3b-9c0a-795613b2c277",
-      //   ],
-      //   topics: [
-      //     {
-      //       title:
-      //         " Knowledge based Agents, The Wumpus World, inference procedures, First Order Logic: Syntax and Semantic, Inference in FOL, Unification and lifting, Forward chaining, backward Chaining, Resolution, Answer set programming",
-      //       description: "Basic concepts and importance",
-      //       videos: [
-      //         {
-      //           title: "Basic Concepts - Part 1",
-      //           url: "https://www.youtube.com/embed/example1",
-      //         },
-      //         {
-      //           title: "Implementation Overview - Part 2",
-      //           url: "https://www.youtube.com/embed/example2",
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
     },
   },
   is: {
@@ -800,7 +893,7 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/xw19eT5thIE?si=j93UHQsyDApxQvwL",
               },
               {
-                title:"Diffie Hellman Key Exchange Algorithm (Page 64 of the notes) - Added in Numericals as well",
+                title: "Diffie Hellman Key Exchange Algorithm (Page 64 of the notes) - Added in Numericals as well",
                 url: "https://www.youtube.com/embed/OGTQ8Y1rDuI?si=fcCOXl8jkXxuPHNb",
               },
               {
@@ -835,8 +928,8 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/yUeI4nqvNs8?si=Rus3TQnCNnHAehAE",
               },
               {
-                title:"Digital Certificates",
-                url:"https://www.youtube.com/embed/stsWa9A3sOM?si=EAXhnuST9lHWRXJ6"
+                title: "Digital Certificates",
+                url: "https://www.youtube.com/embed/stsWa9A3sOM?si=EAXhnuST9lHWRXJ6"
               }
             ],
           },
@@ -874,16 +967,16 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3",
               },
               {
-                title:"Rail Fence Cipher",
-                url:"https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
+                title: "Rail Fence Cipher",
+                url: "https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
               },
               {
-                title:"Row Column or Columnar Transposition Cipher",
-                url:"https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
+                title: "Row Column or Columnar Transposition Cipher",
+                url: "https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
               },
               {
-                title:"Row Column or Columnar Transposition Cipher - Solved Example",
-                url:"https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
+                title: "Row Column or Columnar Transposition Cipher - Solved Example",
+                url: "https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
               },
               {
                 title: "RSA Algorithm",
@@ -959,28 +1052,6 @@ const subjects: Subjects = {
           },
         ],
       },
-      // 3: {
-      //   notesLink: [
-      //     "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/4%20The%20Web%2C%20Management%20%26%20Incidents.pdf?alt=media&token=530951ec-c9e2-449e-ab3f-195b90fe9246",
-      //   ],
-      //   topics: [
-      //     {
-      //       title:
-      //         "3.1 Browser Attacks: Browser Attack Types,  How Browser Attacks Succeed: Failed Identification and Authentication",
-      //       description: "Basic concepts and importance",
-      //       videos: [
-      //         {
-      //           title: "Basic Concepts - Part 1",
-      //           url: "https://www.youtube.com/embed/example1",
-      //         },
-      //         {
-      //           title: "Implementation Overview - Part 2",
-      //           url: "https://www.youtube.com/embed/example2",
-      //         },
-      //       ],
-      //     },
-      //   ],
-      // },
     },
   },
   ac: {
@@ -1113,16 +1184,16 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/hHsUJxikM3g?si=G3QLNDzULooE0Su3",
               },
               {
-                title:"Rail Fence Cipher",
-                url:"https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
+                title: "Rail Fence Cipher",
+                url: "https://www.youtube.com/embed/hINK8zCIxJ4?si=eEMAoRcyrR2ammG7"
               },
               {
-                title:"Row Column or Columnar Transposition Cipher",
-                url:"https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
+                title: "Row Column or Columnar Transposition Cipher",
+                url: "https://www.youtube.com/embed/cPQXaYUMOjQ?si=Smk9isi2haB_K5Eo"
               },
               {
-                title:"Row Column or Columnar Transposition Cipher - Solved Example",
-                url:"https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
+                title: "Row Column or Columnar Transposition Cipher - Solved Example",
+                url: "https://www.youtube.com/embed/K7Mth_55y9E?si=Be-xHMeIBkPjzYVO"
               },
               {
                 title: "Vigenere Cipher",
@@ -1148,7 +1219,7 @@ const subjects: Subjects = {
                 title: "Hill Cipher - Solved Example",
                 url: "https://www.youtube.com/embed/6T46sgty4Mk?si=4-xF3AOLYoAbVDcJ",
               },
-             
+
             ],
           },
         ],
@@ -1344,7 +1415,7 @@ const subjects: Subjects = {
                 url: "https://www.youtube.com/embed/RCIVFJLqy-s?si=sBgBWwnE2aZ20CcZ",
               },
 
-              
+
             ],
           },
 
@@ -1353,10 +1424,22 @@ const subjects: Subjects = {
               "2.3 Cloud Computing Architecture : Cloud Reference Model, Types of Clouds, Economics of the Cloud, Open Challenges",
             description: "Basic concepts and importance",
             videos: [
-              // ref models 
-              // https://www.youtube.com/embed/GKtCwEQqaMI?si=TDMH7ltS7Kknn4Wl
-
-              
+              {
+                title: "2.3.1 Cloud Reference Model",
+                url: "https://www.youtube.com/embed/pGe4VZbSmTw?si=gfd_K_eHIS7FbpIk",
+              },
+              {
+                title: "2.3.2 Types of Clouds",
+                url: "https://www.youtube.com/embed/lsvpvCU6Oxs?si=aDz06sSN7vH9S3SR",
+              },
+              {
+                title: "2.3.3 Economics of the Cloud",
+                url: "https://www.youtube.com/embed/YwkBJe9Z_cY?si=RJmSr0zZyyRWcnIg",
+              },
+              {
+                title: "2.3.4 Open Challenges",
+                url: "https://www.youtube.com/embed/icSXPCL-vZw?si=AI2hlsnwVWF3324i",
+              },
             ],
           },
         ],
@@ -1417,7 +1500,7 @@ const subjects: Subjects = {
             videos: [
               {
                 title: "1.4.1 Hadoop",
-              url: "https://www.youtube.com/embed/aReuLtY0YMI?si=Ns6rA9sMZMsOPg4U",
+                url: "https://www.youtube.com/embed/aReuLtY0YMI?si=Ns6rA9sMZMsOPg4U",
               }
             ],
           }
