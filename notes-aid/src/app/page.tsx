@@ -195,7 +195,7 @@ export default function MainPage() {
             {hasPreviousSelection && (
               <button
                 onClick={handleReturnToPrevious}
-                className="border border-[#706C61] dark:border-slate-700 text-[#333333] dark:text-slate-200 font-medium py-3 px-2 rounded-lg transition-all duration-200 flex items-center justify-center text-sm gap-2 hover:bg-gray-100 dark:hover:bg-slate-800"
+                className="border flex-1 md:flex-none border-[#706C61] dark:border-slate-700 text-[#333333] dark:text-slate-200 font-medium py-3 px-2 rounded-lg transition-all duration-200 flex items-center justify-center text-sm gap-2 hover:bg-gray-100 dark:hover:bg-slate-800"
               >
                 <RotateCcw className="w-3 h-3" />
                 Return to Previous Selection

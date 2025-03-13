@@ -18,6 +18,7 @@ interface RawNotification {
   read: boolean
 }
 
+
 const Navbar = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState<boolean>(false)
@@ -54,20 +55,20 @@ const Navbar = () => {
       }
 
       const data = await response.json()
-      console.log(data)
+      // console.log(data)
 
 
       const processedNotifications = data.map((item: RawNotification) => ({
         ...item,
         date: new Date(item.date),
-        message: item.message.startsWith("notify: ")
-          ? item.message.replace("notify: ", "")
-          : item.message,
+        message: item.message
       }))
 
-      const notifyOnly = processedNotifications.filter((note: Notification) =>
-        note.message.startsWith("notify: ")
+      const notifyOnly = processedNotifications.filter((note: RawNotification) =>
+        note.message.startsWith("notify:")
       )
+
+      // console.log(notifyOnly)
 
       const k=localStorage.getItem("LastNotificationRead")
 
@@ -77,11 +78,18 @@ const Navbar = () => {
         notifyOnly.forEach((notification: Notification) => {
         notification.read = notification.date <= lastReadDate;
         });
+        const unreadCount = notifyOnly.reduce((count:number, note:Notification) => count + (note.read ? 0 : 1), 0);
+        setNotifications(notifyOnly);
+        setUnreadCount(unreadCount);
+      }
+      else
+      {
+        setNotifications(notifyOnly);
+        setUnreadCount(notifyOnly.length);
       }
 
-      const unreadNotifications = notifyOnly.filter((note: Notification) => !note.read);
-      setNotifications(notifyOnly);
-      setUnreadCount(unreadNotifications.length);
+      // const unreadNotifications = notifyOnly.filter((note: Notification) => !note.read);
+    
     } catch (error) {
       console.error("Error fetching notifications:", error)
       const mockNotifications: Notification[] = [
@@ -149,7 +157,7 @@ const Navbar = () => {
             </button>
 
             {showDropdown && (
-                 <div className="absolute transform-none top-auto left-auto right-0 mt-2 w-80">
+                <div className="fixed top-16 left-1/2 transform -translate-x-1/2 w-11/12 max-w-sm z-50 md:absolute md:transform-none md:top-auto md:left-auto md:right-0 md:mt-2 md:w-80">
                 <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 w-full flex flex-col">
                   <div className="p-3 border-b border-gray-200 dark:border-gray-700 flex justify-between items-center sticky top-0 bg-white dark:bg-gray-800 rounded-t-lg">
                     <h3 className="text-sm font-medium text-gray-900 dark:text-white">
@@ -189,7 +197,7 @@ const Navbar = () => {
                           }`}
                         >
                           <p className="text-sm text-gray-800 dark:text-gray-200 mb-1">
-                            {notification.message}
+                            {notification.message.replace("notify:","")}
                           </p>
                           <p className="text-xs text-gray-500 dark:text-gray-400">
                             {notification.date.toLocaleDateString()} at{" "}
