@@ -7,7 +7,7 @@ import {
   Database,
 } from "lucide-react";
 
-import { Subjects } from "@/app/interfaces/Subject";
+import { Subjects } from "@/interfaces/Subject";
 import dsip from "./dsip/data";
 import ai from "./ai/data";
 import is from "./is/data";
