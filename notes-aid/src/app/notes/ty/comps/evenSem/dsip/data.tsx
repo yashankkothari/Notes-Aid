@@ -9,7 +9,10 @@ const dsip = {
   modules: {
     1: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%201%20DSIP%202022.pptx.pdf?alt=media&token=7d6bd8e7-ce2a-4d1d-bf88-c38fee89642e",
+        {
+          title: "Notes 1",
+          url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%201%20DSIP%202022.pptx.pdf?alt=media&token=7d6bd8e7-ce2a-4d1d-bf88-c38fee89642e",
+        },
       ],
       topics: [
         {
@@ -190,7 +193,10 @@ const dsip = {
     },
     2: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%202.pdf?alt=media&token=050c1cc3-45f5-425f-a1eb-a05c93d9e445",
+        {
+          title: "Notes 1",
+          url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Chapter%202.pdf?alt=media&token=050c1cc3-45f5-425f-a1eb-a05c93d9e445",
+        },
       ],
       topics: [
         {

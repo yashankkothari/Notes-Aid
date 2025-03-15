@@ -7,8 +7,14 @@ const is = {
   modules: {
     1: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/1%20Introduction.pdf?alt=media&token=f354e878-b2c2-46b9-a729-9181fd474eec",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/2%20Cryptography.pdf?alt=media&token=287136ed-9315-4d4b-9945-063ee1b78c18",
+        {
+          title: "Notes 1",
+          url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/1%20Introduction.pdf?alt=media&token=f354e878-b2c2-46b9-a729-9181fd474eec",
+        },
+        {
+          title: "Notes 2",
+          url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/2%20Cryptography.pdf?alt=media&token=287136ed-9315-4d4b-9945-063ee1b78c18",
+        },
       ],
       topics: [
         {
@@ -239,7 +245,10 @@ const is = {
     },
     2: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/3%20Software%20Security-updated.pdf?alt=media&token=780f208d-7eaa-456c-a6c4-c8c99820ce88",
+        {
+          title: "Notes 1",
+          url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/3%20Software%20Security-updated.pdf?alt=media&token=780f208d-7eaa-456c-a6c4-c8c99820ce88",
+        },
       ],
       topics: [
         {

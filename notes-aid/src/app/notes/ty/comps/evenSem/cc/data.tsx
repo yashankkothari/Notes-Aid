@@ -7,7 +7,10 @@ const cc = {
   modules: {
     1: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%201.pdf?alt=media&token=5fdc10e7-7eef-41c1-a2a8-d5fac03bf238",
+        {
+            title: "Notes 1",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%201.pdf?alt=media&token=5fdc10e7-7eef-41c1-a2a8-d5fac03bf238",
+          },
       ],
       topics: [
         {
@@ -60,12 +63,30 @@ const cc = {
     },
     2: {
       notesLink: [
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202.1%2C%202.2%2C%202.3.pdf?alt=media&token=2e06924c-2866-4875-93b8-e110fcf1e284",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Hardware-assisted%20CPU%20virtualization%20in%20KVM%20QEMU.pdf?alt=media&token=12fc3a59-97de-42b6-bbd4-1b356871fc4d",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization.pdf?alt=media&token=e45c11af-8b7d-4b7d-8fe8-197ad96dd3c2",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization%202.pdf?alt=media&token=48376b43-fe35-4d54-a424-b3101f861f9c",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Parairtualization%20in%20Xen.pdf?alt=media&token=da1c8a39-0c00-46e6-bfa5-9a56db6493a1",
-        "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Full%20virtualization.pdf?alt=media&token=8afdc23b-9adb-4689-883f-be7b807f1cbe",
+        {
+            title: "Notes 1",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202.1%2C%202.2%2C%202.3.pdf?alt=media&token=2e06924c-2866-4875-93b8-e110fcf1e284",
+          },
+          {
+            title: "Notes 2",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Hardware-assisted%20CPU%20virtualization%20in%20KVM%20QEMU.pdf?alt=media&token=12fc3a59-97de-42b6-bbd4-1b356871fc4d",
+          },
+          {
+            title: "Notes 3",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization.pdf?alt=media&token=e45c11af-8b7d-4b7d-8fe8-197ad96dd3c2",
+          },
+          {
+            title: "Notes 4",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Virtualization%202.pdf?alt=media&token=48376b43-fe35-4d54-a424-b3101f861f9c",
+          },
+          {
+            title: "Notes 5",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Parairtualization%20in%20Xen.pdf?alt=media&token=da1c8a39-0c00-46e6-bfa5-9a56db6493a1",
+          },
+          {
+            title: "Notes 6",
+            url: "https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/CC%20Module%202%20Full%20virtualization.pdf?alt=media&token=8afdc23b-9adb-4689-883f-be7b807f1cbe",
+          },
       ],
 
       topics: [

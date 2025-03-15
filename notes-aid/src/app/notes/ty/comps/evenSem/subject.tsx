@@ -27,11 +27,26 @@ const subjects: Subjects = {
     modules: {
       1: {
         notesLink: [
-          "https://drive.google.com/file/d/1yMCgNSGgRlqBfouRmyNXgXEEaPRjOL86/view?usp=sharing",
-          "https://drive.google.com/file/d/1zITv6KHvz5x1Hjg0kp2hGqcQ9dQGkpZE/view?usp=sharing",
-          "https://drive.google.com/file/d/1lXXUJ_Di70sqcGYLpZ1xXTJhSWN-3VcF/view?usp=drive_link",
-          "https://drive.google.com/file/d/1n7Lv6A7qlkk0iWzOarnP0z7gGeGvOYPu/view?usp=drive_link",
-          "https://drive.google.com/file/d/1yOYbvs03ULo5rbgkxuucQVc4gINnRQFb/view?usp=drive_link",
+          {
+            title: "Noteswdawd",
+            url: "https://drive.google.com/file/d/1yMCgNSGgRlqBfouRmyNXgXEEaPRjOL86/view?usp=sharing",
+          },
+          {
+            title: "Notes 2",
+            url: "https://drive.google.com/file/d/1zITv6KHvz5x1Hjg0kp2hGqcQ9dQGkpZE/view?usp=sharing",
+          },
+          {
+            title: "Notes 3",
+            url: "https://drive.google.com/file/d/1lXXUJ_Di70sqcGYLpZ1xXTJhSWN-3VcF/view?usp=drive_link",
+          },
+          {
+            title: "Notes 4",
+            url: "https://drive.google.com/file/d/1n7Lv6A7qlkk0iWzOarnP0z7gGeGvOYPu/view?usp=drive_link",
+          },
+          {
+            title: "Notes 5",
+            url: "https://drive.google.com/file/d/1yOYbvs03ULo5rbgkxuucQVc4gINnRQFb/view?usp=drive_link",
+          },
         ],
         topics: [
           {
@@ -82,9 +97,18 @@ const subjects: Subjects = {
       },
       2: {
         notesLink: [
-          "https://drive.google.com/file/d/1XnBn-vbZDp0rGePs_pJ8fYrWqCaMh9tC/view?usp=drive_link",
-          "https://drive.google.com/file/d/1gzWTcj9re10FsvKA9bL4B9welJqAfU8t/view?usp=sharing",
-          "https://drive.google.com/file/d/14zH7me3thnh3OzDbvo2fPAtoQ-nlIGYC/view?usp=drive_link",
+          {
+            title: "Notes 1",
+            url: "https://drive.google.com/file/d/1XnBn-vbZDp0rGePs_pJ8fYrWqCaMh9tC/view?usp=drive_link",
+          },
+          {
+            title: "Notes 2",
+            url: "https://drive.google.com/file/d/1gzWTcj9re10FsvKA9bL4B9welJqAfU8t/view?usp=sharing",
+          },
+          {
+            title: "Notes 3",
+            url: "https://drive.google.com/file/d/14zH7me3thnh3OzDbvo2fPAtoQ-nlIGYC/view?usp=drive_link",
+          },
         ],
         topics: [
           {
@@ -143,12 +167,30 @@ const subjects: Subjects = {
       },
       4: {
         notesLink: [
-          "https://drive.google.com/file/d/1RbLSaz9NbJ77TE1FPD-U4pZjWP2F7Hnz/view?usp=drive_link",
-          "https://drive.google.com/file/d/1icdkCzmQ1nayrfX-CZmO7mjla1FFOvm8/view?usp=drive_link",
-          "https://drive.google.com/file/d/1QMeVY6BVN_t1RnHuz72EhrrgSIYqtOv8/view?usp=drive_link",
-          "https://drive.google.com/file/d/1K1Goft-MF16n0YRZPvitc6IICxUbPbJ4/view?usp=drive_link",
-          "https://drive.google.com/file/d/1utyDeaQF7T9MUeLWG9I3AtfoUJWhmLbd/view?usp=drive_link",
-          "https://drive.google.com/file/d/1P4G76f9NttJXtZN-ZbAua2R6LE6wNMX7/view?usp=drive_link",
+          {
+            title: "Notes 1",
+            url: "https://drive.google.com/file/d/1RbLSaz9NbJ77TE1FPD-U4pZjWP2F7Hnz/view?usp=drive_link",
+          },
+          {
+            title: "Notes 2",
+            url: "https://drive.google.com/file/d/1icdkCzmQ1nayrfX-CZmO7mjla1FFOvm8/view?usp=drive_link",
+          },
+          {
+            title: "Notes 3",
+            url: "https://drive.google.com/file/d/1QMeVY6BVN_t1RnHuz72EhrrgSIYqtOv8/view?usp=drive_link",
+          },
+          {
+            title: "Notes 4",
+            url: "https://drive.google.com/file/d/1K1Goft-MF16n0YRZPvitc6IICxUbPbJ4/view?usp=drive_link",
+          },
+          {
+            title: "Notes 5",
+            url: "https://drive.google.com/file/d/1utyDeaQF7T9MUeLWG9I3AtfoUJWhmLbd/view?usp=drive_link",
+          },
+          {
+            title: "Notes 6",
+            url: "https://drive.google.com/file/d/1P4G76f9NttJXtZN-ZbAua2R6LE6wNMX7/view?usp=drive_link",
+          },
         ],
         topics: [
           {

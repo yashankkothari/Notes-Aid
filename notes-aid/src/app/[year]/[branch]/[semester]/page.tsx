@@ -26,9 +26,14 @@ interface Topic {
   }[]
 }
 
+interface NotesLink {
+  title: string
+  url: string
+}
+
 interface Module {
   [key: number]: {
-    notesLink: string[]
+    notesLink: NotesLink[]
     topics: Topic[]
   }
 }

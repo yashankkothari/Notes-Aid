@@ -11,10 +11,15 @@ interface Note {
   url: string;
 }
 
+interface NotesLink{
+  title: string;
+  url: string;
+}
+
 interface Module {
   [key: number]: {
     progress?: number; 
-    notesLink: string[];
+    notesLink: NotesLink[];
     topics: Topic[];
   };
 }

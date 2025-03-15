@@ -15,9 +15,14 @@ interface Topic {
   }[];
 }
 
+interface NotesLink{
+  title: string;
+  url: string;
+}
+
 interface TopicListProps {
   topics: Topic[];
-  notesLink: string[];
+  notesLink: NotesLink[];
   moduleNumber: number;
   updateVideoProgress: (moduleIndex: string, videoIndex: string, topicName: string) => void;
   moduleKey:string;
@@ -70,17 +75,17 @@ const TopicList: React.FC<TopicListProps> = ({
         </h5>
       )}
       <div className="flex flex-wrap gap-2">
-      {notesLink.map((note: string, noteIndex: number) => (
+      {notesLink.map((note: NotesLink, noteIndex: number) => (
         <React.Fragment key={`note-${noteIndex}`}>
           <a
             key={noteIndex}
-            href={note}
+            href={note.url}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-100 dark:hover:bg-blue-800 transition-colors"
           >
             <BookOpen className="w-4 h-4" />
-            Notes {noteIndex + 1}
+            {note.title}
           </a>
         </React.Fragment>
         

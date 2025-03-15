@@ -7,7 +7,10 @@ const ai = {
   modules: {
     1: {
       notesLink: [
-        "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea5TxRERSnNMk8dJziSwhr4B59EW4oP51sNa7uOmTKA1ZA?e=JueEIi",
+        {
+            title: "Notes 1",
+            url: "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea5TxRERSnNMk8dJziSwhr4B59EW4oP51sNa7uOmTKA1ZA?e=JueEIi",
+          },
       ],
       topics: [
         {
@@ -72,7 +75,10 @@ const ai = {
     },
     2: {
       notesLink: [
-        "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/EVTpki7L6b1Nsq50m8uOL6EB-8Td3LndwzkLk-VMQCbTbg?e=CYBbWp",
+        {
+            title: "Notes 1",
+            url: "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/EVTpki7L6b1Nsq50m8uOL6EB-8Td3LndwzkLk-VMQCbTbg?e=CYBbWp",
+          },
       ],
       topics: [
         {
@@ -163,9 +169,18 @@ const ai = {
     },
     3: {
       notesLink: [
-        "https://drive.google.com/file/d/1esiJaNmR6CyKEBRptQA60GMU8clbyR0n/view?usp=drive_link",
-        "https://drive.google.com/file/d/1mDPMwUxSFYGvdhVRn4mLNdWnld1Z6uCk/view?usp=drive_link",
-        "https://drive.google.com/file/d/19yLUfnPABTv3jw_umuHvCKhywIhpup6j/view?usp=drive_link",
+        {
+            title: "Notes 1",
+            url: "https://drive.google.com/file/d/1esiJaNmR6CyKEBRptQA60GMU8clbyR0n/view?usp=drive_link",
+          },
+          {
+            title: "Notes 2",
+            url: "https://drive.google.com/file/d/1mDPMwUxSFYGvdhVRn4mLNdWnld1Z6uCk/view?usp=drive_link",
+          },
+          {
+            title: "Notes 3",
+            url: "https://drive.google.com/file/d/19yLUfnPABTv3jw_umuHvCKhywIhpup6j/view?usp=drive_link",
+          },
       ],
       topics: [
         {
@@ -301,7 +316,10 @@ const ai = {
     // },
     4: {
       notesLink: [
-        "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea0c7C72Nv9DhETaPxfCfZgB_JiRc_fBV3FeMcCWRRMuqw?e=DoEypQ",
+        {
+            title: "Notes 1",
+            url: "https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/Ea0c7C72Nv9DhETaPxfCfZgB_JiRc_fBV3FeMcCWRRMuqw?e=DoEypQ",
+          },
       ],
       topics: [
         {
