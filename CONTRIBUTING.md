@@ -123,6 +123,10 @@ Each evenSem and oddSem Folder has <subject>/data.tsx
 .
 ```
 
+
+
+
+
 Format of `data.tsx` file is as follows:
 
 ### Adding Notes
@@ -133,6 +137,9 @@ Format of `data.tsx` file is as follows:
    - **Videos** (if available)
    - **Notes** (as URLs)
    - **Description** of the topic
+4. Moreover As per syllabus, C and P batch in **First Year** have the same syllabus only the subjects are swapped, We have followed:
+   - C Batch -> Comps and AIDs
+   - P Batch -> Others 
 
 
 _Bonus Tip: We have 1 TB of storage on Sharepoint with somaiya.edu account, so you can upload your notes there and share the link here._
