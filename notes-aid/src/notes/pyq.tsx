@@ -7,9 +7,17 @@ interface pyqLink{
 }   
 
 const pyqLinks:pyqLink={
-    fy:[],
+    fy:[
+        {
+            title:"FY B.Tech Syllabus",
+            url:"https://somaiya0-my.sharepoint.com/:b:/g/personal/minav_karia_somaiya_edu/ETeSaAWOV8JJpAAn4YxdI7oB6BpArT6VtkxJU0MyFa-ecQ?e=OP4ITu"
+        }
+    ],
     sy:[
-        
+        {
+            title:"SY B.Tech Syllabus",
+            url:"https://somaiya0-my.sharepoint.com/personal/aarush_s_somaiya_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Faarush%5Fs%5Fsomaiya%5Fedu%2FDocuments%2FSY%5FSYLLABUS&ga=1"
+        }
     ],
     ty:[
         {
@@ -18,7 +26,7 @@ const pyqLinks:pyqLink={
         },
         {
             title:"TY B.Tech Syllabus",
-            url:"https://firebasestorage.googleapis.com/v0/b/acm-bruh.appspot.com/o/Modi-TY-SVU%202020%20Syllabus-July-2022.pdf?alt=media&token=427b68c3-61e9-4d92-abe5-c5e361c4c6d4"
+            url:"https://somaiya0-my.sharepoint.com/:f:/g/personal/aarush_s_somaiya_edu/Es5hUxpbGhtPpT_DeON92_EBJMXeHbpQK0NJLjSywclQkw?e=I0ElvW"
         },
         {
             title:"Textbooks",

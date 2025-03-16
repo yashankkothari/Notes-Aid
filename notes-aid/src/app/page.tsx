@@ -17,6 +17,10 @@ const branches = [
   { value: "mech", label: "Mechanical Engineering" },
   { value: "excp", label: "Electronics & Computer Engineering" },
   { value: "it", label: "Information Technology" },
+  { value: "extc", label: "Electronics & Telecommunication Engineering" },
+  { value: "rai" , label: "Robotics & Automation Engineering" },
+  { value: "cce",  label: "Computer and Communication Engineering" },
+  { value: "aids", label: "Artificial Intelligence and Data Science" },
 ]
 
 const years = [

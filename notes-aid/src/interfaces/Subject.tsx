@@ -18,7 +18,6 @@ interface NotesLink{
 
 interface Module {
   [key: number]: {
-    progress?: number; 
     notesLink: NotesLink[];
     topics: Topic[];
   };
@@ -27,7 +26,6 @@ interface Module {
 interface Topic {
   title: string;
   description: string;
-  progress?: number; 
   videos?: Video[];
   notes?: Note[];
 }

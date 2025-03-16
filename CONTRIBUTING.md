@@ -114,98 +114,89 @@ Each evenSem and oddSem Folder has <subject>/data.tsx
 │  │  ├──📂 cc/📄data.tsx
 │  │  ├──📂 is/📄data.tsx
 │  │  ├──📄subject.tsx
-│  ├── oddSem
+│  ├──📂oddSem
+│  │  ├──📂 cn/📄data.tsx
+│  │  ├──📂 os/📄data.tsx
+│  │  ├──📂 cg/📄data.tsx
 ...
 .
 .
 ```
 
-
-
-```ts
-import { LucideIcon } from 'lucide-react';
-
-interface Video {
-  title: string;
-  url: string;
-  completed?: boolean;
-}
-
-interface Note {
-  title: string;
-  url: string;
-}
-
-interface NotesLink {
-  title: string;
-  url: string;
-}
-
-interface Module {
-  [key: number]: {
-    progress?: number;
-    notesLink: NotesLink[];
-    topics: Topic[];
-  };
-}
-
-interface Topic {
-  title: string;
-  description: string;
-  progress?: number;
-  videos?: Video[];
-  notes?: Note[];
-}
-
-interface Subject {
-  name: string;
-  icon: LucideIcon;
-  color: string;
-  modules: Module;
-}
-
-export interface Subjects {
-  [key: string]: Subject;
-}
-```
+Format of `data.tsx` file is as follows:
 
 ### Adding Notes
-1. Navigate to `data/subjects.ts`.
+1. Navigate to `<subject>/data.tsx`.
 2. Find the appropriate subject or add a new one following the above format.
 3. Include:
+   - **Topics** (with titles, icon & descriptions)
    - **Videos** (if available)
-   - **Notes** (as URLs in markdown or PDFs)
+   - **Notes** (as URLs)
    - **Description** of the topic
 
-Example:
+
+_Bonus Tip: We have 1 TB of storage on Sharepoint with somaiya.edu account, so you can upload your notes there and share the link here._
+
+---
+
+Currently taking notes for Artificial Intelligence as an example:
+
+
 ```ts
-const dsa: Subject = {
-  name: "Data Structures & Algorithms",
+import {SomeLucideIcon} from "lucide-react";  // choose icon from lucide.dev
+
+const ai: Subject = {
+  name: "Artificial Intelligence",
   icon: SomeLucideIcon,
-  color: "#ff5733",
+  color: "blue", // Make it blue for consistent color scheme
   modules: {
+    // For each module make different
     1: {
-      progress: 50,
+    
       notesLink: [
-        { title: "Introduction to DSA", url: "https://example.com/dsa-intro" },
+         {
+            title: "Notes 1",
+            url: "https://somaiya0-my.sharepoint.com/:b:/g/personal/....",
+         },
+         // ... Add notes here with title and url here
       ],
+      // Topics of Module like 1.1, 1.2 ....
       topics: [
         {
-          title: "Arrays & Linked Lists",
-          description: "Understanding the basics of arrays and linked lists.",
-          progress: 70,
+          title: "1.1 Introduction to AI",
+          description: "Theortical Topic / Numerical Based / Important for exam",
           videos: [
-            { title: "Array Basics", url: "https://youtube.com/array-basics" }
+            // Videos for that topic
+            { title: "Introduction to AI", url: "https://www.youtube.com/embed/xvFZjo5PgG0?si=ii7FsVVzJTpiartE" }
+      
+            { title: "History of AI", url: "https://www.youtube.com/embed/xvFZjo5PgG0?si=ii7FsVVzJTpiartE" }
+            // Use embed link of youtube video for url which you will get when you click on share button of youtube video
+            // Add more videos if needed or else leave the array empty
           ],
           notes: [
-            { title: "Array Notes", url: "https://example.com/array-notes" }
+            { title: "Module 1.1 Notes", url: "https://example.com/ai-notes" }
+            // Add notes if needed
+            // Use drive link or any other link where notes are stored
           ],
         },
       ],
     },
+    2: {
+        // Same format as above
+    },
+    3: {
+        // Same format as above
+    },
   },
 };
+
+export default ai; 
+
+// You can refer to the src/app folder for more examples
 ```
+
+For testing wether the notes are added correctly or not, you can run the project locally and check the notes in the browser with steps mentioned in [README.md](README.md)
+
 
 ### Submitting a Pull Request
 1. Fork the repository.
