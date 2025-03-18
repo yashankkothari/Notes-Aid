@@ -2,6 +2,8 @@
 
 import { Subjects } from "@/interfaces/Subject";
 
-const subjects: Subjects = {};
+const subjects: Subjects = {
+    
+};
 
 export default subjects;
