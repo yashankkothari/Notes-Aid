@@ -1,6 +1,6 @@
 import { MessageSquareLock } from "lucide-react"
 
-const ac = {
+const oose = {
   name: "Object-Oriented Software Engineering",
   icon: MessageSquareLock,
   color: "blue",
@@ -228,4 +228,4 @@ const ac = {
   },
 }
 
-export default ac
+export default oose

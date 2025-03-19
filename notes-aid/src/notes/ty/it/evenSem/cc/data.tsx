@@ -1,7 +1,7 @@
 import { MessageSquareLock } from "lucide-react"
 
 
-const ac = {
+const cc = {
   name: "Cloud Computing",
   icon: MessageSquareLock,
   color: "blue",
@@ -143,4 +143,4 @@ const ac = {
   },
 }
 
-export default ac
+export default cc
