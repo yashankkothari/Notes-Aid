@@ -1,5 +1,4 @@
 import { MessageSquareLock } from "lucide-react"
-import { describe } from "node:test"
 
 const ac = {
   name: "Object-Oriented Software Engineering",
