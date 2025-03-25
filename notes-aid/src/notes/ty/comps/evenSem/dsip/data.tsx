@@ -85,11 +85,11 @@ const dsip = {
               url: "https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK",
             },
             {
-              title: "Block Diagram & Signal Flow Graph - Part 2",
+              title: "Block Diagram & Signal Flow Graph - Part 3",
               url: "https://www.youtube.com/embed/rjC_7YOiM3I?si=ncTFhky6vsF2PEPK",
             },
             {
-              title: "Block Diagram & Signal Flow Graph - Part 3",
+              title: "Block Diagram & Signal Flow Graph - Part 4",
               url: "https://www.youtube.com/embed/BYMc-YEy89E?si=6kmCxOIYxiqTARVB",
             },
             {
