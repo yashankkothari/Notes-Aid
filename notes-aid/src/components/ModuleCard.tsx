@@ -55,8 +55,8 @@ const ModuleCard: React.FC<ModuleCardProps> = ({
         hover:shadow-md
         ${
           isActive
-            ? "border-blue-500 bg-blue-50 dark:bg-blue-900/50 dark:border-blue-400"
-            : "border-slate-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-700"
+            ? "border-[#3B82F6] bg-[#EFF6FF] dark:bg-[#27355C80] dark:border-[#60A5FA]"
+            : "border-[#E2E8F0] dark:border-[#374151] hover:border-[#BFDBFE] dark:hover:border-[#d97757]"
         }
       `}
     >

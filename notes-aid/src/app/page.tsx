@@ -97,7 +97,7 @@ export default function MainPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#E1F4F3] via-white to-[#E1F4F3] dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] flex flex-col transition-colors duration-300">
+    <div className="min-h-screen bg-[#E1F4F3] dark:bg-[#262624] flex flex-col transition-colors duration-300">
       <div
         className={`flex-1 grid place-items-center p-4 transition-all duration-500 ${
           isLoading ? "opacity-0" : "opacity-100"
@@ -126,7 +126,8 @@ export default function MainPage() {
                 </label>
                 <div className="relative">
                   <select
-                    className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
+                    className="w-full p-3 pr-10 bg-white dark:bg-[#1c1b1a] dark:border-[#505050] border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-[#2975c0]  text-[#333333] dark:text-[#f0f0f0] appearance-none selection:bg-[#ffcc00] dark:selection:bg-[#00ffff] selection:text-[#000000] dark:selection:text-[#101010]"
+                    
                     value={selectedBranch}
                     onChange={(e) => setSelectedBranch(e.target.value)}
                   >
@@ -150,7 +151,7 @@ export default function MainPage() {
                 </label>
                 <div className="relative">
                   <select
-                    className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
+                    className="w-full p-3 pr-10 bg-white dark:bg-[#1c1b1a] dark:border-[#505050] border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-[#2975c0]  text-[#333333] dark:text-[#f0f0f0] appearance-none selection:bg-[#ffcc00] dark:selection:bg-[#00ffff] selection:text-[#000000] dark:selection:text-[#101010]"
                     value={selectedYear}
                     onChange={(e) => setSelectedYear(e.target.value)}
                   >
@@ -174,7 +175,7 @@ export default function MainPage() {
                 </label>
                 <div className="relative">
                   <select
-                    className="w-full p-3 pr-10 bg-white dark:bg-slate-900 dark:border-slate-700 border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-cyan-400 text-[#333333] dark:text-slate-100 appearance-none"
+                    className="w-full p-3 pr-10 bg-white dark:bg-[#1c1b1a] dark:border-[#505050] border-[#706C61] rounded-lg focus:outline-none focus:ring-1 focus:ring-[#706C61] dark:focus:ring-[#2975c0]  text-[#333333] dark:text-[#f0f0f0] appearance-none selection:bg-[#ffcc00] dark:selection:bg-[#00ffff] selection:text-[#000000] dark:selection:text-[#101010]"
                     value={selectedSemester}
                     onChange={(e) => setSelectedSemester(e.target.value)}
                   >
@@ -195,10 +196,10 @@ export default function MainPage() {
             <button
               onClick={handleContinue}
               disabled={!selectedBranch || !selectedYear || !selectedSemester}
-              className={`w-full bg-[#333333] dark:bg-slate-800 dark:hover:bg-slate-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
+              className={`w-full bg-[#333333] dark:bg-[#1C1B1A] text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 flex items-center justify-center gap-2 ${
                 !selectedBranch || !selectedYear || !selectedSemester
-                  ? "opacity-50 cursor-not-allowed dark:bg-slate-900"
-                  : "hover:bg-[#706C61] dark:hover:bg-slate-700"
+                  ? "opacity-50 cursor-not-allowed dark:bg-[#1a1a1a]"
+                  : "hover:bg-[#706C61] dark:hover:bg-[#3A3937]"
               }`}
             >
               <BookOpen className="w-4 h-4" />

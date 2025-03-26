@@ -208,11 +208,11 @@ const EngineeringCurriculum: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-[#F8FAFC] dark:bg-[#262624]">
       <div className="w-full p-4 md:p-6">
-        <div className="max-w-full mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-sm p-4 md:p-6">
+        <div className="max-w-full mx-auto bg-[#FFFFFF] dark:bg-[#30302e] rounded-lg shadow-sm p-4 md:p-6">
           <div className="mb-6 md:mb-8 text-center md:text-left">
-            <h1 className="text-lg md:text-2xl font-bold mb-2 text-black dark:text-white">
+            <h1 className="text-lg md:text-2xl font-bold mb-2 text-[#000000] dark:text-[#FFFFFF]">
               Engineering Curriculum of {branch.toUpperCase()} /{" "}
               {slug.toUpperCase()} /{" "}
               {sem.charAt(0).toUpperCase() + sem.slice(1)}
@@ -243,14 +243,14 @@ const EngineeringCurriculum: React.FC = () => {
                   className={`p-4 rounded-lg border cursor-pointer transition-all flex-1 max-w-[120px] sm:max-w-[150px] md:max-w-none text-center 
                       ${
                         selectedSubject === key
-                          ? "border-blue-500 bg-blue-50 dark:bg-[#2D336B] dark:border-[#7886C7]"
-                          : "bg-blue-200 dark:bg-[#000957] hover:border-blue-200 dark:hover:border-[#A9B5DF]"
+                          ? "border-blue-500 bg-blue-50 dark:bg-[#0f0f0e] dark:border-[#d97757]"
+                          : "bg-blue-200 dark:bg-[#1c1b1a] hover:border-blue-200 dark:hover:border-[#A9B5DF]"
                       }
                     `}
                 >
                   <div className="flex items-center justify-center gap-2 mb-2 flex-col">
-                    <Icon className="w-6 h-6 text-blue-500 dark:text-blue-400" />
-                    <h3 className="font-medium text-black dark:text-white text-sm md:text-base">
+                    <Icon className="w-6 h-6 text-[#2975C0] dark:text-[#d97757]" />
+                    <h3 className="font-medium text-black dark:text-white text-sm md:text-base ">
                       {subject.name}
                     </h3>
                   </div>
@@ -261,7 +261,7 @@ const EngineeringCurriculum: React.FC = () => {
               );
             })}
           </div>
-          <div className="p-4 rounded-lg border bg-white dark:bg-gray-800 shadow-sm mb-4">
+          {/* <div className="p-4 rounded-lg border border-[#30302e] bg-white dark:bg-[#1c1b1a] shadow-sm mb-4">
             <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
               Important Links
             </h2>
@@ -280,10 +280,31 @@ const EngineeringCurriculum: React.FC = () => {
                   );
                 })}
             </div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
             <div className="space-y-3">
+            <div className="p-4 rounded-lg border  border-[#30302e] bg-white dark:bg-[#1c1b1a] shadow-sm mb-4">
+            <h2 className="text-sm md:text-base font-bold mb-2 text-black dark:text-white">
+              Important Links
+            </h2>
+            <div className="flex gap-2 flex-wrap">
+              {Object.keys(pyq).length > 0 &&
+                pyq.map((pyq, index) => {
+                  return (
+                    <a
+                      href={pyq.url}
+                      target="_blank"
+                      className="inline-block px-4 py-2 mt-2 text-sm font-medium text-center text-white bg-[#3B82F6] rounded-lg hover:bg-[#2563EB] dark:bg-[#60A5FA] dark:hover:bg-[#3B82F6]
+"
+                      key={index}
+                    >
+                      {pyq.title}
+                    </a>
+                  );
+                })}
+            </div>
+          </div>
               {Object.keys(subjects[selectedSubject].modules).map(
                 (moduleKey) => {
                   const moduley = parseInt(moduleKey);
@@ -311,7 +332,7 @@ const EngineeringCurriculum: React.FC = () => {
               </button>
             </div>
 
-            <div className="md:col-span-2 bg-slate-50 dark:bg-gray-900 rounded-lg p-4 md:p-6">
+            <div className="md:col-span-2 bg-slate-50 dark:bg-[#262624] rounded-lg p-4 md:p-6">
               <h2 className="text-base md:text-lg font-bold mb-1 text-black dark:text-white">
                 {subjects[selectedSubject].name} - Module {selectedModule || 1}
               </h2>
@@ -340,14 +361,14 @@ const EngineeringCurriculum: React.FC = () => {
       {/* Reset Confirmation Modal */}
       {showResetConfirmation && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4">
+          <div className="bg-white dark:bg-[#262624] rounded-lg p-6 max-w-sm w-full mx-4">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-bold text-black dark:text-white">
                 Reset Progress
               </h3>
               <button
                 onClick={() => setShowResetConfirmation(false)}
-                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                className="text-[#30302e] hover:text-[#1d1d1b] dark:text-[#1c1b1a] dark:hover:text-[#f0f0f0]"
               >
                 <X className="w-5 h-5" />
               </button>

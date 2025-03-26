@@ -5,7 +5,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="w-full py-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-200 bg-white dark:bg-gray-900">
+    <footer className="w-full py-8 border-t border-gray-200 dark:border-gray-800 transition-colors duration-200 dark:bg-[#303030]">
       <div className="container mx-auto px-6">
         <div className="flex justify-between flex-col md:flex-row items-center space-y-4 md:space-y-0 gap-3 ">
           <div className="flex ">
