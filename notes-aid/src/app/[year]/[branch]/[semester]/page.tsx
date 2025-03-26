@@ -1,17 +1,17 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "next/navigation";
 // import ModuleCard from "../components/ModuleCard";
 // import TopicList from "../components/TopicList";
 // import Navbar from "../components/Navbar";
 // import NotesData from "../notes/data";
 // import pyqLinks from "../notes/pyq";
-import ModuleCard from "@/app/components/ModuleCard";
-import TopicList from "@/app/components/TopicList";
-import NotesData from "@/app/notes/data";
-import pyqLinks from "@/app/notes/pyq";
-import useProgress from "@/app/hook/useProgress";
-import { RotateCcw } from "lucide-react";
+import ModuleCard from "@/components/ModuleCard";
+import TopicList from "@/components/TopicList";
+import NotesData from "@/notes/data";
+import pyqLinks from "@/notes/pyq";
+import useProgress from "@/hook/useProgress";
+import { RotateCcw, X } from "lucide-react";
 
 interface Topic {
   title: string;
@@ -26,9 +26,14 @@ interface Topic {
   }[];
 }
 
+interface NotesLink {
+  title: string;
+  url: string;
+}
+
 interface Module {
   [key: number]: {
-    notesLink: string[];
+    notesLink: NotesLink[];
     topics: Topic[];
   };
 }
@@ -55,6 +60,15 @@ interface NotesDataType {
   [year: string]: BranchData;
 }
 
+interface PyqLink {
+  title: string;
+  url: string;
+}
+
+interface PyqLinks {
+  [year: string]: PyqLink[];
+}
+
 const EngineeringCurriculum: React.FC = () => {
   const {
     year: slug,
@@ -66,30 +80,30 @@ const EngineeringCurriculum: React.FC = () => {
   //   const sem = searchParam.get("sem") || "";
   const [isMounted, setIsMounted] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [showResetConfirmation, setShowResetConfirmation] = useState(false);
 
   console.log(branch, sem, slug);
 
   const typedNotesData = NotesData as NotesDataType;
 
   const subjects = slug && typedNotesData[slug]?.[branch]?.[sem];
-  const pyq = pyqLinks[slug];
+  const pyq = (pyqLinks as PyqLinks)[slug] || [];
   // console.log(pyq)
   // const subjects = NotesData.fy.comps.oddSem;
 
+  const isMountedRef = useRef(isMounted);
   useEffect(() => {
     setIsMounted(true);
-    console.log(isMounted);
+    console.log(isMountedRef.current); // Access via ref instead
   }, []);
 
   useEffect(() => {
     if (subjects) {
       setTimeout(() => {
         setLoading(false);
-      }
-      , 500);
+      }, 500);
     }
   }, [subjects]);
-  
 
   const initialSubject = subjects ? Object.keys(subjects)[0] : "";
   const [selectedSubject, setSelectedSubject] = useState(initialSubject);
@@ -105,7 +119,7 @@ const EngineeringCurriculum: React.FC = () => {
   }, [selectedSubject, subjects]);
 
   const { progressData, updateVideoProgress, resetProgress } =
-  useProgress(selectedSubject);
+    useProgress(selectedSubject);
 
   if (loading) {
     return (
@@ -174,8 +188,6 @@ const EngineeringCurriculum: React.FC = () => {
   //   return 0;
   // };
 
-
-
   // console.log(getTotalVideos("cc"))
 
   const numberVideoInModule = (k: number) =>
@@ -185,6 +197,15 @@ const EngineeringCurriculum: React.FC = () => {
 
   // console.log("Hello")
   // console.log(numberVideoInModule)
+
+  const handleResetProgress = () => {
+    setShowResetConfirmation(true);
+  };
+
+  const confirmReset = () => {
+    resetProgress();
+    setShowResetConfirmation(false);
+  };
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-gray-900">
@@ -282,10 +303,10 @@ const EngineeringCurriculum: React.FC = () => {
                 }
               )}
               <button
-                onClick={() => resetProgress()}
+                onClick={handleResetProgress}
                 className="w-full mt-4 px-4 py-2 text-sm font-medium text-white bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-200 flex items-center justify-center gap-2"
               >
-                <RotateCcw />
+                <RotateCcw className="w-4 h-4" />
                 Reset Progress
               </button>
             </div>
@@ -316,6 +337,42 @@ const EngineeringCurriculum: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Reset Confirmation Modal */}
+      {showResetConfirmation && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white dark:bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-bold text-black dark:text-white">
+                Reset Progress
+              </h3>
+              <button
+                onClick={() => setShowResetConfirmation(false)}
+                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <p className="text-gray-600 dark:text-gray-300 mb-6">
+              Are you sure you want to reset your progress for this subject?
+              This action cannot be undone.
+            </p>
+            <div className="flex justify-end gap-3">
+              <button
+                onClick={() => setShowResetConfirmation(false)}
+                className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmReset}
+                className="px-4 py-2 text-sm font-medium text-white bg-red-500 rounded-lg hover:bg-red-600"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
